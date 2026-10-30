@@ -1,0 +1,56 @@
+/* 1. Универсальный селектор: общая модель размеров. */
+* { box-sizing: border-box; }
+
+/* 2. Селекторы по тегам задают базовое оформление. */
+body { max-width: 1000px; margin: 0 auto; padding: 48px 24px; background: #f3f3ef; color: #243337; font: 16px/1.6 Arial, sans-serif; }
+header { border-bottom: 1px solid #d4dcd8; padding-bottom: 24px; }
+h1 { margin: 0 0 20px; font-size: clamp(36px, 7vw, 58px); line-height: 1.15; letter-spacing: -.04em; }
+h2 { font-size: 24px; margin: 0 0 10px; }
+h3 { font-size: 22px; margin: 0 0 16px; color: pink; }
+p { margin: 0; }
+
+/* 3. Классы, включая составной селектор .link.special-link. */
+.main-title { color: red; }
+.nav-list { display: flex; list-style: none; padding: 0; gap: 14px; flex-wrap: wrap; }
+.nav-list > li { padding: 10px 24px; border-radius: 5px; background: white; }
+.link { color: green; text-decoration: none; font-weight: bold; }
+.link.special-link { color: blue; }
+.content, .sidebar { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 24px; }
+.post, .widget { border: 1px solid #d4dcd8; padding: 26px; border-radius: 6px; background: #fff; }
+.post:first-child { background: #253338; border-color: #253338; }
+.widget:first-child { background: #253338; border-color: #253338; }
+.important-widget { background: #f8e8e8; }
+.important-widget h3, .note { color: maroon; }
+.color-list { margin: 0; padding: 0; list-style: none; }
+.color-list li { background: #fff; padding: 8px 12px; margin-top: 8px; border-radius: 3px; }
+.highlighted { color: black; font-weight: bold; }
+.form { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; margin-top: 30px; padding: 24px; background: #fff; border: 1px solid #d4dcd8; border-radius: 6px; }
+.submit-btn { color: black; background: #e4edba; border: 1px solid #b7c47d; border-radius: 4px; padding: 11px 20px; cursor: pointer; font: inherit; }
+
+/* 4. Идентификатор: цвет наследуют заголовок и абзац первого поста. */
+#first-post { color: orange; }
+
+/* 5. Атрибутные селекторы. На тёмном фоне виден белый placeholder. */
+input[placeholder="Белый"] { color: white; background: #253338; border: 1px solid #647a80; border-radius: 4px; padding: 12px; font: inherit; min-width: 0; max-width: 100%; }
+input[placeholder="Белый"]::placeholder { color: white; opacity: 1; }
+.nav-list a[href="#"] { text-underline-offset: 4px; }
+
+/* 6. Псевдоклассы: положение, наведение, фокус. */
+.nav-list li:last-child { background: #253338; }
+.nav-list li:nth-child(3) a { color: yellow; }
+.post:nth-child(2) { color: purple; }
+.color-list li:nth-child(2) { color: brown; }
+.link:hover { text-decoration: underline; }
+.submit-btn:hover { background: #d6e39e; }
+a:focus-visible, input:focus-visible, button:focus-visible { outline: 3px solid #497b72; outline-offset: 4px; }
+
+/* Псевдоэлемент добавляет декоративную линию, сохраняя цвет заголовка. */
+.main-title::after { content: ""; display: block; width: 64px; height: 4px; margin-top: 18px; background: currentColor; }
+
+/* 7. Потомки: первый пункт списка цветов. */
+.widget .color-list li:first-child { color: gray; }
+
+/* 8. Соседний элемент: абзац непосредственно после h2. */
+.post h2 + p { color: inherit; border-top: 1px solid currentColor; padding-top: 12px; }
+
+@media (max-width: 650px) { body { padding: 28px 18px; } .content, .sidebar { grid-template-columns: 1fr; } .form { align-items: stretch; flex-direction: column; } }
