@@ -45,8 +45,8 @@
 <tr><td data-label="Где в PDF">Стр. 1, пункт 2</td><td data-label="Что требуется">caption — добавить заголовок таблицы.</td><td data-label="Как выполнено / что объяснять"><code>&lt;caption&gt;Сравнение Lamborghini, Voyah и Jaguar&lt;/caption&gt;</code>.</td></tr>
 <tr><td data-label="Где в PDF">Стр. 1, пункт 2</td><td data-label="Что требуется">th — заголовки столбцов.</td><td data-label="Как выполнено / что объяснять"><code>&lt;th scope=&quot;col&quot;&gt;Lamborghini&lt;/th&gt;</code>. Также th использован для названий строк с <code>scope=&quot;row&quot;</code>.</td></tr>
 <tr><td data-label="Где в PDF">Стр. 1, пункт 2</td><td data-label="Что требуется">td — ячейки с данными.</td><td data-label="Как выполнено / что объяснять"><code>&lt;td&gt;200 км/ч&lt;/td&gt;</code>. Ячейки всегда находятся внутри <code>tr</code>.</td></tr>
-<tr><td data-label="Где в PDF">Стр. 1, пункт 2</td><td data-label="Что требуется">details / summary — информация о каждом автомобиле.</td><td data-label="Как выполнено / что объяснять">В общем задании теперь три отдельных <code>details</code>: Revuelto, FREE Sport и F-TYPE. У каждого своя кликабельная подпись <code>summary</code>.</td></tr>
-<tr><td data-label="Где в PDF">Стр. 1, пункт 2</td><td data-label="Что требуется">mark — выделить ключевые характеристики.</td><td data-label="Как выполнено / что объяснять"><code>&lt;mark&gt;2,5 с&lt;/mark&gt;</code> и <code>&lt;mark&gt;Более 350 км/ч&lt;/mark&gt;</code>.</td></tr>
+<tr><td data-label="Где в PDF">Стр. 1, пункт 2</td><td data-label="Что требуется">details / summary — информация о каждом автомобиле.</td><td data-label="Как выполнено / что объяснять">По последнему уточнению общее задание сокращено до одной таблицы; details и summary в нём убраны. Эти теги сохранены и разобраны в индивидуальном задании Hyundai.</td></tr>
+<tr><td data-label="Где в PDF">Стр. 1, пункт 2</td><td data-label="Что требуется">mark — выделить ключевые характеристики.</td><td data-label="Как выполнено / что объяснять">В общей таблице выделение убрано по выбранному формату. Примеры mark есть в индивидуальном сравнении Hyundai, например объём багажника 616 л.</td></tr>
 <tr><td data-label="Где в PDF">Стр. 1, характеристика 1</td><td data-label="Что требуется">Самая дорогая модель</td><td data-label="Как выполнено / что объяснять">Отдельная строка <code>tr</code> в общей таблице. Уточнение: среди приведённых примеров, не всех серий бренда за всю историю.</td></tr>
 <tr><td data-label="Где в PDF">Стр. 1, характеристика 2</td><td data-label="Что требуется">Самая дешёвая модель</td><td data-label="Как выполнено / что объяснять">Отдельная строка <code>tr</code> в общей таблице. Цены в разных валютах и с разными условиями скидки не сравниваются напрямую.</td></tr>
 <tr><td data-label="Где в PDF">Стр. 1, характеристика 3</td><td data-label="Что требуется">Двигатель</td><td data-label="Как выполнено / что объяснять">Отдельная строка <code>tr</code> в общей таблице. Значения записаны обычным текстом внутри td.</td></tr>
@@ -89,7 +89,7 @@
 </tbody></table></section>
 <section id="difference"><h2>3. Что добавилось после первой лабораторной</h2><p>Сравнение сделано с реальным <a href="../lab1/index.html">lab1/index.html</a>, а не с предположением о том, что изучали на занятии. <code>h1</code>, <code>href</code>, <code>div</code>, <code>mark</code>, списки и изображения уже были в №1; они повторяются и объяснены ниже.</p>
 <p><b>Новые HTML-теги:</b> <code>article</code>, <code>aside</code>, <code>blockquote</code>, <code>button</code>, <code>caption</code>, <code>cite</code>, <code>code</code>, <code>col</code>, <code>colgroup</code>, <code>details</code>, <code>figcaption</code>, <code>figure</code>, <code>form</code>, <code>input</code>, <code>label</code>, <code>link</code>, <code>nav</code>, <code>progress</code>, <code>section</code>, <code>summary</code>, <code>table</code>, <code>tbody</code>, <code>td</code>, <code>tfoot</code>, <code>th</code>, <code>thead</code>, <code>time</code>, <code>tr</code>.</p>
-<p><b>Новые атрибуты в HTML-файлах:</b> <code>action</code>, <code>aria-hidden</code>, <code>aria-label</code>, <code>aria-labelledby</code>, <code>cite</code>, <code>class</code>, <code>colspan</code>, <code>content</code>, <code>datetime</code>, <code>for</code>, <code>id</code>, <code>max</code>, <code>name</code>, <code>placeholder</code>, <code>rel</code>, <code>role</code>, <code>scope</code>, <code>tabindex</code>, <code>type</code>, <code>value</code>.</p>
+<p><b>Новые атрибуты в HTML-файлах:</b> <code>action</code>, <code>aria-hidden</code>, <code>aria-label</code>, <code>aria-labelledby</code>, <code>border</code>, <code>cite</code>, <code>class</code>, <code>colspan</code>, <code>content</code>, <code>datetime</code>, <code>for</code>, <code>id</code>, <code>max</code>, <code>name</code>, <code>placeholder</code>, <code>rel</code>, <code>role</code>, <code>scope</code>, <code>tabindex</code>, <code>type</code>, <code>value</code>.</p>
 <p><b>Новый пласт знаний:</b> подключение внешнего CSS, классы и id, селекторы, наследование цвета, табличная раскладка DIV, flex/grid, адаптация через @media. В №1 вообще нет подключённого CSS-файла.</p>
 <p>SVG-иллюстрация визитки — отдельная дополнительная часть, а не обязательное требование методички 2–3. Её элементы и координаты вынесены в справочник и собственный построчный блок.</p>
 </section>
@@ -133,12 +133,12 @@
 <tr><td data-label="Тег"><code>&lt;code&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Фрагмент программного кода или имя тега в обычном тексте. Чтобы показать &lt;table&gt; как текст, используют &amp;lt;table&amp;gt;.</td><td data-label="Пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
 <tr><td data-label="Тег"><code>&lt;col&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Описывает столбец настоящей таблицы, например для общего фона. Не содержит текст и не заменяет td. Пустой элемент.</td><td data-label="Пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
 <tr><td data-label="Тег"><code>&lt;colgroup&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Группа описаний столбцов. Внутри размещены col; сами ячейки она не создаёт.</td><td data-label="Пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
-<tr><td data-label="Тег"><code>&lt;details&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Раскрывающийся блок. Браузер сам открывает и закрывает его при нажатии на summary; JavaScript для этого не нужен.</td><td data-label="Пример файла"><a href="../lab2/general.html">lab2/general.html</a></td></tr>
+<tr><td data-label="Тег"><code>&lt;details&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Раскрывающийся блок. Браузер сам открывает и закрывает его при нажатии на summary; JavaScript для этого не нужен.</td><td data-label="Пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
 <tr><td data-label="Тег"><code>&lt;figcaption&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Подпись к содержимому figure. Это не атрибут alt и не название вкладки title.</td><td data-label="Пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
 <tr><td data-label="Тег"><code>&lt;figure&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Самостоятельная иллюстрация с подписью. В работе объединяет фотографию и figcaption.</td><td data-label="Пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
 <tr><td data-label="Тег"><code>&lt;footer&gt;</code></td><td data-label="Значение">Нижняя часть страницы или раздела; здесь — ссылки на другие работы.</td><td data-label="Пример файла"><a href="../index.html">index.html</a></td></tr>
 <tr><td data-label="Тег"><code>&lt;form&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Форма с полями ввода. В данном упражнении action=&quot;#&quot; не отправляет имя на реальный сервер приложения.</td><td data-label="Пример файла"><a href="../lab3/index.html">lab3/index.html</a></td></tr>
-<tr><td data-label="Тег"><code>&lt;header&gt;</code></td><td data-label="Значение">Вводная часть страницы или раздела: заголовок и пояснение. В этой работе используется и общая, и внутренняя шапка.</td><td data-label="Пример файла"><a href="../lab2/general.html">lab2/general.html</a></td></tr>
+<tr><td data-label="Тег"><code>&lt;header&gt;</code></td><td data-label="Значение">Вводная часть страницы или раздела: заголовок и пояснение. В этой работе используется и общая, и внутренняя шапка.</td><td data-label="Пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
 <tr><td data-label="Тег"><code>&lt;input&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Поле ввода. type=&quot;text&quot; — текст, placeholder — подсказка. Пустой элемент без закрывающего тега.</td><td data-label="Пример файла"><a href="../lab3/index.html">lab3/index.html</a></td></tr>
 <tr><td data-label="Тег"><code>&lt;label&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Подпись к полю или другому подписываемому элементу, в том числе progress. for должен совпасть с id адресата.</td><td data-label="Пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
 <tr><td data-label="Тег"><code>&lt;link&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Подключает внешний ресурс в head. rel=&quot;stylesheet&quot; и href=&quot;style.css&quot; связывают страницу с таблицей стилей.</td><td data-label="Пример файла"><a href="../index.html">index.html</a></td></tr>
@@ -148,7 +148,7 @@
 <tr><td data-label="Тег"><code>&lt;progress&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Индикатор: value — текущее значение, max — максимум. В учебном сравнении изображает процент защиты взрослых, не рейтинг в звёздах.</td><td data-label="Пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
 <tr><td data-label="Тег"><code>&lt;rect&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">SVG-прямоугольник. Координаты и размеры задаются атрибутами.</td><td data-label="Пример файла"><a href="../lab3/assets/workspace.svg">lab3/assets/workspace.svg</a></td></tr>
 <tr><td data-label="Тег"><code>&lt;section&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Тематический раздел, обычно с заголовком. Здесь отделяет общее задание и информацию о каждой модели.</td><td data-label="Пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
-<tr><td data-label="Тег"><code>&lt;summary&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Видимая подпись раскрывающегося блока; должна быть первым summary внутри details.</td><td data-label="Пример файла"><a href="../lab2/general.html">lab2/general.html</a></td></tr>
+<tr><td data-label="Тег"><code>&lt;summary&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Видимая подпись раскрывающегося блока; должна быть первым summary внутри details.</td><td data-label="Пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
 <tr><td data-label="Тег"><code>&lt;svg&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Корневой элемент векторной картинки SVG; используется в иллюстрации визитки, не в основной таблице.</td><td data-label="Пример файла"><a href="../lab3/assets/workspace.svg">lab3/assets/workspace.svg</a></td></tr>
 <tr><td data-label="Тег"><code>&lt;table&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Настоящая таблица данных. Содержит название, группы строк и строки с ячейками.</td><td data-label="Пример файла"><a href="../lab2/general.html">lab2/general.html</a></td></tr>
 <tr><td data-label="Тег"><code>&lt;tbody&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Группа основных строк таблицы. Сами thead и tbody не создают ни строки, ни ячейки.</td><td data-label="Пример файла"><a href="../lab2/general.html">lab2/general.html</a></td></tr>
@@ -167,6 +167,7 @@
 <tr><td data-label="Атрибут"><code>aria-hidden</code> <span class="new">Новое</span></td><td data-label="Что означает">aria-hidden=&quot;true&quot; исключает декоративный фрагмент из дерева доступности; визуально он остаётся.</td><td data-label="Первый пример файла"><a href="../lab3/business-card.html">lab3/business-card.html</a></td></tr>
 <tr><td data-label="Атрибут"><code>aria-label</code> <span class="new">Новое</span></td><td data-label="Что означает">Текстовое имя элемента для технологий доступности. Обычно не отображается как видимый текст.</td><td data-label="Первый пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
 <tr><td data-label="Атрибут"><code>aria-labelledby</code> <span class="new">Новое</span></td><td data-label="Что означает">Имя элемента берётся из другого элемента по его id, например заголовка раздела.</td><td data-label="Первый пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
+<tr><td data-label="Атрибут"><code>border</code> <span class="new">Новое</span></td><td data-label="Что означает">border=&quot;1&quot; у table включает обычные HTML-границы без CSS, как в учебном примере. Это устаревший атрибут оформления; в общем задании оставлен по выбранному формату. Не путать со свойством border в CSS.</td><td data-label="Первый пример файла"><a href="../lab2/general.html">lab2/general.html</a></td></tr>
 <tr><td data-label="Атрибут"><code>charset</code></td><td data-label="Что означает">Кодировка документа. UTF-8 позволяет правильно показывать кириллицу и символы.</td><td data-label="Первый пример файла"><a href="../index.html">index.html</a></td></tr>
 <tr><td data-label="Атрибут"><code>cite</code> <span class="new">Новое</span></td><td data-label="Что означает">URL источника у blockquote. Не создаёт кликабельную видимую ссылку; для ссылки нужен a.</td><td data-label="Первый пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
 <tr><td data-label="Атрибут"><code>class</code> <span class="new">Новое</span></td><td data-label="Что означает">Имена CSS-классов через пробел. Один класс может повторяться у многих элементов; один элемент может иметь несколько классов.</td><td data-label="Первый пример файла"><a href="../index.html">index.html</a></td></tr>
@@ -221,7 +222,7 @@
 <tr><td data-label="Пример"><code>#hyundai</code></td><td data-label="Объяснение">Переход к id="hyundai" в той же странице.</td></tr>
 <tr><td data-label="Пример"><code>index.html#sources</code></td><td data-label="Объяснение">Открыть соседний index.html, затем его раздел sources.</td></tr>
 <tr><td data-label="Пример"><code>https://github.com/error999777</code></td><td data-label="Объяснение">Абсолютный адрес другого сайта.</td></tr>
-<tr><td data-label="Пример"><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;general.css&quot;&gt;</code></td><td data-label="Объяснение">Браузер загружает CSS рядом с general.html. Это не навигационная ссылка a.</td></tr>
+<tr><td data-label="Пример"><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;</code></td><td data-label="Объяснение">В индивидуальном задании браузер загружает style.css рядом с index.html. Это не навигационная ссылка a; в общем задании такой строки нет.</td></tr>
 </tbody></table><pre><code>&lt;table&gt;
   &lt;caption&gt;Сравнение&lt;/caption&gt;
   &lt;thead&gt;
@@ -272,7 +273,7 @@
 <p><b>Приоритет:</b> в обычных авторских правилах без <code>!important</code>, слоёв и других специальных случаев ID имеет больший вес, чем класс/атрибут/псевдокласс, а они — больший вес, чем тег. Комбинаторы и * вес не увеличивают. При равном весе выигрывает более позднее правило. В файле задания нет встроенных style-атрибутов.</p>
 <p>Чтобы не путаться: <code>.link.special-link</code> — оба класса на одном элементе; <code>.link .special-link</code> — .special-link внутри другого элемента .link; <code>.link, .special-link</code> — любая из двух групп.</p>
 </section>
-<section id="css"><h2>9. Все CSS-свойства, использованные в лабораторных</h2><p>Это полный перечень свойств из файлов общего, индивидуального заданий, селекторов, визитки и оглавления. Имена классов вроде <code>.model</code> и <code>.hero</code> придуманы автором страницы; они не являются командами HTML и не имеют встроенного значения.</p>
+<section id="css"><h2>9. Все CSS-свойства, использованные в лабораторных</h2><p>Общее задание теперь содержит только таблицу: CSS у него нет, границы заданы атрибутом border="1". Ниже — полный перечень свойств индивидуального задания, селекторов, визитки и оглавления. Имена классов вроде <code>.model</code> и <code>.hero</code> придуманы автором страницы; они не являются командами HTML и не имеют встроенного значения.</p>
 <table><thead><tr><th scope="col">Свойство</th><th scope="col">Понятное объяснение</th></tr>
 </thead><tbody><tr><td data-label="Свойство"><code>accent-color</code></td><td data-label="Понятное объяснение">Акцентный цвет поддерживающих его стандартных элементов, здесь полосы progress.</td></tr>
 <tr><td data-label="Свойство"><code>align-items</code></td><td data-label="Понятное объяснение">Выравнивание элементов по поперечной оси flex или в областях grid: center — по центру, stretch — растянуть.</td></tr>
@@ -345,8 +346,8 @@
 <tr><td data-label="Значение / единица"><code>1px solid #999</code></td><td data-label="Как понимать">Сокращённая рамка: толщина, тип линии, цвет.</td></tr>
 </tbody></table><p><b>Коробочная модель:</b> содержимое → padding → border → margin. <code>padding</code> находится внутри рамки, <code>margin</code> снаружи. <code>gap</code> — промежуток между соседними элементами раскладки, не отступ внутри карточки.</p>
 </section>
-<section id="lines"><h2>10. Построчный разбор всех исходных файлов</h2><p>Раскрой нужный файл. Каждая строка показана без изменения кода и снабжена объяснением тегов, атрибутов или CSS-свойств. Всего 703 строк в 11 файлах. Сами файлы гайда сюда не входят: это учебное пособие, а не ещё одна часть лабораторной.</p>
-<details id="file-lab2-general-html"><summary>lab2/general.html — 239 строк</summary><div class="inside"><p><a href="https://github.com/error999777/wb1/blob/main/lab2/general.html">Исходный файл на GitHub</a> · <a href="../lab2/general.html">lab2/general.html</a></p>
+<section id="lines"><h2>10. Построчный разбор всех исходных файлов</h2><p>Раскрой нужный файл. Каждая строка показана без изменения кода и снабжена объяснением тегов, атрибутов или CSS-свойств. Всего 529 строк в 10 файлах. Сами файлы гайда сюда не входят: это учебное пособие, а не ещё одна часть лабораторной.</p>
+<details id="file-lab2-general-html"><summary>lab2/general.html — 93 строк</summary><div class="inside"><p><a href="https://github.com/error999777/wb1/blob/main/lab2/general.html">Исходный файл на GitHub</a> · <a href="../lab2/general.html">lab2/general.html</a></p>
 </div><ol class="source-lines"><li id="lab2-general-html-L1"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L1">Строка 1</a><code class="source-code">&lt;!DOCTYPE html&gt;</code><ul class="explain"><li>DOCTYPE html включает стандартный режим HTML5. Это объявление типа документа, а не обычный парный тег.</li>
 </ul></li>
 <li id="lab2-general-html-L2"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L2">Строка 2</a><code class="source-code">&lt;html lang=&quot;ru&quot;&gt;</code><ul class="explain"><li><code>&lt;html&gt;</code> — Корневой элемент: охватывает весь HTML-документ. lang=&quot;ru&quot; указывает русский язык.</li>
@@ -357,701 +358,307 @@
 <li id="lab2-general-html-L4"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L4">Строка 4</a><code class="source-code">  &lt;meta charset=&quot;UTF-8&quot;&gt;</code><ul class="explain"><li><code>&lt;meta&gt;</code> — Метаданные: charset — кодировка; name и content — название и значение настройки. Пустой элемент, без закрывающего тега.</li>
 <li><code>charset=&quot;UTF-8&quot;</code> — Кодировка документа. UTF-8 позволяет правильно показывать кириллицу и символы.</li>
 </ul></li>
-<li id="lab2-general-html-L5"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L5">Строка 5</a><code class="source-code">  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;</code><ul class="explain"><li><code>&lt;meta&gt;</code> — Метаданные: charset — кодировка; name и content — название и значение настройки. Пустой элемент, без закрывающего тега.</li>
-<li><code>name=&quot;viewport&quot;</code> — Имя метаданных у meta: viewport или description. Это не имя HTML-тега.</li>
-<li><code>content=&quot;width=device-width, initial-scale=1&quot;</code> — Значение метаданных у meta. У viewport задаёт ширину области просмотра и начальный масштаб.</li>
-</ul></li>
-<li id="lab2-general-html-L6"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L6">Строка 6</a><code class="source-code">  &lt;title&gt;Сравнение автомобилей — общее задание&lt;/title&gt;</code><ul class="explain"><li><code>&lt;title&gt;</code> — Название документа во вкладке браузера; внутри head. Не путать с атрибутом title у картинки или ссылки.</li>
-<li>Текст внутри <code>title</code>: Сравнение автомобилей — общее задание. Это содержимое, а не имя тега или атрибута.</li>
+<li id="lab2-general-html-L5"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L5">Строка 5</a><code class="source-code">  &lt;title&gt;Сравнение автомобилей&lt;/title&gt;</code><ul class="explain"><li><code>&lt;title&gt;</code> — Название документа во вкладке браузера; внутри head. Не путать с атрибутом title у картинки или ссылки.</li>
+<li>Текст внутри <code>title</code>: Сравнение автомобилей. Это содержимое, а не имя тега или атрибута.</li>
 <li><code>&lt;/title&gt;</code> — конец элемента <code>title</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L7"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L7">Строка 7</a><code class="source-code">  &lt;link rel=&quot;stylesheet&quot; href=&quot;general.css&quot;&gt;</code><ul class="explain"><li><code>&lt;link&gt;</code> — Подключает внешний ресурс в head. rel=&quot;stylesheet&quot; и href=&quot;style.css&quot; связывают страницу с таблицей стилей.</li>
-<li><code>rel=&quot;stylesheet&quot;</code> — Тип связи. stylesheet у link — таблица стилей; noopener у новой вкладки ограничивает доступ к opener, noreferrer не передаёт Referer.</li>
-<li><code>href=&quot;general.css&quot;</code> — Адрес назначения у a или адрес CSS у link. Ссылку создаёт элемент a; href — его атрибут, а не отдельный тег.</li>
+<li id="lab2-general-html-L6"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L6">Строка 6</a><code class="source-code">&lt;/head&gt;</code><ul class="explain"><li><code>&lt;/head&gt;</code> — конец элемента <code>head</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L8"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L8">Строка 8</a><code class="source-code">&lt;/head&gt;</code><ul class="explain"><li><code>&lt;/head&gt;</code> — конец элемента <code>head</code>.</li>
+<li id="lab2-general-html-L7"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L7">Строка 7</a><code class="source-code">&lt;body&gt;</code><ul class="explain"><li><code>&lt;body&gt;</code> — Содержимое, которое браузер показывает на странице.</li>
 </ul></li>
-<li id="lab2-general-html-L9"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L9">Строка 9</a><code class="source-code">&lt;body&gt;</code><ul class="explain"><li><code>&lt;body&gt;</code> — Содержимое, которое браузер показывает на странице.</li>
+<li id="lab2-general-html-L8"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L8">Строка 8</a><code class="source-code">  &lt;table border=&quot;1&quot;&gt;</code><ul class="explain"><li><code>&lt;table&gt;</code> — Настоящая таблица данных. Содержит название, группы строк и строки с ячейками.</li>
+<li><code>border=&quot;1&quot;</code> — border=&quot;1&quot; у table включает обычные HTML-границы без CSS, как в учебном примере. Это устаревший атрибут оформления; в общем задании оставлен по выбранному формату. Не путать со свойством border в CSS.</li>
 </ul></li>
-<li id="lab2-general-html-L10"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L10">Строка 10</a><code class="source-code">  &lt;header&gt;</code><ul class="explain"><li><code>&lt;header&gt;</code> — Вводная часть страницы или раздела: заголовок и пояснение. В этой работе используется и общая, и внутренняя шапка.</li>
-</ul></li>
-<li id="lab2-general-html-L11"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L11">Строка 11</a><code class="source-code">    &lt;h1&gt;Сравнение автомобилей&lt;/h1&gt;</code><ul class="explain"><li><code>&lt;h1&gt;</code> — Главный заголовок страницы. Здесь один h1 в каждом HTML-документе.</li>
-<li>Текст внутри <code>h1</code>: Сравнение автомобилей. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/h1&gt;</code> — конец элемента <code>h1</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L12"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L12">Строка 12</a><code class="source-code">    &lt;p&gt;Лабораторная работа по таблицам и DIV. Общее задание.&lt;/p&gt;</code><ul class="explain"><li><code>&lt;p&gt;</code> — Абзац текста. Для нового абзаца нужен ещё один p, а не много br.</li>
-<li>Текст внутри <code>p</code>: Лабораторная работа по таблицам и DIV. Общее задание.. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/p&gt;</code> — конец элемента <code>p</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L13"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L13">Строка 13</a><code class="source-code">    &lt;p&gt;&lt;a href=&quot;../&quot;&gt;Все работы&lt;/a&gt; | &lt;a href=&quot;index.html#hyundai&quot;&gt;Индивидуальное задание: Hyundai&lt;/a&gt;&lt;/p&gt;</code><ul class="explain"><li><code>&lt;p&gt;</code> — Абзац текста. Для нового абзаца нужен ещё один p, а не много br.</li>
-<li><code>&lt;a&gt;</code> — Гиперссылка. Адрес записан в атрибуте href, а текст между &lt;a&gt; и &lt;/a&gt; виден пользователю.</li>
-<li><code>href=&quot;../&quot;</code> — Адрес назначения у a или адрес CSS у link. Ссылку создаёт элемент a; href — его атрибут, а не отдельный тег.</li>
-<li>Текст внутри <code>a</code>: Все работы. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/a&gt;</code> — конец элемента <code>a</code>.</li>
-<li>Текст внутри <code>p</code>: |. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>href=&quot;index.html#hyundai&quot;</code> — Адрес назначения у a или адрес CSS у link. Ссылку создаёт элемент a; href — его атрибут, а не отдельный тег.</li>
-<li>Текст внутри <code>a</code>: Индивидуальное задание: Hyundai. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/p&gt;</code> — конец элемента <code>p</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L14"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L14">Строка 14</a><code class="source-code">  &lt;/header&gt;</code><ul class="explain"><li><code>&lt;/header&gt;</code> — конец элемента <code>header</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L15"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L15">Строка 15</a><code class="source-code">  &lt;hr&gt;</code><ul class="explain"><li><code>&lt;hr&gt;</code> — Тематическое разделение частей текста; обычно отображается линией. Пишем &lt;hr&gt;, без &lt;/hr&gt;.</li>
-</ul></li>
-<li id="lab2-general-html-L16"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L16">Строка 16</a><code class="source-code">  &lt;main&gt;</code><ul class="explain"><li><code>&lt;main&gt;</code> — Основное уникальное содержимое страницы. В каждом документе работы один видимый main.</li>
-</ul></li>
-<li id="lab2-general-html-L17"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L17">Строка 17</a><code class="source-code">    &lt;h2&gt;Lamborghini, Voyah и Jaguar&lt;/h2&gt;</code><ul class="explain"><li><code>&lt;h2&gt;</code> — Заголовок раздела внутри страницы. Уровень важнее размера букв.</li>
-<li>Текст внутри <code>h2</code>: Lamborghini, Voyah и Jaguar. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/h2&gt;</code> — конец элемента <code>h2</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L18"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L18">Строка 18</a><code class="source-code">    &lt;p&gt;Для сравнения выбраны &lt;b&gt;Revuelto&lt;/b&gt;, &lt;b&gt;FREE Sport&lt;/b&gt; и &lt;b&gt;F-TYPE P300 Coupé&lt;/b&gt;.&lt;/p&gt;</code><ul class="explain"><li><code>&lt;p&gt;</code> — Абзац текста. Для нового абзаца нужен ещё один p, а не много br.</li>
-<li>Текст внутри <code>p</code>: Для сравнения выбраны. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;b&gt;</code> — Выделение фрагмента для привлечения внимания; по умолчанию жирный шрифт, без значения особой важности.</li>
-<li>Текст внутри <code>b</code>: Revuelto. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/b&gt;</code> — конец элемента <code>b</code>.</li>
-<li>Текст внутри <code>p</code>: ,. Это содержимое, а не имя тега или атрибута.</li>
-<li>Текст внутри <code>b</code>: FREE Sport. Это содержимое, а не имя тега или атрибута.</li>
-<li>Текст внутри <code>p</code>: и. Это содержимое, а не имя тега или атрибута.</li>
-<li>Текст внутри <code>b</code>: F-TYPE P300 Coupé. Это содержимое, а не имя тега или атрибута.</li>
-<li>Текст внутри <code>p</code>: .. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/p&gt;</code> — конец элемента <code>p</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L19"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L19">Строка 19</a><code class="source-code">    &lt;p&gt;В первых двух строках показаны дорогие и дешёвые модели &lt;strong&gt;только среди приведённых примеров&lt;/strong&gt;. Это исторические цены: они относятся к разным годам и странам.&lt;/p&gt;</code><ul class="explain"><li><code>&lt;p&gt;</code> — Абзац текста. Для нового абзаца нужен ещё один p, а не много br.</li>
-<li>Текст внутри <code>p</code>: В первых двух строках показаны дорогие и дешёвые модели. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;strong&gt;</code> — Смысловая важность текста; обычно тоже жирный. Отличается от b значением, а не обязательно видом.</li>
-<li>Текст внутри <code>strong</code>: только среди приведённых примеров. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/strong&gt;</code> — конец элемента <code>strong</code>.</li>
-<li>Текст внутри <code>p</code>: . Это исторические цены: они относятся к разным годам и странам.. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/p&gt;</code> — конец элемента <code>p</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L20"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L20">Строка 20</a><code class="source-code">    &lt;div class=&quot;table-wrap&quot;&gt;</code><ul class="explain"><li><code>&lt;div&gt;</code> — Универсальный контейнер для группировки. Не сообщает, что внутри таблица, навигация или самостоятельная статья.</li>
-<li><code>class=&quot;table-wrap&quot;</code> — Имена CSS-классов через пробел. Один класс может повторяться у многих элементов; один элемент может иметь несколько классов.</li>
-</ul></li>
-<li id="lab2-general-html-L21"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L21">Строка 21</a><code class="source-code">    &lt;table&gt;</code><ul class="explain"><li><code>&lt;table&gt;</code> — Настоящая таблица данных. Содержит название, группы строк и строки с ячейками.</li>
-</ul></li>
-<li id="lab2-general-html-L22"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L22">Строка 22</a><code class="source-code">      &lt;caption&gt;</code><ul class="explain"><li><code>&lt;caption&gt;</code> — Название самой таблицы; располагается внутри table, обычно первым дочерним элементом. Отличается от h1 всей страницы.</li>
+<li id="lab2-general-html-L9"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L9">Строка 9</a><code class="source-code">    &lt;caption&gt;Сравнение Lamborghini, Voyah и Jaguar&lt;/caption&gt;</code><ul class="explain"><li><code>&lt;caption&gt;</code> — Название самой таблицы; располагается внутри table, обычно первым дочерним элементом. Отличается от h1 всей страницы.</li>
 <li>Текст внутри <code>caption</code>: Сравнение Lamborghini, Voyah и Jaguar. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/caption&gt;</code> — конец элемента <code>caption</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L23"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L23">Строка 23</a><code class="source-code">        Сравнение Lamborghini, Voyah и Jaguar</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
+<li id="lab2-general-html-L10"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L10">Строка 10</a><code class="source-code">    &lt;thead&gt;</code><ul class="explain"><li><code>&lt;thead&gt;</code> — Группа строк заголовков таблицы. Обычно внутри tr с ячейками th.</li>
 </ul></li>
-<li id="lab2-general-html-L24"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L24">Строка 24</a><code class="source-code">      &lt;/caption&gt;</code><ul class="explain"><li><code>&lt;/caption&gt;</code> — конец элемента <code>caption</code>.</li>
+<li id="lab2-general-html-L11"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L11">Строка 11</a><code class="source-code">      &lt;tr&gt;</code><ul class="explain"><li><code>&lt;tr&gt;</code> — Одна строка таблицы; содержит th и/или td.</li>
 </ul></li>
-<li id="lab2-general-html-L25"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L25">Строка 25</a><code class="source-code">      &lt;thead&gt;</code><ul class="explain"><li><code>&lt;thead&gt;</code> — Группа строк заголовков таблицы. Обычно внутри tr с ячейками th.</li>
-</ul></li>
-<li id="lab2-general-html-L26"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L26">Строка 26</a><code class="source-code">        &lt;tr&gt;</code><ul class="explain"><li><code>&lt;tr&gt;</code> — Одна строка таблицы; содержит th и/или td.</li>
-</ul></li>
-<li id="lab2-general-html-L27"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L27">Строка 27</a><code class="source-code">          &lt;th scope=&quot;col&quot;&gt;</code><ul class="explain"><li><code>&lt;th&gt;</code> — Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</li>
+<li id="lab2-general-html-L12"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L12">Строка 12</a><code class="source-code">        &lt;th scope=&quot;col&quot;&gt;Характеристика&lt;/th&gt;</code><ul class="explain"><li><code>&lt;th&gt;</code> — Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</li>
 <li><code>scope=&quot;col&quot;</code> — Назначение th: col — заголовок столбца, row — строки. Помогает правильно читать таблицу.</li>
 <li>Текст внутри <code>th</code>: Характеристика. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/th&gt;</code> — конец элемента <code>th</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L28"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L28">Строка 28</a><code class="source-code">            Характеристика</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L29"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L29">Строка 29</a><code class="source-code">          &lt;/th&gt;</code><ul class="explain"><li><code>&lt;/th&gt;</code> — конец элемента <code>th</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L30"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L30">Строка 30</a><code class="source-code">          &lt;th scope=&quot;col&quot;&gt;</code><ul class="explain"><li><code>&lt;th&gt;</code> — Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</li>
+<li id="lab2-general-html-L13"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L13">Строка 13</a><code class="source-code">        &lt;th scope=&quot;col&quot;&gt;Lamborghini&lt;/th&gt;</code><ul class="explain"><li><code>&lt;th&gt;</code> — Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</li>
 <li><code>scope=&quot;col&quot;</code> — Назначение th: col — заголовок столбца, row — строки. Помогает правильно читать таблицу.</li>
 <li>Текст внутри <code>th</code>: Lamborghini. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/th&gt;</code> — конец элемента <code>th</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L31"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L31">Строка 31</a><code class="source-code">            Lamborghini</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L32"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L32">Строка 32</a><code class="source-code">          &lt;/th&gt;</code><ul class="explain"><li><code>&lt;/th&gt;</code> — конец элемента <code>th</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L33"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L33">Строка 33</a><code class="source-code">          &lt;th scope=&quot;col&quot;&gt;</code><ul class="explain"><li><code>&lt;th&gt;</code> — Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</li>
+<li id="lab2-general-html-L14"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L14">Строка 14</a><code class="source-code">        &lt;th scope=&quot;col&quot;&gt;Voyah&lt;/th&gt;</code><ul class="explain"><li><code>&lt;th&gt;</code> — Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</li>
 <li><code>scope=&quot;col&quot;</code> — Назначение th: col — заголовок столбца, row — строки. Помогает правильно читать таблицу.</li>
 <li>Текст внутри <code>th</code>: Voyah. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/th&gt;</code> — конец элемента <code>th</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L34"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L34">Строка 34</a><code class="source-code">            Voyah</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L35"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L35">Строка 35</a><code class="source-code">          &lt;/th&gt;</code><ul class="explain"><li><code>&lt;/th&gt;</code> — конец элемента <code>th</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L36"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L36">Строка 36</a><code class="source-code">          &lt;th scope=&quot;col&quot;&gt;</code><ul class="explain"><li><code>&lt;th&gt;</code> — Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</li>
+<li id="lab2-general-html-L15"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L15">Строка 15</a><code class="source-code">        &lt;th scope=&quot;col&quot;&gt;Jaguar&lt;/th&gt;</code><ul class="explain"><li><code>&lt;th&gt;</code> — Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</li>
 <li><code>scope=&quot;col&quot;</code> — Назначение th: col — заголовок столбца, row — строки. Помогает правильно читать таблицу.</li>
 <li>Текст внутри <code>th</code>: Jaguar. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/th&gt;</code> — конец элемента <code>th</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L37"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L37">Строка 37</a><code class="source-code">            Jaguar</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
+<li id="lab2-general-html-L16"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L16">Строка 16</a><code class="source-code">      &lt;/tr&gt;</code><ul class="explain"><li><code>&lt;/tr&gt;</code> — конец элемента <code>tr</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L38"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L38">Строка 38</a><code class="source-code">          &lt;/th&gt;</code><ul class="explain"><li><code>&lt;/th&gt;</code> — конец элемента <code>th</code>.</li>
+<li id="lab2-general-html-L17"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L17">Строка 17</a><code class="source-code">    &lt;/thead&gt;</code><ul class="explain"><li><code>&lt;/thead&gt;</code> — конец элемента <code>thead</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L39"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L39">Строка 39</a><code class="source-code">        &lt;/tr&gt;</code><ul class="explain"><li><code>&lt;/tr&gt;</code> — конец элемента <code>tr</code>.</li>
+<li id="lab2-general-html-L18"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L18">Строка 18</a><code class="source-code">    &lt;tbody&gt;</code><ul class="explain"><li><code>&lt;tbody&gt;</code> — Группа основных строк таблицы. Сами thead и tbody не создают ни строки, ни ячейки.</li>
 </ul></li>
-<li id="lab2-general-html-L40"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L40">Строка 40</a><code class="source-code">      &lt;/thead&gt;</code><ul class="explain"><li><code>&lt;/thead&gt;</code> — конец элемента <code>thead</code>.</li>
+<li id="lab2-general-html-L19"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L19">Строка 19</a><code class="source-code">      &lt;tr&gt;</code><ul class="explain"><li><code>&lt;tr&gt;</code> — Одна строка таблицы; содержит th и/или td.</li>
 </ul></li>
-<li id="lab2-general-html-L41"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L41">Строка 41</a><code class="source-code">      &lt;tbody&gt;</code><ul class="explain"><li><code>&lt;tbody&gt;</code> — Группа основных строк таблицы. Сами thead и tbody не создают ни строки, ни ячейки.</li>
-</ul></li>
-<li id="lab2-general-html-L42"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L42">Строка 42</a><code class="source-code">        &lt;tr&gt;</code><ul class="explain"><li><code>&lt;tr&gt;</code> — Одна строка таблицы; содержит th и/или td.</li>
-</ul></li>
-<li id="lab2-general-html-L43"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L43">Строка 43</a><code class="source-code">          &lt;th scope=&quot;row&quot;&gt;</code><ul class="explain"><li><code>&lt;th&gt;</code> — Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</li>
+<li id="lab2-general-html-L20"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L20">Строка 20</a><code class="source-code">        &lt;th scope=&quot;row&quot;&gt;Самая дорогая модель в выборке&lt;/th&gt;</code><ul class="explain"><li><code>&lt;th&gt;</code> — Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</li>
 <li><code>scope=&quot;row&quot;</code> — Назначение th: col — заголовок столбца, row — строки. Помогает правильно читать таблицу.</li>
 <li>Текст внутри <code>th</code>: Самая дорогая модель в выборке. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/th&gt;</code> — конец элемента <code>th</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L44"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L44">Строка 44</a><code class="source-code">            Самая дорогая модель в выборке</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L45"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L45">Строка 45</a><code class="source-code">          &lt;/th&gt;</code><ul class="explain"><li><code>&lt;/th&gt;</code> — конец элемента <code>th</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L46"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L46">Строка 46</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L21"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L21">Строка 21</a><code class="source-code">        &lt;td&gt;Revuelto: около £446 000 (Великобритания, 2024)&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: Revuelto: около £446 000 (Великобритания, 2024). Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L47"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L47">Строка 47</a><code class="source-code">            Revuelto: около £446 000 (Великобритания, 2024)</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L48"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L48">Строка 48</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L49"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L49">Строка 49</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L22"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L22">Строка 22</a><code class="source-code">        &lt;td&gt;DREAM: 8 490 000 ₽ без выгоды по трейд-ин (карточка автомобиля 2024 г.)&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: DREAM: 8 490 000 ₽ без выгоды по трейд-ин (карточка автомобиля 2024 г.). Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L50"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L50">Строка 50</a><code class="source-code">            DREAM: 8 490 000 ₽ без выгоды по трейд-ин (карточка автомобиля 2024 г.)</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L51"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L51">Строка 51</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L52"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L52">Строка 52</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L23"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L23">Строка 23</a><code class="source-code">        &lt;td&gt;F-TYPE R 75 Convertible: £108 065 (прайс 2023 модельного года)&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: F-TYPE R 75 Convertible: £108 065 (прайс 2023 модельного года). Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L53"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L53">Строка 53</a><code class="source-code">            F-TYPE R 75 Convertible: £108 065 (прайс 2023 модельного года)</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
+<li id="lab2-general-html-L24"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L24">Строка 24</a><code class="source-code">      &lt;/tr&gt;</code><ul class="explain"><li><code>&lt;/tr&gt;</code> — конец элемента <code>tr</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L54"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L54">Строка 54</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
+<li id="lab2-general-html-L25"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L25">Строка 25</a><code class="source-code">      &lt;tr&gt;</code><ul class="explain"><li><code>&lt;tr&gt;</code> — Одна строка таблицы; содержит th и/или td.</li>
 </ul></li>
-<li id="lab2-general-html-L55"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L55">Строка 55</a><code class="source-code">        &lt;/tr&gt;</code><ul class="explain"><li><code>&lt;/tr&gt;</code> — конец элемента <code>tr</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L56"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L56">Строка 56</a><code class="source-code">        &lt;tr&gt;</code><ul class="explain"><li><code>&lt;tr&gt;</code> — Одна строка таблицы; содержит th и/или td.</li>
-</ul></li>
-<li id="lab2-general-html-L57"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L57">Строка 57</a><code class="source-code">          &lt;th scope=&quot;row&quot;&gt;</code><ul class="explain"><li><code>&lt;th&gt;</code> — Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</li>
+<li id="lab2-general-html-L26"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L26">Строка 26</a><code class="source-code">        &lt;th scope=&quot;row&quot;&gt;Самая дешёвая модель в выборке&lt;/th&gt;</code><ul class="explain"><li><code>&lt;th&gt;</code> — Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</li>
 <li><code>scope=&quot;row&quot;</code> — Назначение th: col — заголовок столбца, row — строки. Помогает правильно читать таблицу.</li>
 <li>Текст внутри <code>th</code>: Самая дешёвая модель в выборке. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/th&gt;</code> — конец элемента <code>th</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L58"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L58">Строка 58</a><code class="source-code">            Самая дешёвая модель в выборке</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L59"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L59">Строка 59</a><code class="source-code">          &lt;/th&gt;</code><ul class="explain"><li><code>&lt;/th&gt;</code> — конец элемента <code>th</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L60"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L60">Строка 60</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L27"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L27">Строка 27</a><code class="source-code">        &lt;td&gt;Urus S: около £188 000 (Великобритания, 2023)&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: Urus S: около £188 000 (Великобритания, 2023). Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L61"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L61">Строка 61</a><code class="source-code">            Urus S: около £188 000 (Великобритания, 2023)</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L62"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L62">Строка 62</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L63"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L63">Строка 63</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L28"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L28">Строка 28</a><code class="source-code">        &lt;td&gt;FREE Sport: от 5 890 000 ₽ по специальной программе (11.06.2024)&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: FREE Sport: от 5 890 000 ₽ по специальной программе (11.06.2024). Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L64"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L64">Строка 64</a><code class="source-code">            FREE Sport: от 5 890 000 ₽ по специальной программе (11.06.2024)</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L65"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L65">Строка 65</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L66"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L66">Строка 66</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L29"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L29">Строка 29</a><code class="source-code">        &lt;td&gt;F-TYPE P300 Coupé: £62 235 (тот же прайс)&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: F-TYPE P300 Coupé: £62 235 (тот же прайс). Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L67"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L67">Строка 67</a><code class="source-code">            F-TYPE P300 Coupé: £62 235 (тот же прайс)</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
+<li id="lab2-general-html-L30"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L30">Строка 30</a><code class="source-code">      &lt;/tr&gt;</code><ul class="explain"><li><code>&lt;/tr&gt;</code> — конец элемента <code>tr</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L68"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L68">Строка 68</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
+<li id="lab2-general-html-L31"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L31">Строка 31</a><code class="source-code">      &lt;tr&gt;</code><ul class="explain"><li><code>&lt;tr&gt;</code> — Одна строка таблицы; содержит th и/или td.</li>
 </ul></li>
-<li id="lab2-general-html-L69"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L69">Строка 69</a><code class="source-code">        &lt;/tr&gt;</code><ul class="explain"><li><code>&lt;/tr&gt;</code> — конец элемента <code>tr</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L70"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L70">Строка 70</a><code class="source-code">        &lt;tr&gt;</code><ul class="explain"><li><code>&lt;tr&gt;</code> — Одна строка таблицы; содержит th и/или td.</li>
-</ul></li>
-<li id="lab2-general-html-L71"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L71">Строка 71</a><code class="source-code">          &lt;th scope=&quot;row&quot;&gt;</code><ul class="explain"><li><code>&lt;th&gt;</code> — Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</li>
+<li id="lab2-general-html-L32"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L32">Строка 32</a><code class="source-code">        &lt;th scope=&quot;row&quot;&gt;Модель для технического сравнения&lt;/th&gt;</code><ul class="explain"><li><code>&lt;th&gt;</code> — Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</li>
 <li><code>scope=&quot;row&quot;</code> — Назначение th: col — заголовок столбца, row — строки. Помогает правильно читать таблицу.</li>
 <li>Текст внутри <code>th</code>: Модель для технического сравнения. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/th&gt;</code> — конец элемента <code>th</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L72"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L72">Строка 72</a><code class="source-code">            Модель для технического сравнения</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L73"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L73">Строка 73</a><code class="source-code">          &lt;/th&gt;</code><ul class="explain"><li><code>&lt;/th&gt;</code> — конец элемента <code>th</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L74"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L74">Строка 74</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L33"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L33">Строка 33</a><code class="source-code">        &lt;td&gt;Revuelto, спецификация 2024&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: Revuelto, спецификация 2024. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L75"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L75">Строка 75</a><code class="source-code">            Revuelto, спецификация 2024</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L76"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L76">Строка 76</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L77"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L77">Строка 77</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L34"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L34">Строка 34</a><code class="source-code">        &lt;td&gt;FREE Sport, 2024&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: FREE Sport, 2024. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L78"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L78">Строка 78</a><code class="source-code">            FREE Sport, 2024</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L79"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L79">Строка 79</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L80"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L80">Строка 80</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L35"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L35">Строка 35</a><code class="source-code">        &lt;td&gt;F-TYPE P300 Coupé&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: F-TYPE P300 Coupé. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L81"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L81">Строка 81</a><code class="source-code">            F-TYPE P300 Coupé</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
+<li id="lab2-general-html-L36"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L36">Строка 36</a><code class="source-code">      &lt;/tr&gt;</code><ul class="explain"><li><code>&lt;/tr&gt;</code> — конец элемента <code>tr</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L82"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L82">Строка 82</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
+<li id="lab2-general-html-L37"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L37">Строка 37</a><code class="source-code">      &lt;tr&gt;</code><ul class="explain"><li><code>&lt;tr&gt;</code> — Одна строка таблицы; содержит th и/или td.</li>
 </ul></li>
-<li id="lab2-general-html-L83"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L83">Строка 83</a><code class="source-code">        &lt;/tr&gt;</code><ul class="explain"><li><code>&lt;/tr&gt;</code> — конец элемента <code>tr</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L84"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L84">Строка 84</a><code class="source-code">        &lt;tr&gt;</code><ul class="explain"><li><code>&lt;tr&gt;</code> — Одна строка таблицы; содержит th и/или td.</li>
-</ul></li>
-<li id="lab2-general-html-L85"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L85">Строка 85</a><code class="source-code">          &lt;th scope=&quot;row&quot;&gt;</code><ul class="explain"><li><code>&lt;th&gt;</code> — Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</li>
+<li id="lab2-general-html-L38"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L38">Строка 38</a><code class="source-code">        &lt;th scope=&quot;row&quot;&gt;Двигатель&lt;/th&gt;</code><ul class="explain"><li><code>&lt;th&gt;</code> — Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</li>
 <li><code>scope=&quot;row&quot;</code> — Назначение th: col — заголовок столбца, row — строки. Помогает правильно читать таблицу.</li>
 <li>Текст внутри <code>th</code>: Двигатель. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/th&gt;</code> — конец элемента <code>th</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L86"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L86">Строка 86</a><code class="source-code">            Двигатель</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L87"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L87">Строка 87</a><code class="source-code">          &lt;/th&gt;</code><ul class="explain"><li><code>&lt;/th&gt;</code> — конец элемента <code>th</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L88"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L88">Строка 88</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L39"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L39">Строка 39</a><code class="source-code">        &lt;td&gt;Подключаемый гибрид: V12 6,5 л + 3 электромотора; 1 015 л.с.&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: Подключаемый гибрид: V12 6,5 л + 3 электромотора; 1 015 л.с.. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L89"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L89">Строка 89</a><code class="source-code">            Подключаемый гибрид: V12 6,5 л + 3 электромотора; 1 015 л.с.</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L90"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L90">Строка 90</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L91"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L91">Строка 91</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L40"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L40">Строка 40</a><code class="source-code">        &lt;td&gt;Последовательный гибрид: 1,5 л ДВС-генератор + 2 электромотора; 490 л.с.&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: Последовательный гибрид: 1,5 л ДВС-генератор + 2 электромотора; 490 л.с.. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L92"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L92">Строка 92</a><code class="source-code">            Последовательный гибрид: 1,5 л ДВС-генератор + 2 электромотора; 490 л.с.</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L93"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L93">Строка 93</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L94"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L94">Строка 94</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L41"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L41">Строка 41</a><code class="source-code">        &lt;td&gt;Бензиновый I4 2,0 л с турбонаддувом; 300 л.с.&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: Бензиновый I4 2,0 л с турбонаддувом; 300 л.с.. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L95"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L95">Строка 95</a><code class="source-code">            Бензиновый I4 2,0 л с турбонаддувом; 300 л.с.</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
+<li id="lab2-general-html-L42"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L42">Строка 42</a><code class="source-code">      &lt;/tr&gt;</code><ul class="explain"><li><code>&lt;/tr&gt;</code> — конец элемента <code>tr</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L96"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L96">Строка 96</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
+<li id="lab2-general-html-L43"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L43">Строка 43</a><code class="source-code">      &lt;tr&gt;</code><ul class="explain"><li><code>&lt;tr&gt;</code> — Одна строка таблицы; содержит th и/или td.</li>
 </ul></li>
-<li id="lab2-general-html-L97"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L97">Строка 97</a><code class="source-code">        &lt;/tr&gt;</code><ul class="explain"><li><code>&lt;/tr&gt;</code> — конец элемента <code>tr</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L98"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L98">Строка 98</a><code class="source-code">        &lt;tr&gt;</code><ul class="explain"><li><code>&lt;tr&gt;</code> — Одна строка таблицы; содержит th и/или td.</li>
-</ul></li>
-<li id="lab2-general-html-L99"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L99">Строка 99</a><code class="source-code">          &lt;th scope=&quot;row&quot;&gt;</code><ul class="explain"><li><code>&lt;th&gt;</code> — Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</li>
+<li id="lab2-general-html-L44"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L44">Строка 44</a><code class="source-code">        &lt;th scope=&quot;row&quot;&gt;Расход топлива&lt;/th&gt;</code><ul class="explain"><li><code>&lt;th&gt;</code> — Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</li>
 <li><code>scope=&quot;row&quot;</code> — Назначение th: col — заголовок столбца, row — строки. Помогает правильно читать таблицу.</li>
 <li>Текст внутри <code>th</code>: Расход топлива. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/th&gt;</code> — конец элемента <code>th</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L100"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L100">Строка 100</a><code class="source-code">            Расход топлива</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L101"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L101">Строка 101</a><code class="source-code">          &lt;/th&gt;</code><ul class="explain"><li><code>&lt;/th&gt;</code> — конец элемента <code>th</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L102"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L102">Строка 102</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L45"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L45">Строка 45</a><code class="source-code">        &lt;td&gt;11,86 л/100 км + 10,1 кВт·ч/100 км (взвешенный WLTP)&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: 11,86 л/100 км + 10,1 кВт·ч/100 км (взвешенный WLTP). Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L103"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L103">Строка 103</a><code class="source-code">            11,86 л/100 км + 10,1 кВт·ч/100 км (взвешенный WLTP)</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L104"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L104">Строка 104</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L105"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L105">Строка 105</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L46"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L46">Строка 46</a><code class="source-code">        &lt;td&gt;6,9 л/100 км (по спецификации, цикл WLTC)&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: 6,9 л/100 км (по спецификации, цикл WLTC). Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L106"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L106">Строка 106</a><code class="source-code">            6,9 л/100 км (по спецификации, цикл WLTC)</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L107"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L107">Строка 107</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L108"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L108">Строка 108</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L47"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L47">Строка 47</a><code class="source-code">        &lt;td&gt;Около 9 л/100 км (WLTP, зависит от комплектации)&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: Около 9 л/100 км (WLTP, зависит от комплектации). Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L109"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L109">Строка 109</a><code class="source-code">            Около 9 л/100 км (WLTP, зависит от комплектации)</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
+<li id="lab2-general-html-L48"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L48">Строка 48</a><code class="source-code">      &lt;/tr&gt;</code><ul class="explain"><li><code>&lt;/tr&gt;</code> — конец элемента <code>tr</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L110"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L110">Строка 110</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
+<li id="lab2-general-html-L49"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L49">Строка 49</a><code class="source-code">      &lt;tr&gt;</code><ul class="explain"><li><code>&lt;tr&gt;</code> — Одна строка таблицы; содержит th и/или td.</li>
 </ul></li>
-<li id="lab2-general-html-L111"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L111">Строка 111</a><code class="source-code">        &lt;/tr&gt;</code><ul class="explain"><li><code>&lt;/tr&gt;</code> — конец элемента <code>tr</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L112"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L112">Строка 112</a><code class="source-code">        &lt;tr&gt;</code><ul class="explain"><li><code>&lt;tr&gt;</code> — Одна строка таблицы; содержит th и/или td.</li>
-</ul></li>
-<li id="lab2-general-html-L113"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L113">Строка 113</a><code class="source-code">          &lt;th scope=&quot;row&quot;&gt;</code><ul class="explain"><li><code>&lt;th&gt;</code> — Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</li>
+<li id="lab2-general-html-L50"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L50">Строка 50</a><code class="source-code">        &lt;th scope=&quot;row&quot;&gt;Скорость: разгон 0–100 км/ч&lt;/th&gt;</code><ul class="explain"><li><code>&lt;th&gt;</code> — Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</li>
 <li><code>scope=&quot;row&quot;</code> — Назначение th: col — заголовок столбца, row — строки. Помогает правильно читать таблицу.</li>
 <li>Текст внутри <code>th</code>: Скорость: разгон 0–100 км/ч. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/th&gt;</code> — конец элемента <code>th</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L114"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L114">Строка 114</a><code class="source-code">            Скорость: разгон 0–100 км/ч</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
+<li id="lab2-general-html-L51"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L51">Строка 51</a><code class="source-code">        &lt;td&gt;2,5 с&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li>Текст внутри <code>td</code>: 2,5 с. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L115"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L115">Строка 115</a><code class="source-code">          &lt;/th&gt;</code><ul class="explain"><li><code>&lt;/th&gt;</code> — конец элемента <code>th</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L116"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L116">Строка 116</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
-</ul></li>
-<li id="lab2-general-html-L117"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L117">Строка 117</a><code class="source-code">            &lt;mark&gt;</code><ul class="explain"><li><code>&lt;mark&gt;</code> — Выделение фрагмента, важного в текущем контексте: например лучшего показателя в сравнении.</li>
-<li>Текст внутри <code>mark</code>: 2,5 с. Это содержимое, а не имя тега или атрибута.</li>
-</ul></li>
-<li id="lab2-general-html-L118"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L118">Строка 118</a><code class="source-code">              2,5 с</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L119"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L119">Строка 119</a><code class="source-code">            &lt;/mark&gt;</code><ul class="explain"><li><code>&lt;/mark&gt;</code> — конец элемента <code>mark</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L120"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L120">Строка 120</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L121"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L121">Строка 121</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L52"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L52">Строка 52</a><code class="source-code">        &lt;td&gt;4,8 с&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: 4,8 с. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L122"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L122">Строка 122</a><code class="source-code">            4,8 с</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L123"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L123">Строка 123</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L124"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L124">Строка 124</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L53"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L53">Строка 53</a><code class="source-code">        &lt;td&gt;5,7 с&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: 5,7 с. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L125"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L125">Строка 125</a><code class="source-code">            5,7 с</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
+<li id="lab2-general-html-L54"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L54">Строка 54</a><code class="source-code">      &lt;/tr&gt;</code><ul class="explain"><li><code>&lt;/tr&gt;</code> — конец элемента <code>tr</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L126"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L126">Строка 126</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
+<li id="lab2-general-html-L55"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L55">Строка 55</a><code class="source-code">      &lt;tr&gt;</code><ul class="explain"><li><code>&lt;tr&gt;</code> — Одна строка таблицы; содержит th и/или td.</li>
 </ul></li>
-<li id="lab2-general-html-L127"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L127">Строка 127</a><code class="source-code">        &lt;/tr&gt;</code><ul class="explain"><li><code>&lt;/tr&gt;</code> — конец элемента <code>tr</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L128"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L128">Строка 128</a><code class="source-code">        &lt;tr&gt;</code><ul class="explain"><li><code>&lt;tr&gt;</code> — Одна строка таблицы; содержит th и/или td.</li>
-</ul></li>
-<li id="lab2-general-html-L129"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L129">Строка 129</a><code class="source-code">          &lt;th scope=&quot;row&quot;&gt;</code><ul class="explain"><li><code>&lt;th&gt;</code> — Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</li>
+<li id="lab2-general-html-L56"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L56">Строка 56</a><code class="source-code">        &lt;th scope=&quot;row&quot;&gt;Экологическое соответствие&lt;/th&gt;</code><ul class="explain"><li><code>&lt;th&gt;</code> — Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</li>
 <li><code>scope=&quot;row&quot;</code> — Назначение th: col — заголовок столбца, row — строки. Помогает правильно читать таблицу.</li>
 <li>Текст внутри <code>th</code>: Экологическое соответствие. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/th&gt;</code> — конец элемента <code>th</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L130"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L130">Строка 130</a><code class="source-code">            Экологическое соответствие</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L131"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L131">Строка 131</a><code class="source-code">          &lt;/th&gt;</code><ul class="explain"><li><code>&lt;/th&gt;</code> — конец элемента <code>th</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L132"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L132">Строка 132</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L57"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L57">Строка 57</a><code class="source-code">        &lt;td&gt;Euro 6, указано в брошюре&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: Euro 6, указано в брошюре. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L133"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L133">Строка 133</a><code class="source-code">            Euro 6, указано в брошюре</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L134"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L134">Строка 134</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L135"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L135">Строка 135</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L58"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L58">Строка 58</a><code class="source-code">        &lt;td&gt;ОТТС для официальных российских автомобилей&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: ОТТС для официальных российских автомобилей. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L136"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L136">Строка 136</a><code class="source-code">            ОТТС для официальных российских автомобилей</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L137"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L137">Строка 137</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L138"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L138">Строка 138</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L59"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L59">Строка 59</a><code class="source-code">        &lt;td&gt;Европейская омологация; выбросы P300 — 214 г CO₂/км в британском прайсе&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: Европейская омологация; выбросы P300 — 214 г CO₂/км в британском прайсе. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L139"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L139">Строка 139</a><code class="source-code">            Европейская омологация; выбросы P300 — 214 г CO₂/км в британском прайсе</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
+<li id="lab2-general-html-L60"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L60">Строка 60</a><code class="source-code">      &lt;/tr&gt;</code><ul class="explain"><li><code>&lt;/tr&gt;</code> — конец элемента <code>tr</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L140"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L140">Строка 140</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
+<li id="lab2-general-html-L61"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L61">Строка 61</a><code class="source-code">      &lt;tr&gt;</code><ul class="explain"><li><code>&lt;tr&gt;</code> — Одна строка таблицы; содержит th и/или td.</li>
 </ul></li>
-<li id="lab2-general-html-L141"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L141">Строка 141</a><code class="source-code">        &lt;/tr&gt;</code><ul class="explain"><li><code>&lt;/tr&gt;</code> — конец элемента <code>tr</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L142"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L142">Строка 142</a><code class="source-code">        &lt;tr&gt;</code><ul class="explain"><li><code>&lt;tr&gt;</code> — Одна строка таблицы; содержит th и/или td.</li>
-</ul></li>
-<li id="lab2-general-html-L143"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L143">Строка 143</a><code class="source-code">          &lt;th scope=&quot;row&quot;&gt;</code><ul class="explain"><li><code>&lt;th&gt;</code> — Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</li>
+<li id="lab2-general-html-L62"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L62">Строка 62</a><code class="source-code">        &lt;th scope=&quot;row&quot;&gt;Гарантийный срок&lt;/th&gt;</code><ul class="explain"><li><code>&lt;th&gt;</code> — Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</li>
 <li><code>scope=&quot;row&quot;</code> — Назначение th: col — заголовок столбца, row — строки. Помогает правильно читать таблицу.</li>
 <li>Текст внутри <code>th</code>: Гарантийный срок. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/th&gt;</code> — конец элемента <code>th</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L144"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L144">Строка 144</a><code class="source-code">            Гарантийный срок</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L145"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L145">Строка 145</a><code class="source-code">          &lt;/th&gt;</code><ul class="explain"><li><code>&lt;/th&gt;</code> — конец элемента <code>th</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L146"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L146">Строка 146</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L63"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L63">Строка 63</a><code class="source-code">        &lt;td&gt;3 года, без ограничения пробега; условия зависят от рынка&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: 3 года, без ограничения пробега; условия зависят от рынка. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L147"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L147">Строка 147</a><code class="source-code">            3 года, без ограничения пробега; условия зависят от рынка</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L148"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L148">Строка 148</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L149"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L149">Строка 149</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L64"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L64">Строка 64</a><code class="source-code">        &lt;td&gt;5 лет или 100 000 км в России&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: 5 лет или 100 000 км в России. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L150"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L150">Строка 150</a><code class="source-code">            5 лет или 100 000 км в России</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L151"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L151">Строка 151</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L152"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L152">Строка 152</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L65"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L65">Строка 65</a><code class="source-code">        &lt;td&gt;3 года, без ограничения пробега в Великобритании&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: 3 года, без ограничения пробега в Великобритании. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L153"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L153">Строка 153</a><code class="source-code">            3 года, без ограничения пробега в Великобритании</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
+<li id="lab2-general-html-L66"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L66">Строка 66</a><code class="source-code">      &lt;/tr&gt;</code><ul class="explain"><li><code>&lt;/tr&gt;</code> — конец элемента <code>tr</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L154"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L154">Строка 154</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
+<li id="lab2-general-html-L67"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L67">Строка 67</a><code class="source-code">      &lt;tr&gt;</code><ul class="explain"><li><code>&lt;tr&gt;</code> — Одна строка таблицы; содержит th и/или td.</li>
 </ul></li>
-<li id="lab2-general-html-L155"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L155">Строка 155</a><code class="source-code">        &lt;/tr&gt;</code><ul class="explain"><li><code>&lt;/tr&gt;</code> — конец элемента <code>tr</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L156"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L156">Строка 156</a><code class="source-code">        &lt;tr&gt;</code><ul class="explain"><li><code>&lt;tr&gt;</code> — Одна строка таблицы; содержит th и/или td.</li>
-</ul></li>
-<li id="lab2-general-html-L157"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L157">Строка 157</a><code class="source-code">          &lt;th scope=&quot;row&quot;&gt;</code><ul class="explain"><li><code>&lt;th&gt;</code> — Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</li>
+<li id="lab2-general-html-L68"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L68">Строка 68</a><code class="source-code">        &lt;th scope=&quot;row&quot;&gt;Максимальная скорость&lt;/th&gt;</code><ul class="explain"><li><code>&lt;th&gt;</code> — Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</li>
 <li><code>scope=&quot;row&quot;</code> — Назначение th: col — заголовок столбца, row — строки. Помогает правильно читать таблицу.</li>
 <li>Текст внутри <code>th</code>: Максимальная скорость. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/th&gt;</code> — конец элемента <code>th</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L158"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L158">Строка 158</a><code class="source-code">            Максимальная скорость</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
+<li id="lab2-general-html-L69"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L69">Строка 69</a><code class="source-code">        &lt;td&gt;Более 350 км/ч&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li>Текст внутри <code>td</code>: Более 350 км/ч. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L159"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L159">Строка 159</a><code class="source-code">          &lt;/th&gt;</code><ul class="explain"><li><code>&lt;/th&gt;</code> — конец элемента <code>th</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L160"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L160">Строка 160</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
-</ul></li>
-<li id="lab2-general-html-L161"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L161">Строка 161</a><code class="source-code">            &lt;mark&gt;</code><ul class="explain"><li><code>&lt;mark&gt;</code> — Выделение фрагмента, важного в текущем контексте: например лучшего показателя в сравнении.</li>
-<li>Текст внутри <code>mark</code>: Более 350 км/ч. Это содержимое, а не имя тега или атрибута.</li>
-</ul></li>
-<li id="lab2-general-html-L162"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L162">Строка 162</a><code class="source-code">              Более 350 км/ч</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L163"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L163">Строка 163</a><code class="source-code">            &lt;/mark&gt;</code><ul class="explain"><li><code>&lt;/mark&gt;</code> — конец элемента <code>mark</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L164"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L164">Строка 164</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L165"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L165">Строка 165</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L70"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L70">Строка 70</a><code class="source-code">        &lt;td&gt;200 км/ч&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: 200 км/ч. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L166"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L166">Строка 166</a><code class="source-code">            200 км/ч</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L167"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L167">Строка 167</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L168"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L168">Строка 168</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L71"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L71">Строка 71</a><code class="source-code">        &lt;td&gt;250 км/ч&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: 250 км/ч. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L169"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L169">Строка 169</a><code class="source-code">            250 км/ч</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
+<li id="lab2-general-html-L72"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L72">Строка 72</a><code class="source-code">      &lt;/tr&gt;</code><ul class="explain"><li><code>&lt;/tr&gt;</code> — конец элемента <code>tr</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L170"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L170">Строка 170</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
+<li id="lab2-general-html-L73"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L73">Строка 73</a><code class="source-code">      &lt;tr&gt;</code><ul class="explain"><li><code>&lt;tr&gt;</code> — Одна строка таблицы; содержит th и/или td.</li>
 </ul></li>
-<li id="lab2-general-html-L171"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L171">Строка 171</a><code class="source-code">        &lt;/tr&gt;</code><ul class="explain"><li><code>&lt;/tr&gt;</code> — конец элемента <code>tr</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L172"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L172">Строка 172</a><code class="source-code">        &lt;tr&gt;</code><ul class="explain"><li><code>&lt;tr&gt;</code> — Одна строка таблицы; содержит th и/или td.</li>
-</ul></li>
-<li id="lab2-general-html-L173"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L173">Строка 173</a><code class="source-code">          &lt;th scope=&quot;row&quot;&gt;</code><ul class="explain"><li><code>&lt;th&gt;</code> — Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</li>
+<li id="lab2-general-html-L74"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L74">Строка 74</a><code class="source-code">        &lt;th scope=&quot;row&quot;&gt;Тип трансмиссии&lt;/th&gt;</code><ul class="explain"><li><code>&lt;th&gt;</code> — Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</li>
 <li><code>scope=&quot;row&quot;</code> — Назначение th: col — заголовок столбца, row — строки. Помогает правильно читать таблицу.</li>
 <li>Текст внутри <code>th</code>: Тип трансмиссии. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/th&gt;</code> — конец элемента <code>th</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L174"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L174">Строка 174</a><code class="source-code">            Тип трансмиссии</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L175"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L175">Строка 175</a><code class="source-code">          &lt;/th&gt;</code><ul class="explain"><li><code>&lt;/th&gt;</code> — конец элемента <code>th</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L176"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L176">Строка 176</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L75"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L75">Строка 75</a><code class="source-code">        &lt;td&gt;Роботизированная, два сцепления&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: Роботизированная, два сцепления. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L177"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L177">Строка 177</a><code class="source-code">            Роботизированная, два сцепления</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L178"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L178">Строка 178</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L179"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L179">Строка 179</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L76"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L76">Строка 76</a><code class="source-code">        &lt;td&gt;Одноступенчатые понижающие редукторы; обычной КПП нет&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: Одноступенчатые понижающие редукторы; обычной КПП нет. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L180"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L180">Строка 180</a><code class="source-code">            Одноступенчатые понижающие редукторы; обычной КПП нет</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L181"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L181">Строка 181</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L182"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L182">Строка 182</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L77"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L77">Строка 77</a><code class="source-code">        &lt;td&gt;Автоматическая&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: Автоматическая. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L183"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L183">Строка 183</a><code class="source-code">            Автоматическая</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
+<li id="lab2-general-html-L78"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L78">Строка 78</a><code class="source-code">      &lt;/tr&gt;</code><ul class="explain"><li><code>&lt;/tr&gt;</code> — конец элемента <code>tr</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L184"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L184">Строка 184</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
+<li id="lab2-general-html-L79"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L79">Строка 79</a><code class="source-code">      &lt;tr&gt;</code><ul class="explain"><li><code>&lt;tr&gt;</code> — Одна строка таблицы; содержит th и/или td.</li>
 </ul></li>
-<li id="lab2-general-html-L185"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L185">Строка 185</a><code class="source-code">        &lt;/tr&gt;</code><ul class="explain"><li><code>&lt;/tr&gt;</code> — конец элемента <code>tr</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L186"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L186">Строка 186</a><code class="source-code">        &lt;tr&gt;</code><ul class="explain"><li><code>&lt;tr&gt;</code> — Одна строка таблицы; содержит th и/или td.</li>
-</ul></li>
-<li id="lab2-general-html-L187"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L187">Строка 187</a><code class="source-code">          &lt;th scope=&quot;row&quot;&gt;</code><ul class="explain"><li><code>&lt;th&gt;</code> — Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</li>
+<li id="lab2-general-html-L80"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L80">Строка 80</a><code class="source-code">        &lt;th scope=&quot;row&quot;&gt;Количество передач вперёд&lt;/th&gt;</code><ul class="explain"><li><code>&lt;th&gt;</code> — Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</li>
 <li><code>scope=&quot;row&quot;</code> — Назначение th: col — заголовок столбца, row — строки. Помогает правильно читать таблицу.</li>
 <li>Текст внутри <code>th</code>: Количество передач вперёд. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/th&gt;</code> — конец элемента <code>th</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L188"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L188">Строка 188</a><code class="source-code">            Количество передач вперёд</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L189"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L189">Строка 189</a><code class="source-code">          &lt;/th&gt;</code><ul class="explain"><li><code>&lt;/th&gt;</code> — конец элемента <code>th</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L190"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L190">Строка 190</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L81"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L81">Строка 81</a><code class="source-code">        &lt;td&gt;8&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: 8. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L191"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L191">Строка 191</a><code class="source-code">            8</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L192"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L192">Строка 192</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L193"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L193">Строка 193</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L82"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L82">Строка 82</a><code class="source-code">        &lt;td&gt;1 фиксированное передаточное отношение на каждом приводе&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: 1 фиксированное передаточное отношение на каждом приводе. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L194"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L194">Строка 194</a><code class="source-code">            1 фиксированное передаточное отношение на каждом приводе</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L195"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L195">Строка 195</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L196"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L196">Строка 196</a><code class="source-code">          &lt;td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L83"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L83">Строка 83</a><code class="source-code">        &lt;td&gt;8&lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li>Текст внутри <code>td</code>: 8. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L197"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L197">Строка 197</a><code class="source-code">            8</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
+<li id="lab2-general-html-L84"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L84">Строка 84</a><code class="source-code">      &lt;/tr&gt;</code><ul class="explain"><li><code>&lt;/tr&gt;</code> — конец элемента <code>tr</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L198"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L198">Строка 198</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
+<li id="lab2-general-html-L85"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L85">Строка 85</a><code class="source-code">    &lt;/tbody&gt;</code><ul class="explain"><li><code>&lt;/tbody&gt;</code> — конец элемента <code>tbody</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L199"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L199">Строка 199</a><code class="source-code">        &lt;/tr&gt;</code><ul class="explain"><li><code>&lt;/tr&gt;</code> — конец элемента <code>tr</code>.</li>
+<li id="lab2-general-html-L86"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L86">Строка 86</a><code class="source-code">    &lt;tfoot&gt;</code><ul class="explain"><li><code>&lt;tfoot&gt;</code> — Группа заключительных строк таблицы: итог или примечание. Это не footer всей страницы.</li>
 </ul></li>
-<li id="lab2-general-html-L200"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L200">Строка 200</a><code class="source-code">      &lt;/tbody&gt;</code><ul class="explain"><li><code>&lt;/tbody&gt;</code> — конец элемента <code>tbody</code>.</li>
+<li id="lab2-general-html-L87"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L87">Строка 87</a><code class="source-code">      &lt;tr&gt;</code><ul class="explain"><li><code>&lt;tr&gt;</code> — Одна строка таблицы; содержит th и/или td.</li>
 </ul></li>
-<li id="lab2-general-html-L201"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L201">Строка 201</a><code class="source-code">      &lt;tfoot&gt;</code><ul class="explain"><li><code>&lt;tfoot&gt;</code> — Группа заключительных строк таблицы: итог или примечание. Это не footer всей страницы.</li>
-</ul></li>
-<li id="lab2-general-html-L202"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L202">Строка 202</a><code class="source-code">        &lt;tr&gt;</code><ul class="explain"><li><code>&lt;tr&gt;</code> — Одна строка таблицы; содержит th и/или td.</li>
-</ul></li>
-<li id="lab2-general-html-L203"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L203">Строка 203</a><code class="source-code">          &lt;td colspan=&quot;4&quot;&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
+<li id="lab2-general-html-L88"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L88">Строка 88</a><code class="source-code">        &lt;td colspan=&quot;4&quot;&gt;Цены исторические, относятся к разным рынкам и условиям продажи; их нельзя напрямую сопоставлять между валютами. WLTP и WLTC — разные испытательные процедуры. ОТТС подтверждает соответствие требованиям, но не является экологической наградой. Источники: &lt;a href=&quot;index.html#sources&quot;&gt;характеристики и цены&lt;/a&gt;. &lt;/td&gt;</code><ul class="explain"><li><code>&lt;td&gt;</code> — Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</li>
 <li><code>colspan=&quot;4&quot;</code> — Число объединяемых столбцов ячейки: colspan=&quot;4&quot; занимает ширину всех четырёх столбцов. Это не объединение строк.</li>
-<li>Текст внутри <code>td</code>: Цены исторические, относятся к разным рынкам и условиям продажи; их нельзя напрямую сопоставлять между валютами. WLTP и WLTC — разные испытательные процедуры. ОТТС подтверждает соответствие требованиям, но не является экологической наградой. Ссылки на исходные данные приведены ниже.. Это содержимое, а не имя тега или атрибута.</li>
-</ul></li>
-<li id="lab2-general-html-L204"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L204">Строка 204</a><code class="source-code">            Цены исторические, относятся к разным рынкам и условиям продажи; их нельзя напрямую сопоставлять между валютами. WLTP и WLTC — разные испытательные процедуры. ОТТС подтверждает соответствие требованиям, но не является экологической наградой. Ссылки на исходные данные приведены ниже.</code><ul class="explain"><li>Продолжение текущего HTML-элемента.</li>
-</ul></li>
-<li id="lab2-general-html-L205"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L205">Строка 205</a><code class="source-code">          &lt;/td&gt;</code><ul class="explain"><li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L206"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L206">Строка 206</a><code class="source-code">        &lt;/tr&gt;</code><ul class="explain"><li><code>&lt;/tr&gt;</code> — конец элемента <code>tr</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L207"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L207">Строка 207</a><code class="source-code">      &lt;/tfoot&gt;</code><ul class="explain"><li><code>&lt;/tfoot&gt;</code> — конец элемента <code>tfoot</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L208"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L208">Строка 208</a><code class="source-code">    &lt;/table&gt;</code><ul class="explain"><li><code>&lt;/table&gt;</code> — конец элемента <code>table</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L209"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L209">Строка 209</a><code class="source-code">    &lt;/div&gt;</code><ul class="explain"><li><code>&lt;/div&gt;</code> — конец элемента <code>div</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L210"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L210">Строка 210</a><code class="source-code">    &lt;h2&gt;Информация об автомобилях&lt;/h2&gt;</code><ul class="explain"><li><code>&lt;h2&gt;</code> — Заголовок раздела внутри страницы. Уровень важнее размера букв.</li>
-<li>Текст внутри <code>h2</code>: Информация об автомобилях. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/h2&gt;</code> — конец элемента <code>h2</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L211"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L211">Строка 211</a><code class="source-code">    &lt;details&gt;</code><ul class="explain"><li><code>&lt;details&gt;</code> — Раскрывающийся блок. Браузер сам открывает и закрывает его при нажатии на summary; JavaScript для этого не нужен.</li>
-</ul></li>
-<li id="lab2-general-html-L212"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L212">Строка 212</a><code class="source-code">      &lt;summary&gt;Lamborghini Revuelto&lt;/summary&gt;</code><ul class="explain"><li><code>&lt;summary&gt;</code> — Видимая подпись раскрывающегося блока; должна быть первым summary внутри details.</li>
-<li>Текст внутри <code>summary</code>: Lamborghini Revuelto. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/summary&gt;</code> — конец элемента <code>summary</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L213"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L213">Строка 213</a><code class="source-code">      &lt;p&gt;Спортивный автомобиль с атмосферным двигателем V12 и тремя электромоторами. Тип силовой установки — &lt;em&gt;подключаемый гибрид&lt;/em&gt;.&lt;/p&gt;</code><ul class="explain"><li><code>&lt;p&gt;</code> — Абзац текста. Для нового абзаца нужен ещё один p, а не много br.</li>
-<li>Текст внутри <code>p</code>: Спортивный автомобиль с атмосферным двигателем V12 и тремя электромоторами. Тип силовой установки —. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;em&gt;</code> — Смысловое ударение на словах; обычно курсив.</li>
-<li>Текст внутри <code>em</code>: подключаемый гибрид. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/em&gt;</code> — конец элемента <code>em</code>.</li>
-<li>Текст внутри <code>p</code>: .. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/p&gt;</code> — конец элемента <code>p</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L214"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L214">Строка 214</a><code class="source-code">    &lt;/details&gt;</code><ul class="explain"><li><code>&lt;/details&gt;</code> — конец элемента <code>details</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L215"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L215">Строка 215</a><code class="source-code">    &lt;details&gt;</code><ul class="explain"><li><code>&lt;details&gt;</code> — Раскрывающийся блок. Браузер сам открывает и закрывает его при нажатии на summary; JavaScript для этого не нужен.</li>
-</ul></li>
-<li id="lab2-general-html-L216"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L216">Строка 216</a><code class="source-code">      &lt;summary&gt;Voyah FREE Sport&lt;/summary&gt;</code><ul class="explain"><li><code>&lt;summary&gt;</code> — Видимая подпись раскрывающегося блока; должна быть первым summary внутри details.</li>
-<li>Текст внутри <code>summary</code>: Voyah FREE Sport. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/summary&gt;</code> — конец элемента <code>summary</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L217"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L217">Строка 217</a><code class="source-code">      &lt;p&gt;Кроссовер с двумя электромоторами. Бензиновый двигатель работает генератором: это &lt;em&gt;последовательный гибрид&lt;/em&gt;.&lt;/p&gt;</code><ul class="explain"><li><code>&lt;p&gt;</code> — Абзац текста. Для нового абзаца нужен ещё один p, а не много br.</li>
-<li>Текст внутри <code>p</code>: Кроссовер с двумя электромоторами. Бензиновый двигатель работает генератором: это. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;em&gt;</code> — Смысловое ударение на словах; обычно курсив.</li>
-<li>Текст внутри <code>em</code>: последовательный гибрид. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/em&gt;</code> — конец элемента <code>em</code>.</li>
-<li>Текст внутри <code>p</code>: .. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/p&gt;</code> — конец элемента <code>p</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L218"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L218">Строка 218</a><code class="source-code">    &lt;/details&gt;</code><ul class="explain"><li><code>&lt;/details&gt;</code> — конец элемента <code>details</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L219"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L219">Строка 219</a><code class="source-code">    &lt;details&gt;</code><ul class="explain"><li><code>&lt;details&gt;</code> — Раскрывающийся блок. Браузер сам открывает и закрывает его при нажатии на summary; JavaScript для этого не нужен.</li>
-</ul></li>
-<li id="lab2-general-html-L220"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L220">Строка 220</a><code class="source-code">      &lt;summary&gt;Jaguar F-TYPE P300 Coupé&lt;/summary&gt;</code><ul class="explain"><li><code>&lt;summary&gt;</code> — Видимая подпись раскрывающегося блока; должна быть первым summary внутри details.</li>
-<li>Текст внутри <code>summary</code>: Jaguar F-TYPE P300 Coupé. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/summary&gt;</code> — конец элемента <code>summary</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L221"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L221">Строка 221</a><code class="source-code">      &lt;p&gt;Двухместное заднеприводное купе с бензиновым двигателем 2,0 л и автоматической коробкой передач.&lt;/p&gt;</code><ul class="explain"><li><code>&lt;p&gt;</code> — Абзац текста. Для нового абзаца нужен ещё один p, а не много br.</li>
-<li>Текст внутри <code>p</code>: Двухместное заднеприводное купе с бензиновым двигателем 2,0 л и автоматической коробкой передач.. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/p&gt;</code> — конец элемента <code>p</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L222"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L222">Строка 222</a><code class="source-code">    &lt;/details&gt;</code><ul class="explain"><li><code>&lt;/details&gt;</code> — конец элемента <code>details</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L223"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L223">Строка 223</a><code class="source-code">    &lt;h2&gt;Краткий вывод&lt;/h2&gt;</code><ul class="explain"><li><code>&lt;h2&gt;</code> — Заголовок раздела внутри страницы. Уровень важнее размера букв.</li>
-<li>Текст внутри <code>h2</code>: Краткий вывод. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/h2&gt;</code> — конец элемента <code>h2</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L224"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L224">Строка 224</a><code class="source-code">    &lt;p&gt;Lamborghini быстрее всех разгоняется и имеет наибольшую максимальную скорость. Voyah использует электрическую тягу с бензиновым генератором. Jaguar оснащён бензиновым двигателем и обычной автоматической коробкой.&lt;/p&gt;</code><ul class="explain"><li><code>&lt;p&gt;</code> — Абзац текста. Для нового абзаца нужен ещё один p, а не много br.</li>
-<li>Текст внутри <code>p</code>: Lamborghini быстрее всех разгоняется и имеет наибольшую максимальную скорость. Voyah использует электрическую тягу с бензиновым генератором. Jaguar оснащён бензиновым двигателем и обычной автоматической коробкой.. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/p&gt;</code> — конец элемента <code>p</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L225"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L225">Строка 225</a><code class="source-code">    &lt;p&gt;&lt;i&gt;Цены разных валют и расход разных испытательных циклов нельзя напрямую сравнивать.&lt;/i&gt;&lt;/p&gt;</code><ul class="explain"><li><code>&lt;p&gt;</code> — Абзац текста. Для нового абзаца нужен ещё один p, а не много br.</li>
-<li><code>&lt;i&gt;</code> — Фрагмент в иной манере или термин на другом языке; обычно курсив. Само по себе не означает смысловое ударение.</li>
-<li>Текст внутри <code>i</code>: Цены разных валют и расход разных испытательных циклов нельзя напрямую сравнивать.. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/i&gt;</code> — конец элемента <code>i</code>.</li>
-<li><code>&lt;/p&gt;</code> — конец элемента <code>p</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L226"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L226">Строка 226</a><code class="source-code">    &lt;h3&gt;Откуда взяты данные&lt;/h3&gt;</code><ul class="explain"><li><code>&lt;h3&gt;</code> — Заголовок подраздела третьего уровня, например имя модели.</li>
-<li>Текст внутри <code>h3</code>: Откуда взяты данные. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/h3&gt;</code> — конец элемента <code>h3</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L227"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L227">Строка 227</a><code class="source-code">    &lt;ul&gt;</code><ul class="explain"><li><code>&lt;ul&gt;</code> — Неупорядоченный список, обычно с маркерами. Содержит элементы li.</li>
-</ul></li>
-<li id="lab2-general-html-L228"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L228">Строка 228</a><code class="source-code">      &lt;li&gt;Брошюра Lamborghini Revuelto 2024 и британские публикации о ценах.&lt;/li&gt;</code><ul class="explain"><li><code>&lt;li&gt;</code> — Один пункт списка ul или ol.</li>
-<li>Текст внутри <code>li</code>: Брошюра Lamborghini Revuelto 2024 и британские публикации о ценах.. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/li&gt;</code> — конец элемента <code>li</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L229"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L229">Строка 229</a><code class="source-code">      &lt;li&gt;Релиз Voyah FREE Sport от 11 июня 2024 года и спецификация модели.&lt;/li&gt;</code><ul class="explain"><li><code>&lt;li&gt;</code> — Один пункт списка ul или ol.</li>
-<li>Текст внутри <code>li</code>: Релиз Voyah FREE Sport от 11 июня 2024 года и спецификация модели.. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/li&gt;</code> — конец элемента <code>li</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L230"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L230">Строка 230</a><code class="source-code">      &lt;li&gt;Британский прайс и техническая брошюра Jaguar F-TYPE.&lt;/li&gt;</code><ul class="explain"><li><code>&lt;li&gt;</code> — Один пункт списка ul или ol.</li>
-<li>Текст внутри <code>li</code>: Британский прайс и техническая брошюра Jaguar F-TYPE.. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/li&gt;</code> — конец элемента <code>li</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L231"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L231">Строка 231</a><code class="source-code">    &lt;/ul&gt;</code><ul class="explain"><li><code>&lt;/ul&gt;</code> — конец элемента <code>ul</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L232"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L232">Строка 232</a><code class="source-code">    &lt;p&gt;&lt;a href=&quot;index.html#sources&quot;&gt;Ссылки на источники характеристик и цен&lt;/a&gt;&lt;/p&gt;</code><ul class="explain"><li><code>&lt;p&gt;</code> — Абзац текста. Для нового абзаца нужен ещё один p, а не много br.</li>
+<li>Текст внутри <code>td</code>: Цены исторические, относятся к разным рынкам и условиям продажи; их нельзя напрямую сопоставлять между валютами. WLTP и WLTC — разные испытательные процедуры. ОТТС подтверждает соответствие требованиям, но не является экологической наградой. Источники:. Это содержимое, а не имя тега или атрибута.</li>
 <li><code>&lt;a&gt;</code> — Гиперссылка. Адрес записан в атрибуте href, а текст между &lt;a&gt; и &lt;/a&gt; виден пользователю.</li>
 <li><code>href=&quot;index.html#sources&quot;</code> — Адрес назначения у a или адрес CSS у link. Ссылку создаёт элемент a; href — его атрибут, а не отдельный тег.</li>
-<li>Текст внутри <code>a</code>: Ссылки на источники характеристик и цен. Это содержимое, а не имя тега или атрибута.</li>
+<li>Текст внутри <code>a</code>: характеристики и цены. Это содержимое, а не имя тега или атрибута.</li>
 <li><code>&lt;/a&gt;</code> — конец элемента <code>a</code>.</li>
-<li><code>&lt;/p&gt;</code> — конец элемента <code>p</code>.</li>
+<li>Текст внутри <code>td</code>: .. Это содержимое, а не имя тега или атрибута.</li>
+<li><code>&lt;/td&gt;</code> — конец элемента <code>td</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L233"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L233">Строка 233</a><code class="source-code">  &lt;/main&gt;</code><ul class="explain"><li><code>&lt;/main&gt;</code> — конец элемента <code>main</code>.</li>
+<li id="lab2-general-html-L89"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L89">Строка 89</a><code class="source-code">      &lt;/tr&gt;</code><ul class="explain"><li><code>&lt;/tr&gt;</code> — конец элемента <code>tr</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L234"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L234">Строка 234</a><code class="source-code">  &lt;hr&gt;</code><ul class="explain"><li><code>&lt;hr&gt;</code> — Тематическое разделение частей текста; обычно отображается линией. Пишем &lt;hr&gt;, без &lt;/hr&gt;.</li>
+<li id="lab2-general-html-L90"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L90">Строка 90</a><code class="source-code">    &lt;/tfoot&gt;</code><ul class="explain"><li><code>&lt;/tfoot&gt;</code> — конец элемента <code>tfoot</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L235"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L235">Строка 235</a><code class="source-code">  &lt;footer&gt;</code><ul class="explain"><li><code>&lt;footer&gt;</code> — Нижняя часть страницы или раздела; здесь — ссылки на другие работы.</li>
+<li id="lab2-general-html-L91"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L91">Строка 91</a><code class="source-code">  &lt;/table&gt;</code><ul class="explain"><li><code>&lt;/table&gt;</code> — конец элемента <code>table</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L236"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L236">Строка 236</a><code class="source-code">    &lt;p&gt;&lt;a href=&quot;../study/&quot;&gt;Гайд по HTML и CSS с построчным разбором кода&lt;/a&gt;&lt;/p&gt;</code><ul class="explain"><li><code>&lt;p&gt;</code> — Абзац текста. Для нового абзаца нужен ещё один p, а не много br.</li>
-<li><code>&lt;a&gt;</code> — Гиперссылка. Адрес записан в атрибуте href, а текст между &lt;a&gt; и &lt;/a&gt; виден пользователю.</li>
-<li><code>href=&quot;../study/&quot;</code> — Адрес назначения у a или адрес CSS у link. Ссылку создаёт элемент a; href — его атрибут, а не отдельный тег.</li>
-<li>Текст внутри <code>a</code>: Гайд по HTML и CSS с построчным разбором кода. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/a&gt;</code> — конец элемента <code>a</code>.</li>
-<li><code>&lt;/p&gt;</code> — конец элемента <code>p</code>.</li>
+<li id="lab2-general-html-L92"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L92">Строка 92</a><code class="source-code">&lt;/body&gt;</code><ul class="explain"><li><code>&lt;/body&gt;</code> — конец элемента <code>body</code>.</li>
 </ul></li>
-<li id="lab2-general-html-L237"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L237">Строка 237</a><code class="source-code">  &lt;/footer&gt;</code><ul class="explain"><li><code>&lt;/footer&gt;</code> — конец элемента <code>footer</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L238"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L238">Строка 238</a><code class="source-code">&lt;/body&gt;</code><ul class="explain"><li><code>&lt;/body&gt;</code> — конец элемента <code>body</code>.</li>
-</ul></li>
-<li id="lab2-general-html-L239"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L239">Строка 239</a><code class="source-code">&lt;/html&gt;</code><ul class="explain"><li><code>&lt;/html&gt;</code> — конец элемента <code>html</code>.</li>
-</ul></li>
-</ol></details>
-<details id="file-lab2-general-css"><summary>lab2/general.css — 28 строк</summary><div class="inside"><p><a href="https://github.com/error999777/wb1/blob/main/lab2/general.css">Исходный файл на GitHub</a> · <a href="../lab2/general.css">lab2/general.css</a></p>
-</div><ol class="source-lines"><li id="lab2-general-css-L1"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.css#L1">Строка 1</a><code class="source-code">body {</code><ul class="explain"><li>Селектор <code>body</code> выбирает элементы. Имя без . и # означает селектор по тегу.</li>
-</ul></li>
-<li id="lab2-general-css-L2"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.css#L2">Строка 2</a><code class="source-code">  font-family: Arial, sans-serif;</code><ul class="explain"><li><code>font-family: Arial, sans-serif</code> — Список шрифтов по приоритету: Arial, затем подходящий sans-serif.</li>
-</ul></li>
-<li id="lab2-general-css-L3"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.css#L3">Строка 3</a><code class="source-code">  margin: 24px;</code><ul class="explain"><li><code>margin: 24px</code> — Внешний отступ. 24px — со всех сторон; 12px 0 — сверху/снизу 12px, слева/справа 0; auto по бокам центрирует ограниченный по ширине блок.</li>
-</ul></li>
-<li id="lab2-general-css-L4"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.css#L4">Строка 4</a><code class="source-code">  line-height: 1.5;</code><ul class="explain"><li><code>line-height: 1.5</code> — Высота строки. Число без единицы умножается на размер шрифта.</li>
-</ul></li>
-<li id="lab2-general-css-L5"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.css#L5">Строка 5</a><code class="source-code">  color: #222;</code><ul class="explain"><li><code>color: #222</code> — Цвет текста и currentColor; не цвет фона.</li>
-</ul></li>
-<li id="lab2-general-css-L6"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.css#L6">Строка 6</a><code class="source-code">}</code><ul class="explain"><li>Закрывает блок CSS-правила.</li>
-</ul></li>
-<li id="lab2-general-css-L7"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.css#L7">Строка 7</a><code class="source-code"> </code><ul class="explain"><li>Пустая строка отделяет части файла; на отображение не влияет.</li>
-</ul></li>
-<li id="lab2-general-css-L8"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.css#L8">Строка 8</a><code class="source-code">table {</code><ul class="explain"><li>Селектор <code>table</code> выбирает элементы. Имя без . и # означает селектор по тегу.</li>
-</ul></li>
-<li id="lab2-general-css-L9"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.css#L9">Строка 9</a><code class="source-code">  border-collapse: collapse;</code><ul class="explain"><li><code>border-collapse: collapse</code> — Схлопывание соседних рамок настоящей таблицы: collapse убирает двойные границы.</li>
-</ul></li>
-<li id="lab2-general-css-L10"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.css#L10">Строка 10</a><code class="source-code">  min-width: 700px;</code><ul class="explain"><li><code>min-width: 700px</code> — Минимальная ширина. У большой таблицы 740px сохраняет читаемые столбцы; на телефоне появляется внутренняя прокрутка.</li>
-</ul></li>
-<li id="lab2-general-css-L11"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.css#L11">Строка 11</a><code class="source-code">  width: 100%;</code><ul class="explain"><li><code>width: 100%</code> — Ширина: 100% занимает доступную ширину родителя; фиксированное px задаёт конкретный CSS-размер.</li>
-</ul></li>
-<li id="lab2-general-css-L12"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.css#L12">Строка 12</a><code class="source-code">}</code><ul class="explain"><li>Закрывает блок CSS-правила.</li>
-</ul></li>
-<li id="lab2-general-css-L13"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.css#L13">Строка 13</a><code class="source-code"> </code><ul class="explain"><li>Пустая строка отделяет части файла; на отображение не влияет.</li>
-</ul></li>
-<li id="lab2-general-css-L14"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.css#L14">Строка 14</a><code class="source-code">th, td {</code><ul class="explain"><li>Селектор <code>th, td</code> выбирает элементы. Запятая разделяет независимые группы выбора. Пробел между частями — выбор потомка.</li>
-</ul></li>
-<li id="lab2-general-css-L15"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.css#L15">Строка 15</a><code class="source-code">  border: 1px solid #999;</code><ul class="explain"><li><code>border: 1px solid #999</code> — Рамка: 1px solid #999 — толщина, сплошной стиль, цвет.</li>
-</ul></li>
-<li id="lab2-general-css-L16"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.css#L16">Строка 16</a><code class="source-code">  padding: 8px;</code><ul class="explain"><li><code>padding: 8px</code> — Внутренний отступ между содержимым и рамкой. Четыре значения читаются: верх, право, низ, лево.</li>
-</ul></li>
-<li id="lab2-general-css-L17"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.css#L17">Строка 17</a><code class="source-code">  text-align: left;</code><ul class="explain"><li><code>text-align: left</code> — Горизонтальное выравнивание текста: left или center.</li>
-</ul></li>
-<li id="lab2-general-css-L18"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.css#L18">Строка 18</a><code class="source-code">  vertical-align: top;</code><ul class="explain"><li><code>vertical-align: top</code> — Вертикальное положение содержимого ячейки: top прижимает к верхнему краю.</li>
-</ul></li>
-<li id="lab2-general-css-L19"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.css#L19">Строка 19</a><code class="source-code">}</code><ul class="explain"><li>Закрывает блок CSS-правила.</li>
-</ul></li>
-<li id="lab2-general-css-L20"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.css#L20">Строка 20</a><code class="source-code"> </code><ul class="explain"><li>Пустая строка отделяет части файла; на отображение не влияет.</li>
-</ul></li>
-<li id="lab2-general-css-L21"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.css#L21">Строка 21</a><code class="source-code">thead { background: #ddd; }</code><ul class="explain"><li>Селектор <code>thead</code> выбирает элементы. Имя без . и # означает селектор по тегу.</li>
-<li><code>background: #ddd</code> — Фон элемента. В этих файлах задаётся сплошным цветом.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
-</ul></li>
-<li id="lab2-general-css-L22"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.css#L22">Строка 22</a><code class="source-code">tfoot { background: #eee; }</code><ul class="explain"><li>Селектор <code>tfoot</code> выбирает элементы. Имя без . и # означает селектор по тегу.</li>
-<li><code>background: #eee</code> — Фон элемента. В этих файлах задаётся сплошным цветом.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
-</ul></li>
-<li id="lab2-general-css-L23"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.css#L23">Строка 23</a><code class="source-code">caption { font-weight: bold; margin-bottom: 10px; }</code><ul class="explain"><li>Селектор <code>caption</code> выбирает элементы. Имя без . и # означает селектор по тегу.</li>
-<li><code>font-weight: bold</code> — Толщина шрифта: bold — жирный, normal — обычный.</li>
-<li><code>margin-bottom: 10px</code> — Внешний отступ снизу.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
-</ul></li>
-<li id="lab2-general-css-L24"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.css#L24">Строка 24</a><code class="source-code">.table-wrap { overflow-x: auto; }</code><ul class="explain"><li>Селектор <code>.table-wrap</code> выбирает элементы. Точка перед <code>table-wrap</code> означает класс из атрибута class.</li>
-<li><code>overflow-x: auto</code> — Переполнение по горизонтали. auto показывает прокрутку, только когда содержимое не помещается.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
-</ul></li>
-<li id="lab2-general-css-L25"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.css#L25">Строка 25</a><code class="source-code">details { margin: 12px 0; }</code><ul class="explain"><li>Селектор <code>details</code> выбирает элементы. Имя без . и # означает селектор по тегу.</li>
-<li><code>margin: 12px 0</code> — Внешний отступ. 24px — со всех сторон; 12px 0 — сверху/снизу 12px, слева/справа 0; auto по бокам центрирует ограниченный по ширине блок.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
-</ul></li>
-<li id="lab2-general-css-L26"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.css#L26">Строка 26</a><code class="source-code">summary { cursor: pointer; }</code><ul class="explain"><li>Селектор <code>summary</code> выбирает элементы. Имя без . и # означает селектор по тегу.</li>
-<li><code>cursor: pointer</code> — Вид указателя мыши. pointer — указатель для кликабельного элемента.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
-</ul></li>
-<li id="lab2-general-css-L27"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.css#L27">Строка 27</a><code class="source-code">mark { background: #fff29a; }</code><ul class="explain"><li>Селектор <code>mark</code> выбирает элементы. Имя без . и # означает селектор по тегу.</li>
-<li><code>background: #fff29a</code> — Фон элемента. В этих файлах задаётся сплошным цветом.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
-</ul></li>
-<li id="lab2-general-css-L28"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.css#L28">Строка 28</a><code class="source-code">a { color: #174b9c; }</code><ul class="explain"><li>Селектор <code>a</code> выбирает элементы. Имя без . и # означает селектор по тегу.</li>
-<li><code>color: #174b9c</code> — Цвет текста и currentColor; не цвет фона.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab2-general-html-L93"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L93">Строка 93</a><code class="source-code">&lt;/html&gt;</code><ul class="explain"><li><code>&lt;/html&gt;</code> — конец элемента <code>html</code>.</li>
 </ul></li>
 </ol></details>
 <details id="file-lab2-index-html"><summary>lab2/index.html — 156 строк</summary><div class="inside"><p><a href="https://github.com/error999777/wb1/blob/main/lab2/index.html">Исходный файл на GitHub</a> · <a href="../lab2/index.html">lab2/index.html</a></p>
@@ -1174,8 +781,8 @@
 <li><code>&lt;/a&gt;</code> — конец элемента <code>a</code>.</li>
 <li><code>&lt;/p&gt;</code> — конец элемента <code>p</code>.</li>
 </ul></li>
-<li id="lab2-index-html-L32"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/index.html#L32">Строка 32</a><code class="source-code">      &lt;p&gt;Таблица характеристик и раскрывающиеся описания каждого автомобиля.&lt;/p&gt;</code><ul class="explain"><li><code>&lt;p&gt;</code> — Абзац текста. Для нового абзаца нужен ещё один p, а не много br.</li>
-<li>Текст внутри <code>p</code>: Таблица характеристик и раскрывающиеся описания каждого автомобиля.. Это содержимое, а не имя тега или атрибута.</li>
+<li id="lab2-index-html-L32"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/index.html#L32">Строка 32</a><code class="source-code">      &lt;p&gt;Заполненная HTML-таблица сравнения автомобилей.&lt;/p&gt;</code><ul class="explain"><li><code>&lt;p&gt;</code> — Абзац текста. Для нового абзаца нужен ещё один p, а не много br.</li>
+<li>Текст внутри <code>p</code>: Заполненная HTML-таблица сравнения автомобилей.. Это содержимое, а не имя тега или атрибута.</li>
 <li><code>&lt;/p&gt;</code> — конец элемента <code>p</code>.</li>
 </ul></li>
 <li id="lab2-index-html-L33"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/index.html#L33">Строка 33</a><code class="source-code">    &lt;/section&gt;</code><ul class="explain"><li><code>&lt;/section&gt;</code> — конец элемента <code>section</code>.</li>
@@ -3546,7 +3153,7 @@
 </ul></li>
 </ol></details>
 </section>
-<section id="defense"><h2>11. Вопросы для самопроверки перед защитой</h2><dl><dt>Какая структура у HTML-документа?</dt><dd>DOCTYPE, корневой html, служебный head с charset/title и отображаемый body. main — основной материал. В работе использован стандартный режим HTML5; HTML — язык разметки, а не язык программирования.</dd><dt>Какой формат из JPEG, PNG, GIF, RAW, SVG, WebP не вставляется обычно напрямую через img?</dt><dd>RAW. Это исходные данные камеры; их обычно конвертируют в формат, поддерживаемый браузером.</dd><dt>На какой версии HTML выполнена №1?</dt><dd>На HTML5: исходник начинается с &lt;!DOCTYPE html&gt;.</dd><dt>Какой тег переносит строку?</dt><dd>&lt;br&gt;. Для отдельного абзаца используется p; для внешнего расстояния между блоками — CSS margin.</dd><dt>Если открыть HTML на своём компьютере, увидят ли его другие в Интернете?</dt><dd>Нет. Локальный файл не публикуется автоматически. GitHub Pages раздаёт файлы по публичным HTTP(S)-адресам; индексация поисковиками — отдельный процесс.</dd><dt>Чем th отличается от td?</dt><dd>th — заголовочная ячейка, td — обычные данные. Жирное оформление th по умолчанию — только визуальное следствие, главное различие смысловое.</dd><dt>Чем caption отличается от h1?</dt><dd>h1 называет всю страницу, caption — конкретную таблицу внутри неё.</dd><dt>Чем tbody отличается от tr?</dt><dd>tbody — группа строк, tr — одна строка. td и th располагаются в tr.</dd><dt>Зачем colspan=&quot;4&quot;?</dt><dd>Одна ячейка примечания занимает четыре столбца. Если в таблице два столбца, нужно colspan=&quot;2&quot;.</dd><dt>Чем div отличается от col?</dt><dd>div — общий контейнер. col описывает столбец существующей table внутри colgroup, не содержит данных и не создаёт ячейки.</dd><dt>Нужен ли JavaScript для details?</dt><dd>Нет: details и summary уже имеют поведение раскрытия в браузере.</dd><dt>Чем класс отличается от id?</dt><dd>class можно повторять и объединять; id должен быть уникальным внутри документа. В CSS выбираются через . и # соответственно.</dd><dt>Почему текст первого поста оранжевый?</dt><dd>У #first-post задан color: orange, заголовок и абзац наследуют его. У абзаца правило h2 + p явно задаёт color: inherit.</dd><dt>Почему placeholder белый, а кнопка чёрная?</dt><dd>input[placeholder=&quot;Белый&quot;]::placeholder задаёт белый цвет именно подсказке. .submit-btn задаёт black тексту кнопки; её фон светлый.</dd><dt>Куда форма отправляет введённое имя?</dt><dd>В исходном учебном HTML action=&quot;#&quot;; реального обработчика и сохранения данных нет. Это демонстрация элементов формы.</dd><dt>Что делает @media?</dt><dd>Условно включает CSS-правила, например одну колонку вместо трёх на узком экране.</dd><dt>Почему у таблицы прокрутка на телефоне?</dt><dd>Её min-width больше ширины экрана, а родительский div имеет overflow-x: auto. Прокручивается таблица внутри блока.</dd><dt>Как изменить данные?</dt><dd>В lab2/general.html найти нужный tr, затем его td. Менять текст внутри ячейки, сохраняя структуру строки и число столбцов.</dd><dt>Как изменить заголовок?</dt><dd>Видимый заголовок — текст внутри h1; название вкладки — текст внутри title. Это разные места.</dd><dt>Как изменить цвет?</dt><dd>Открыть соответствующий CSS-файл, найти селектор и изменить значение color или background. Например .main-title { color: red; } меняет цвет текста.</dd></dl><p>Практика: закрой гайд и набери таблицу из двух столбцов; добавь caption и tfoot; сделай один details. Затем объясни, почему ссылка с href="#comparison" требует id="comparison". Это проверяет понимание лучше, чем заучивание большого файла.</p>
+<section id="defense"><h2>11. Вопросы для самопроверки перед защитой</h2><dl><dt>Какая структура у HTML-документа?</dt><dd>DOCTYPE, корневой html, служебный head с charset/title и отображаемый body. main — основной материал. В работе использован стандартный режим HTML5; HTML — язык разметки, а не язык программирования.</dd><dt>Какой формат из JPEG, PNG, GIF, RAW, SVG, WebP не вставляется обычно напрямую через img?</dt><dd>RAW. Это исходные данные камеры; их обычно конвертируют в формат, поддерживаемый браузером.</dd><dt>На какой версии HTML выполнена №1?</dt><dd>На HTML5: исходник начинается с &lt;!DOCTYPE html&gt;.</dd><dt>Какой тег переносит строку?</dt><dd>&lt;br&gt;. Для отдельного абзаца используется p; для внешнего расстояния между блоками — CSS margin.</dd><dt>Если открыть HTML на своём компьютере, увидят ли его другие в Интернете?</dt><dd>Нет. Локальный файл не публикуется автоматически. GitHub Pages раздаёт файлы по публичным HTTP(S)-адресам; индексация поисковиками — отдельный процесс.</dd><dt>Чем th отличается от td?</dt><dd>th — заголовочная ячейка, td — обычные данные. Жирное оформление th по умолчанию — только визуальное следствие, главное различие смысловое.</dd><dt>Чем caption отличается от h1?</dt><dd>h1 называет всю страницу, caption — конкретную таблицу внутри неё.</dd><dt>Чем tbody отличается от tr?</dt><dd>tbody — группа строк, tr — одна строка. td и th располагаются в tr.</dd><dt>Зачем colspan=&quot;4&quot;?</dt><dd>Одна ячейка примечания занимает четыре столбца. Если в таблице два столбца, нужно colspan=&quot;2&quot;.</dd><dt>Чем div отличается от col?</dt><dd>div — общий контейнер. col описывает столбец существующей table внутри colgroup, не содержит данных и не создаёт ячейки.</dd><dt>Нужен ли JavaScript для details?</dt><dd>Нет: details и summary уже имеют поведение раскрытия в браузере.</dd><dt>Чем класс отличается от id?</dt><dd>class можно повторять и объединять; id должен быть уникальным внутри документа. В CSS выбираются через . и # соответственно.</dd><dt>Почему текст первого поста оранжевый?</dt><dd>У #first-post задан color: orange, заголовок и абзац наследуют его. У абзаца правило h2 + p явно задаёт color: inherit.</dd><dt>Почему placeholder белый, а кнопка чёрная?</dt><dd>input[placeholder=&quot;Белый&quot;]::placeholder задаёт белый цвет именно подсказке. .submit-btn задаёт black тексту кнопки; её фон светлый.</dd><dt>Куда форма отправляет введённое имя?</dt><dd>В исходном учебном HTML action=&quot;#&quot;; реального обработчика и сохранения данных нет. Это демонстрация элементов формы.</dd><dt>Что делает @media?</dt><dd>Условно включает CSS-правила, например одну колонку вместо трёх на узком экране.</dd><dt>Почему у таблицы индивидуального задания прокрутка на телефоне?</dt><dd>Её min-width больше ширины экрана, а родительский div имеет overflow-x: auto. Прокручивается таблица внутри блока.</dd><dt>Как изменить данные?</dt><dd>В lab2/general.html найти нужный tr, затем его td. Менять текст внутри ячейки, сохраняя структуру строки и число столбцов.</dd><dt>Как изменить заголовок?</dt><dd>Видимый заголовок — текст внутри h1; название вкладки — текст внутри title. Это разные места.</dd><dt>Как изменить цвет?</dt><dd>Открыть соответствующий CSS-файл, найти селектор и изменить значение color или background. Например .main-title { color: red; } меняет цвет текста.</dd></dl><p>Практика: закрой гайд и набери таблицу из двух столбцов; добавь caption и tfoot; сделай один details. Затем объясни, почему ссылка с href="#comparison" требует id="comparison". Это проверяет понимание лучше, чем заучивание большого файла.</p>
 </section>
 <section id="sources"><h2>12. Источники и как пользоваться гайдом</h2><p>Основа разбора — предоставленная методичка «Лаб. №2-3 Верстка таблицами DIV.pdf» (стр. 1–6), прежний PDF про селекторы и исходные файлы wb1. Исходные PDF не загружались в публичный репозиторий.</p>
 <p>Для сверки синтаксиса: <a href="https://html.spec.whatwg.org/multipage/tables.html">HTML Standard: таблицы</a>, <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax">MDN: синтаксис HTML</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Selectors">MDN: селекторы CSS</a>. Это справочные материалы; примеры и построчные пояснения здесь привязаны к твоим файлам.</p>

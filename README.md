@@ -11,7 +11,7 @@
 
 Главная: https://error999777.github.io/wb1/
 
-Общее задание с простой таблицей и тремя раскрывающимися описаниями: https://error999777.github.io/wb1/lab2/general.html
+Общее задание: только заполненная HTML-таблица без CSS, с границами `border="1"`: https://error999777.github.io/wb1/lab2/general.html
 
 Гайд по методичке, тегам, атрибутам, CSS и каждой строке исходных файлов: https://error999777.github.io/wb1/study/
 
