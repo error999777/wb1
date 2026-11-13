@@ -7,7 +7,7 @@
 | №1 | https://error999777.github.io/wb1/lab1/ | Основные теги HTML, кот и Чечерск |
 | №2 | https://error999777.github.io/wb1/lab2/ | Общее сравнение Lamborghini / Voyah / Jaguar; индивидуальное сравнение трёх Hyundai; DIV-таблица; контрольные вопросы |
 | №3 | https://error999777.github.io/wb1/lab3/ | Исходный HTML из методички и внешний CSS с восемью группами селекторов |
-| №3, дополнительное | https://error999777.github.io/wb1/lab3/business-card.html | Первая секция сайта-визитки |
+| №3, дополнительное | https://error999777.github.io/wb1/lab3/business-card.html | Сайт-визитка и секция о работе с 1С |
 
 Главная: https://error999777.github.io/wb1/
 

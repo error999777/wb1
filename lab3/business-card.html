@@ -11,13 +11,44 @@
   <main>
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow">Сайт-визитка</p>
-        <h1 id="hero-title">Ковалёв Тимофей Николаевич <span>Программист 1С</span></h1>
+        <h1 id="hero-title"><span class="role">Программист 1С</span>Ковалёв Тимофей Николаевич</h1>
         <h2>Автоматизация учёта на 1С:Предприятии</h2>
         <p class="description">Работаю с платформой 1С:Предприятие. Мне интересны настройка конфигураций, разработка отчётов и автоматизация работы с документами.</p>
-        <a class="cta" href="https://github.com/error999777">Мой GitHub <span aria-hidden="true">↗</span></a>
+        <div class="actions">
+          <a class="cta" href="#work">Чем занимаюсь <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="https://github.com/error999777">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
-      <img class="portrait" src="assets/timofey.png" width="960" height="1280" alt="Тимофей Ковалёв">
+      <div class="portrait-frame">
+        <img class="portrait" src="assets/timofey.png" width="960" height="1280" alt="Тимофей Ковалёв">
+      </div>
+    </section>
+    <div class="transition">
+      <div class="orbit" aria-hidden="true">
+        <span class="ring ring-outer"></span>
+        <span class="ring ring-inner"></span>
+        <span class="orbit-core">1С</span>
+      </div>
+      <label class="motion-control">
+        <input type="checkbox"> Остановить вращение
+      </label>
+    </div>
+    <section class="work" id="work" aria-labelledby="work-title">
+      <h2 id="work-title">Что я делаю в 1С</h2>
+      <div class="work-grid">
+        <article class="work-card">
+          <h3>Конфигурации</h3>
+          <p>Настраиваю справочники, формы и реквизиты под задачи учёта.</p>
+        </article>
+        <article class="work-card">
+          <h3>Отчёты</h3>
+          <p>Собираю данные в отчётах с фильтрами, группировками и итогами.</p>
+        </article>
+        <article class="work-card">
+          <h3>Документы</h3>
+          <p>Автоматизирую заполнение документов и проверку данных при вводе.</p>
+        </article>
+      </div>
     </section>
   </main>
 </body>
