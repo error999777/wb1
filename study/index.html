@@ -91,7 +91,7 @@
 <p><b>Новые HTML-теги:</b> <code>article</code>, <code>aside</code>, <code>blockquote</code>, <code>button</code>, <code>caption</code>, <code>cite</code>, <code>code</code>, <code>col</code>, <code>colgroup</code>, <code>details</code>, <code>figcaption</code>, <code>figure</code>, <code>form</code>, <code>input</code>, <code>label</code>, <code>link</code>, <code>nav</code>, <code>progress</code>, <code>section</code>, <code>summary</code>, <code>table</code>, <code>tbody</code>, <code>td</code>, <code>tfoot</code>, <code>th</code>, <code>thead</code>, <code>time</code>, <code>tr</code>.</p>
 <p><b>Новые атрибуты в HTML-файлах:</b> <code>action</code>, <code>aria-hidden</code>, <code>aria-label</code>, <code>aria-labelledby</code>, <code>border</code>, <code>cite</code>, <code>class</code>, <code>colspan</code>, <code>content</code>, <code>datetime</code>, <code>for</code>, <code>id</code>, <code>max</code>, <code>name</code>, <code>placeholder</code>, <code>rel</code>, <code>role</code>, <code>scope</code>, <code>tabindex</code>, <code>type</code>, <code>value</code>.</p>
 <p><b>Новый пласт знаний:</b> подключение внешнего CSS, классы и id, селекторы, наследование цвета, табличная раскладка DIV, flex/grid, адаптация через @media. В №1 вообще нет подключённого CSS-файла.</p>
-<p>SVG-иллюстрация визитки — отдельная дополнительная часть, а не обязательное требование методички 2–3. Её элементы и координаты вынесены в справочник и собственный построчный блок.</p>
+<p>Визитка — дополнительное задание из методички по селекторам CSS. Нужна одна секция без меню: ФИО и профессия в h1, специализация в h2, краткое описание, ссылка и фото. Ссылка ко второй секции необязательна.</p>
 </section>
 <section id="basic"><h2>4. Все основные теги со страницы 6</h2><table><thead><tr><th scope="col">№ в методичке / тег</th><th scope="col">Значение</th><th scope="col">Было ли в №1</th></tr>
 </thead><tbody><tr><td data-label="№ в методичке / тег">1 / <code>&lt;html&gt;</code></td><td data-label="Значение">Корневой элемент: охватывает весь HTML-документ. lang=&quot;ru&quot; указывает русский язык.</td><td data-label="Было ли в №1">Да</td></tr>
@@ -128,7 +128,6 @@
 <tr><td data-label="Тег"><code>&lt;blockquote&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Блочная цитата. Атрибут cite может хранить URL источника, но сам по себе не рисует видимую ссылку.</td><td data-label="Пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
 <tr><td data-label="Тег"><code>&lt;button&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Кнопка. type=&quot;submit&quot; запускает отправку формы; type=&quot;button&quot; был бы обычной кнопкой без автоматической отправки.</td><td data-label="Пример файла"><a href="../lab3/index.html">lab3/index.html</a></td></tr>
 <tr><td data-label="Тег"><code>&lt;caption&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Название самой таблицы; располагается внутри table, обычно первым дочерним элементом. Отличается от h1 всей страницы.</td><td data-label="Пример файла"><a href="../lab2/general.html">lab2/general.html</a></td></tr>
-<tr><td data-label="Тег"><code>&lt;circle&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">SVG-круг с центром cx, cy и радиусом r.</td><td data-label="Пример файла"><a href="../lab3/assets/workspace.svg">lab3/assets/workspace.svg</a></td></tr>
 <tr><td data-label="Тег"><code>&lt;cite&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Название источника/работы, откуда взята цитата; здесь подпись отчёта Euro NCAP. Не путать с атрибутом cite.</td><td data-label="Пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
 <tr><td data-label="Тег"><code>&lt;code&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Фрагмент программного кода или имя тега в обычном тексте. Чтобы показать &lt;table&gt; как текст, используют &amp;lt;table&amp;gt;.</td><td data-label="Пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
 <tr><td data-label="Тег"><code>&lt;col&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Описывает столбец настоящей таблицы, например для общего фона. Не содержит текст и не заменяет td. Пустой элемент.</td><td data-label="Пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
@@ -144,16 +143,12 @@
 <tr><td data-label="Тег"><code>&lt;link&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Подключает внешний ресурс в head. rel=&quot;stylesheet&quot; и href=&quot;style.css&quot; связывают страницу с таблицей стилей.</td><td data-label="Пример файла"><a href="../index.html">index.html</a></td></tr>
 <tr><td data-label="Тег"><code>&lt;meta&gt;</code></td><td data-label="Значение">Метаданные: charset — кодировка; name и content — название и значение настройки. Пустой элемент, без закрывающего тега.</td><td data-label="Пример файла"><a href="../index.html">index.html</a></td></tr>
 <tr><td data-label="Тег"><code>&lt;nav&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Раздел с основными навигационными ссылками по странице или сайту.</td><td data-label="Пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
-<tr><td data-label="Тег"><code>&lt;path&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">SVG-контур. Атрибут d описывает путь командами движения и рисования.</td><td data-label="Пример файла"><a href="../lab3/assets/workspace.svg">lab3/assets/workspace.svg</a></td></tr>
 <tr><td data-label="Тег"><code>&lt;progress&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Индикатор: value — текущее значение, max — максимум. В учебном сравнении изображает процент защиты взрослых, не рейтинг в звёздах.</td><td data-label="Пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
-<tr><td data-label="Тег"><code>&lt;rect&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">SVG-прямоугольник. Координаты и размеры задаются атрибутами.</td><td data-label="Пример файла"><a href="../lab3/assets/workspace.svg">lab3/assets/workspace.svg</a></td></tr>
 <tr><td data-label="Тег"><code>&lt;section&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Тематический раздел, обычно с заголовком. Здесь отделяет общее задание и информацию о каждой модели.</td><td data-label="Пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
 <tr><td data-label="Тег"><code>&lt;summary&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Видимая подпись раскрывающегося блока; должна быть первым summary внутри details.</td><td data-label="Пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
-<tr><td data-label="Тег"><code>&lt;svg&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Корневой элемент векторной картинки SVG; используется в иллюстрации визитки, не в основной таблице.</td><td data-label="Пример файла"><a href="../lab3/assets/workspace.svg">lab3/assets/workspace.svg</a></td></tr>
 <tr><td data-label="Тег"><code>&lt;table&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Настоящая таблица данных. Содержит название, группы строк и строки с ячейками.</td><td data-label="Пример файла"><a href="../lab2/general.html">lab2/general.html</a></td></tr>
 <tr><td data-label="Тег"><code>&lt;tbody&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Группа основных строк таблицы. Сами thead и tbody не создают ни строки, ни ячейки.</td><td data-label="Пример файла"><a href="../lab2/general.html">lab2/general.html</a></td></tr>
 <tr><td data-label="Тег"><code>&lt;td&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Обычная ячейка с данными. colspan позволяет растянуть её на несколько столбцов.</td><td data-label="Пример файла"><a href="../lab2/general.html">lab2/general.html</a></td></tr>
-<tr><td data-label="Тег"><code>&lt;text&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Текст в SVG-картинке; не обычный HTML-абзац.</td><td data-label="Пример файла"><a href="../lab3/assets/workspace.svg">lab3/assets/workspace.svg</a></td></tr>
 <tr><td data-label="Тег"><code>&lt;tfoot&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Группа заключительных строк таблицы: итог или примечание. Это не footer всей страницы.</td><td data-label="Пример файла"><a href="../lab2/general.html">lab2/general.html</a></td></tr>
 <tr><td data-label="Тег"><code>&lt;th&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Ячейка-заголовок столбца или строки. scope=&quot;col&quot; обозначает заголовок столбца, scope=&quot;row&quot; — строки.</td><td data-label="Пример файла"><a href="../lab2/general.html">lab2/general.html</a></td></tr>
 <tr><td data-label="Тег"><code>&lt;thead&gt;</code> <span class="new">Новое</span></td><td data-label="Значение">Группа строк заголовков таблицы. Обычно внутри tr с ячейками th.</td><td data-label="Пример файла"><a href="../lab2/general.html">lab2/general.html</a></td></tr>
@@ -173,40 +168,24 @@
 <tr><td data-label="Атрибут"><code>class</code> <span class="new">Новое</span></td><td data-label="Что означает">Имена CSS-классов через пробел. Один класс может повторяться у многих элементов; один элемент может иметь несколько классов.</td><td data-label="Первый пример файла"><a href="../index.html">index.html</a></td></tr>
 <tr><td data-label="Атрибут"><code>colspan</code> <span class="new">Новое</span></td><td data-label="Что означает">Число объединяемых столбцов ячейки: colspan=&quot;4&quot; занимает ширину всех четырёх столбцов. Это не объединение строк.</td><td data-label="Первый пример файла"><a href="../lab2/general.html">lab2/general.html</a></td></tr>
 <tr><td data-label="Атрибут"><code>content</code> <span class="new">Новое</span></td><td data-label="Что означает">Значение метаданных у meta. У viewport задаёт ширину области просмотра и начальный масштаб.</td><td data-label="Первый пример файла"><a href="../index.html">index.html</a></td></tr>
-<tr><td data-label="Атрибут"><code>cx</code> <span class="new">Новое</span></td><td data-label="Что означает">Горизонтальная координата центра SVG-круга.</td><td data-label="Первый пример файла"><a href="../lab3/assets/workspace.svg">lab3/assets/workspace.svg</a></td></tr>
-<tr><td data-label="Атрибут"><code>cy</code> <span class="new">Новое</span></td><td data-label="Что означает">Вертикальная координата центра SVG-круга.</td><td data-label="Первый пример файла"><a href="../lab3/assets/workspace.svg">lab3/assets/workspace.svg</a></td></tr>
-<tr><td data-label="Атрибут"><code>d</code> <span class="new">Новое</span></td><td data-label="Что означает">Данные SVG-контура: M — переместиться, L — линия, H/V — горизонтальная/вертикальная линия, Z — замкнуть контур.</td><td data-label="Первый пример файла"><a href="../lab3/assets/workspace.svg">lab3/assets/workspace.svg</a></td></tr>
 <tr><td data-label="Атрибут"><code>datetime</code> <span class="new">Новое</span></td><td data-label="Что означает">Машинная запись даты в time: 2023-04-06. Видимый текст может быть «6 апреля 2023 года».</td><td data-label="Первый пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
-<tr><td data-label="Атрибут"><code>fill</code> <span class="new">Новое</span></td><td data-label="Что означает">Цвет заливки SVG-фигуры.</td><td data-label="Первый пример файла"><a href="../lab3/assets/workspace.svg">lab3/assets/workspace.svg</a></td></tr>
-<tr><td data-label="Атрибут"><code>font-family</code> <span class="new">Новое</span></td><td data-label="Что означает">Семейство шрифта SVG-текста; в обычном CSS это свойство с тем же названием.</td><td data-label="Первый пример файла"><a href="../lab3/assets/workspace.svg">lab3/assets/workspace.svg</a></td></tr>
-<tr><td data-label="Атрибут"><code>font-size</code> <span class="new">Новое</span></td><td data-label="Что означает">Размер шрифта SVG-текста.</td><td data-label="Первый пример файла"><a href="../lab3/assets/workspace.svg">lab3/assets/workspace.svg</a></td></tr>
 <tr><td data-label="Атрибут"><code>for</code> <span class="new">Новое</span></td><td data-label="Что означает">Связывает label с id поля или progress. Нажатие подписи у input помогает поставить фокус в соответствующее поле.</td><td data-label="Первый пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
 <tr><td data-label="Атрибут"><code>height</code></td><td data-label="Что означает">Высота изображения в HTML задаётся числом. Вместе с width помогает заранее зарезервировать место под картинку.</td><td data-label="Первый пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
 <tr><td data-label="Атрибут"><code>href</code></td><td data-label="Что означает">Адрес назначения у a или адрес CSS у link. Ссылку создаёт элемент a; href — его атрибут, а не отдельный тег.</td><td data-label="Первый пример файла"><a href="../index.html">index.html</a></td></tr>
 <tr><td data-label="Атрибут"><code>id</code> <span class="new">Новое</span></td><td data-label="Что означает">Уникальный идентификатор внутри документа. Используется в #якорях, CSS #id, for и aria-labelledby.</td><td data-label="Первый пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
 <tr><td data-label="Атрибут"><code>lang</code></td><td data-label="Что означает">Язык содержимого: ru — русский, en — английский. Помогает произношению экранным диктором и обработке текста.</td><td data-label="Первый пример файла"><a href="../index.html">index.html</a></td></tr>
-<tr><td data-label="Атрибут"><code>letter-spacing</code> <span class="new">Новое</span></td><td data-label="Что означает">Межбуквенное расстояние SVG-текста.</td><td data-label="Первый пример файла"><a href="../lab3/assets/workspace.svg">lab3/assets/workspace.svg</a></td></tr>
 <tr><td data-label="Атрибут"><code>max</code> <span class="new">Новое</span></td><td data-label="Что означает">Максимальное значение progress. Здесь max=&quot;100&quot;, потому что показан процент.</td><td data-label="Первый пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
 <tr><td data-label="Атрибут"><code>name</code> <span class="new">Новое</span></td><td data-label="Что означает">Имя метаданных у meta: viewport или description. Это не имя HTML-тега.</td><td data-label="Первый пример файла"><a href="../index.html">index.html</a></td></tr>
 <tr><td data-label="Атрибут"><code>placeholder</code> <span class="new">Новое</span></td><td data-label="Что означает">Временная подсказка в пустом input. Пропадает после ввода и не заменяет постоянную подпись label.</td><td data-label="Первый пример файла"><a href="../lab3/index.html">lab3/index.html</a></td></tr>
-<tr><td data-label="Атрибут"><code>r</code> <span class="new">Новое</span></td><td data-label="Что означает">Радиус SVG-круга.</td><td data-label="Первый пример файла"><a href="../lab3/assets/workspace.svg">lab3/assets/workspace.svg</a></td></tr>
 <tr><td data-label="Атрибут"><code>rel</code> <span class="new">Новое</span></td><td data-label="Что означает">Тип связи. stylesheet у link — таблица стилей; noopener у новой вкладки ограничивает доступ к opener, noreferrer не передаёт Referer.</td><td data-label="Первый пример файла"><a href="../index.html">index.html</a></td></tr>
 <tr><td data-label="Атрибут"><code>role</code> <span class="new">Новое</span></td><td data-label="Что означает">Роль для технологий доступности. В DIV-таблице table/row/columnheader/rowheader/cell дополняют отсутствующую семантику div.</td><td data-label="Первый пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
-<tr><td data-label="Атрибут"><code>rx</code> <span class="new">Новое</span></td><td data-label="Что означает">Горизонтальный радиус скругления углов SVG-прямоугольника.</td><td data-label="Первый пример файла"><a href="../lab3/assets/workspace.svg">lab3/assets/workspace.svg</a></td></tr>
 <tr><td data-label="Атрибут"><code>scope</code> <span class="new">Новое</span></td><td data-label="Что означает">Назначение th: col — заголовок столбца, row — строки. Помогает правильно читать таблицу.</td><td data-label="Первый пример файла"><a href="../lab2/general.html">lab2/general.html</a></td></tr>
 <tr><td data-label="Атрибут"><code>src</code></td><td data-label="Что означает">Адрес подключаемого ресурса, здесь картинки. В отличие от href, ресурс отображается внутри страницы.</td><td data-label="Первый пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
-<tr><td data-label="Атрибут"><code>stroke</code> <span class="new">Новое</span></td><td data-label="Что означает">Цвет обводки SVG-фигуры.</td><td data-label="Первый пример файла"><a href="../lab3/assets/workspace.svg">lab3/assets/workspace.svg</a></td></tr>
-<tr><td data-label="Атрибут"><code>stroke-linecap</code> <span class="new">Новое</span></td><td data-label="Что означает">Вид концов открытой SVG-линии: round — скругление.</td><td data-label="Первый пример файла"><a href="../lab3/assets/workspace.svg">lab3/assets/workspace.svg</a></td></tr>
-<tr><td data-label="Атрибут"><code>stroke-width</code> <span class="new">Новое</span></td><td data-label="Что означает">Толщина обводки SVG.</td><td data-label="Первый пример файла"><a href="../lab3/assets/workspace.svg">lab3/assets/workspace.svg</a></td></tr>
 <tr><td data-label="Атрибут"><code>tabindex</code> <span class="new">Новое</span></td><td data-label="Что означает">Участие в навигации клавишей Tab. tabindex=&quot;0&quot; делает прокручиваемый блок доступным для фокуса в обычном порядке.</td><td data-label="Первый пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
 <tr><td data-label="Атрибут"><code>target</code></td><td data-label="Что означает">Место открытия ссылки: _blank — новая вкладка/окно, _self — текущая, _parent — родительская рамка, _top — верхний документ.</td><td data-label="Первый пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
 <tr><td data-label="Атрибут"><code>type</code> <span class="new">Новое</span></td><td data-label="Что означает">Тип элемента: text у input — текстовое поле, submit у button — отправка формы.</td><td data-label="Первый пример файла"><a href="../lab3/index.html">lab3/index.html</a></td></tr>
 <tr><td data-label="Атрибут"><code>value</code> <span class="new">Новое</span></td><td data-label="Что означает">Текущее значение индикатора progress. value=&quot;69&quot; при max=&quot;100&quot; означает 69%. У полей ввода назначение зависит от типа.</td><td data-label="Первый пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
-<tr><td data-label="Атрибут"><code>viewbox</code> <span class="new">Новое</span></td><td data-label="Что означает">Внутренняя система координат SVG. viewBox=&quot;0 0 660 600&quot; задаёт начало и размеры области рисования.</td><td data-label="Первый пример файла"><a href="../lab3/assets/workspace.svg">lab3/assets/workspace.svg</a></td></tr>
 <tr><td data-label="Атрибут"><code>width</code></td><td data-label="Что означает">Ширина изображения в HTML задаётся числом, например width=&quot;520&quot;, без px. CSS может изменить отображаемую ширину.</td><td data-label="Первый пример файла"><a href="../lab2/index.html">lab2/index.html</a></td></tr>
-<tr><td data-label="Атрибут"><code>x</code> <span class="new">Новое</span></td><td data-label="Что означает">Горизонтальная координата в SVG; у rect — левого края.</td><td data-label="Первый пример файла"><a href="../lab3/assets/workspace.svg">lab3/assets/workspace.svg</a></td></tr>
-<tr><td data-label="Атрибут"><code>xmlns</code> <span class="new">Новое</span></td><td data-label="Что означает">Пространство имён SVG: http://www.w3.org/2000/svg. Объявляет, что элементы относятся к SVG.</td><td data-label="Первый пример файла"><a href="../lab3/assets/workspace.svg">lab3/assets/workspace.svg</a></td></tr>
-<tr><td data-label="Атрибут"><code>y</code> <span class="new">Новое</span></td><td data-label="Что означает">Вертикальная координата в SVG; у rect — верхнего края.</td><td data-label="Первый пример файла"><a href="../lab3/assets/workspace.svg">lab3/assets/workspace.svg</a></td></tr>
 </tbody></table><pre><code>&lt;a href=&quot;#comparison&quot;&gt;Сравнение&lt;/a&gt;
 &lt;section id=&quot;comparison&quot;&gt;...&lt;/section&gt;
 
@@ -277,6 +256,7 @@
 <table><thead><tr><th scope="col">Свойство</th><th scope="col">Понятное объяснение</th></tr>
 </thead><tbody><tr><td data-label="Свойство"><code>accent-color</code></td><td data-label="Понятное объяснение">Акцентный цвет поддерживающих его стандартных элементов, здесь полосы progress.</td></tr>
 <tr><td data-label="Свойство"><code>align-items</code></td><td data-label="Понятное объяснение">Выравнивание элементов по поперечной оси flex или в областях grid: center — по центру, stretch — растянуть.</td></tr>
+<tr><td data-label="Свойство"><code>aspect-ratio</code></td><td data-label="Понятное объяснение">Пропорции блока. 1 / 1 делает место под фотографию квадратным.</td></tr>
 <tr><td data-label="Свойство"><code>background</code></td><td data-label="Понятное объяснение">Фон элемента. В этих файлах задаётся сплошным цветом.</td></tr>
 <tr><td data-label="Свойство"><code>border</code></td><td data-label="Понятное объяснение">Рамка: 1px solid #999 — толщина, сплошной стиль, цвет.</td></tr>
 <tr><td data-label="Свойство"><code>border-bottom</code></td><td data-label="Понятное объяснение">Рамка только снизу.</td></tr>
@@ -310,7 +290,8 @@
 <tr><td data-label="Свойство"><code>max-width</code></td><td data-label="Понятное объяснение">Ограничивает максимальную ширину. С margin: auto обычно центрирует содержимое.</td></tr>
 <tr><td data-label="Свойство"><code>min-height</code></td><td data-label="Понятное объяснение">Минимальная высота. 100svh в визитке — не меньше малой высоты видимой области браузера.</td></tr>
 <tr><td data-label="Свойство"><code>min-width</code></td><td data-label="Понятное объяснение">Минимальная ширина. У большой таблицы 740px сохраняет читаемые столбцы; на телефоне появляется внутренняя прокрутка.</td></tr>
-<tr><td data-label="Свойство"><code>object-fit</code></td><td data-label="Понятное объяснение">cover заполняет отведённую область картинкой с сохранением пропорций; края могут обрезаться.</td></tr>
+<tr><td data-label="Свойство"><code>object-fit</code></td><td data-label="Понятное объяснение">Как изображение заполняет свой блок. cover сохраняет пропорции, заполняет весь блок и обрезает лишнее.</td></tr>
+<tr><td data-label="Свойство"><code>object-position</code></td><td data-label="Понятное объяснение">Как разместить изображение внутри блока при обрезке. center 78% центрирует по горизонтали и сдвигает видимую область вниз.</td></tr>
 <tr><td data-label="Свойство"><code>opacity</code></td><td data-label="Понятное объяснение">Непрозрачность: 1 — полностью непрозрачно. Нужна, чтобы белая подсказка поля не становилась бледнее.</td></tr>
 <tr><td data-label="Свойство"><code>outline</code></td><td data-label="Понятное объяснение">Внешняя обводка фокуса, обычно без влияния на размер элемента.</td></tr>
 <tr><td data-label="Свойство"><code>outline-offset</code></td><td data-label="Понятное объяснение">Зазор между элементом и outline.</td></tr>
@@ -346,7 +327,7 @@
 <tr><td data-label="Значение / единица"><code>1px solid #999</code></td><td data-label="Как понимать">Сокращённая рамка: толщина, тип линии, цвет.</td></tr>
 </tbody></table><p><b>Коробочная модель:</b> содержимое → padding → border → margin. <code>padding</code> находится внутри рамки, <code>margin</code> снаружи. <code>gap</code> — промежуток между соседними элементами раскладки, не отступ внутри карточки.</p>
 </section>
-<section id="lines"><h2>10. Построчный разбор всех исходных файлов</h2><p>Раскрой нужный файл. Каждая строка показана без изменения кода и снабжена объяснением тегов, атрибутов или CSS-свойств. Всего 529 строк в 10 файлах. Сами файлы гайда сюда не входят: это учебное пособие, а не ещё одна часть лабораторной.</p>
+<section id="lines"><h2>10. Построчный разбор всех исходных файлов</h2><p>Раскрой нужный файл. Каждая строка показана без изменения кода и снабжена объяснением тегов, атрибутов или CSS-свойств. Всего 497 строк в 9 файлах. Сами файлы гайда сюда не входят: это учебное пособие, а не ещё одна часть лабораторной.</p>
 <details id="file-lab2-general-html"><summary>lab2/general.html — 93 строк</summary><div class="inside"><p><a href="https://github.com/error999777/wb1/blob/main/lab2/general.html">Исходный файл на GitHub</a> · <a href="../lab2/general.html">lab2/general.html</a></p>
 </div><ol class="source-lines"><li id="lab2-general-html-L1"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L1">Строка 1</a><code class="source-code">&lt;!DOCTYPE html&gt;</code><ul class="explain"><li>DOCTYPE html включает стандартный режим HTML5. Это объявление типа документа, а не обычный парный тег.</li>
 </ul></li>
@@ -1898,7 +1879,7 @@
 <li><code>margin: 0</code> — Внешний отступ. 24px — со всех сторон; 12px 0 — сверху/снизу 12px, слева/справа 0; auto по бокам центрирует ограниченный по ширине блок.</li>
 <li><code>width: 100%</code> — Ширина: 100% занимает доступную ширину родителя; фиксированное px задаёт конкретный CSS-размер.</li>
 <li><code>height: 210px</code> — Высота. auto сохраняет пропорции изображения при изменении ширины.</li>
-<li><code>object-fit: cover</code> — cover заполняет отведённую область картинкой с сохранением пропорций; края могут обрезаться.</li>
+<li><code>object-fit: cover</code> — Как изображение заполняет свой блок. cover сохраняет пропорции, заполняет весь блок и обрезает лишнее.</li>
 <li><code>display: block</code> — Способ раскладки. block — блок; flex — гибкая раскладка; grid — сетка; table/row/cell — имитация табличной раскладки у DIV.</li>
 <li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
 </ul></li>
@@ -2486,7 +2467,7 @@
 <li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
 </ul></li>
 </ol></details>
-<details id="file-lab3-business-card-html"><summary>lab3/business-card.html — 28 строк</summary><div class="inside"><p><a href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html">Исходный файл на GitHub</a> · <a href="../lab3/business-card.html">lab3/business-card.html</a></p>
+<details id="file-lab3-business-card-html"><summary>lab3/business-card.html — 24 строк</summary><div class="inside"><p><a href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html">Исходный файл на GitHub</a> · <a href="../lab3/business-card.html">lab3/business-card.html</a></p>
 </div><ol class="source-lines"><li id="lab3-business-card-html-L1"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L1">Строка 1</a><code class="source-code">&lt;!DOCTYPE html&gt;</code><ul class="explain"><li>DOCTYPE html включает стандартный режим HTML5. Это объявление типа документа, а не обычный парный тег.</li>
 </ul></li>
 <li id="lab3-business-card-html-L2"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L2">Строка 2</a><code class="source-code">&lt;html lang=&quot;ru&quot;&gt;</code><ul class="explain"><li><code>&lt;html&gt;</code> — Корневой элемент: охватывает весь HTML-документ. lang=&quot;ru&quot; указывает русский язык.</li>
@@ -2501,12 +2482,12 @@
 <li><code>name=&quot;viewport&quot;</code> — Имя метаданных у meta: viewport или description. Это не имя HTML-тега.</li>
 <li><code>content=&quot;width=device-width, initial-scale=1&quot;</code> — Значение метаданных у meta. У viewport задаёт ширину области просмотра и начальный масштаб.</li>
 </ul></li>
-<li id="lab3-business-card-html-L6"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L6">Строка 6</a><code class="source-code">  &lt;meta name=&quot;description&quot; content=&quot;Учебная страница начинающего веб-разработчика error999777.&quot;&gt;</code><ul class="explain"><li><code>&lt;meta&gt;</code> — Метаданные: charset — кодировка; name и content — название и значение настройки. Пустой элемент, без закрывающего тега.</li>
+<li id="lab3-business-card-html-L6"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L6">Строка 6</a><code class="source-code">  &lt;meta name=&quot;description&quot; content=&quot;Сайт-визитка Тимофея Ковалёва, программиста 1С.&quot;&gt;</code><ul class="explain"><li><code>&lt;meta&gt;</code> — Метаданные: charset — кодировка; name и content — название и значение настройки. Пустой элемент, без закрывающего тега.</li>
 <li><code>name=&quot;description&quot;</code> — Имя метаданных у meta: viewport или description. Это не имя HTML-тега.</li>
-<li><code>content=&quot;Учебная страница начинающего веб-разработчика error999777.&quot;</code> — Значение метаданных у meta. У viewport задаёт ширину области просмотра и начальный масштаб.</li>
+<li><code>content=&quot;Сайт-визитка Тимофея Ковалёва, программиста 1С.&quot;</code> — Значение метаданных у meta. У viewport задаёт ширину области просмотра и начальный масштаб.</li>
 </ul></li>
-<li id="lab3-business-card-html-L7"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L7">Строка 7</a><code class="source-code">  &lt;title&gt;error999777 — начинающий веб-разработчик&lt;/title&gt;</code><ul class="explain"><li><code>&lt;title&gt;</code> — Название документа во вкладке браузера; внутри head. Не путать с атрибутом title у картинки или ссылки.</li>
-<li>Текст внутри <code>title</code>: error999777 — начинающий веб-разработчик. Это содержимое, а не имя тега или атрибута.</li>
+<li id="lab3-business-card-html-L7"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L7">Строка 7</a><code class="source-code">  &lt;title&gt;Ковалёв Тимофей Николаевич — программист 1С&lt;/title&gt;</code><ul class="explain"><li><code>&lt;title&gt;</code> — Название документа во вкладке браузера; внутри head. Не путать с атрибутом title у картинки или ссылки.</li>
+<li>Текст внутри <code>title</code>: Ковалёв Тимофей Николаевич — программист 1С. Это содержимое, а не имя тега или атрибута.</li>
 <li><code>&lt;/title&gt;</code> — конец элемента <code>title</code>.</li>
 </ul></li>
 <li id="lab3-business-card-html-L8"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L8">Строка 8</a><code class="source-code">  &lt;link rel=&quot;stylesheet&quot; href=&quot;business-card.css&quot;&gt;</code><ul class="explain"><li><code>&lt;link&gt;</code> — Подключает внешний ресурс в head. rel=&quot;stylesheet&quot; и href=&quot;style.css&quot; связывают страницу с таблицей стилей.</li>
@@ -2526,34 +2507,31 @@
 <li id="lab3-business-card-html-L13"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L13">Строка 13</a><code class="source-code">      &lt;div class=&quot;hero-copy&quot;&gt;</code><ul class="explain"><li><code>&lt;div&gt;</code> — Универсальный контейнер для группировки. Не сообщает, что внутри таблица, навигация или самостоятельная статья.</li>
 <li><code>class=&quot;hero-copy&quot;</code> — Имена CSS-классов через пробел. Один класс может повторяться у многих элементов; один элемент может иметь несколько классов.</li>
 </ul></li>
-<li id="lab3-business-card-html-L14"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L14">Строка 14</a><code class="source-code">        &lt;p class=&quot;eyebrow&quot;&gt;HTML / CSS / Веб-дизайн&lt;/p&gt;</code><ul class="explain"><li><code>&lt;p&gt;</code> — Абзац текста. Для нового абзаца нужен ещё один p, а не много br.</li>
+<li id="lab3-business-card-html-L14"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L14">Строка 14</a><code class="source-code">        &lt;p class=&quot;eyebrow&quot;&gt;Сайт-визитка&lt;/p&gt;</code><ul class="explain"><li><code>&lt;p&gt;</code> — Абзац текста. Для нового абзаца нужен ещё один p, а не много br.</li>
 <li><code>class=&quot;eyebrow&quot;</code> — Имена CSS-классов через пробел. Один класс может повторяться у многих элементов; один элемент может иметь несколько классов.</li>
-<li>Текст внутри <code>p</code>: HTML / CSS / Веб-дизайн. Это содержимое, а не имя тега или атрибута.</li>
+<li>Текст внутри <code>p</code>: Сайт-визитка. Это содержимое, а не имя тега или атрибута.</li>
 <li><code>&lt;/p&gt;</code> — конец элемента <code>p</code>.</li>
 </ul></li>
-<li id="lab3-business-card-html-L15"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L15">Строка 15</a><code class="source-code">        &lt;h1 id=&quot;hero-title&quot;&gt;Привет! Я &lt;span&gt;error999777&lt;/span&gt; — начинающий веб-разработчик.&lt;/h1&gt;</code><ul class="explain"><li><code>&lt;h1&gt;</code> — Главный заголовок страницы. Здесь один h1 в каждом HTML-документе.</li>
+<li id="lab3-business-card-html-L15"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L15">Строка 15</a><code class="source-code">        &lt;h1 id=&quot;hero-title&quot;&gt;Ковалёв Тимофей Николаевич &lt;span&gt;Программист 1С&lt;/span&gt;&lt;/h1&gt;</code><ul class="explain"><li><code>&lt;h1&gt;</code> — Главный заголовок страницы. Здесь один h1 в каждом HTML-документе.</li>
 <li><code>id=&quot;hero-title&quot;</code> — Уникальный идентификатор внутри документа. Используется в #якорях, CSS #id, for и aria-labelledby.</li>
-<li>Текст внутри <code>h1</code>: Привет! Я. Это содержимое, а не имя тега или атрибута.</li>
+<li>Текст внутри <code>h1</code>: Ковалёв Тимофей Николаевич. Это содержимое, а не имя тега или атрибута.</li>
 <li><code>&lt;span&gt;</code> — Универсальный контейнер для небольшого фрагмента внутри текста; по умолчанию строчный.</li>
-<li>Текст внутри <code>span</code>: error999777. Это содержимое, а не имя тега или атрибута.</li>
+<li>Текст внутри <code>span</code>: Программист 1С. Это содержимое, а не имя тега или атрибута.</li>
 <li><code>&lt;/span&gt;</code> — конец элемента <code>span</code>.</li>
-<li>Текст внутри <code>h1</code>: — начинающий веб-разработчик.. Это содержимое, а не имя тега или атрибута.</li>
 <li><code>&lt;/h1&gt;</code> — конец элемента <code>h1</code>.</li>
 </ul></li>
-<li id="lab3-business-card-html-L16"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L16">Строка 16</a><code class="source-code">        &lt;h2&gt;Превращаю идеи в понятные веб-страницы.&lt;/h2&gt;</code><ul class="explain"><li><code>&lt;h2&gt;</code> — Заголовок раздела внутри страницы. Уровень важнее размера букв.</li>
-<li>Текст внутри <code>h2</code>: Превращаю идеи в понятные веб-страницы.. Это содержимое, а не имя тега или атрибута.</li>
+<li id="lab3-business-card-html-L16"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L16">Строка 16</a><code class="source-code">        &lt;h2&gt;Автоматизация учёта на 1С:Предприятии&lt;/h2&gt;</code><ul class="explain"><li><code>&lt;h2&gt;</code> — Заголовок раздела внутри страницы. Уровень важнее размера букв.</li>
+<li>Текст внутри <code>h2</code>: Автоматизация учёта на 1С:Предприятии. Это содержимое, а не имя тега или атрибута.</li>
 <li><code>&lt;/h2&gt;</code> — конец элемента <code>h2</code>.</li>
 </ul></li>
-<li id="lab3-business-card-html-L17"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L17">Строка 17</a><code class="source-code">        &lt;p class=&quot;description&quot;&gt;Изучаю веб-дизайн и создаю свои первые проекты: от семантической разметки до адаптивной вёрстки. Люблю аккуратные детали и интерфейсы, в которых легко разобраться.&lt;/p&gt;</code><ul class="explain"><li><code>&lt;p&gt;</code> — Абзац текста. Для нового абзаца нужен ещё один p, а не много br.</li>
+<li id="lab3-business-card-html-L17"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L17">Строка 17</a><code class="source-code">        &lt;p class=&quot;description&quot;&gt;Работаю с платформой 1С:Предприятие. Мне интересны настройка конфигураций, разработка отчётов и автоматизация работы с документами.&lt;/p&gt;</code><ul class="explain"><li><code>&lt;p&gt;</code> — Абзац текста. Для нового абзаца нужен ещё один p, а не много br.</li>
 <li><code>class=&quot;description&quot;</code> — Имена CSS-классов через пробел. Один класс может повторяться у многих элементов; один элемент может иметь несколько классов.</li>
-<li>Текст внутри <code>p</code>: Изучаю веб-дизайн и создаю свои первые проекты: от семантической разметки до адаптивной вёрстки. Люблю аккуратные детали и интерфейсы, в которых легко разобраться.. Это содержимое, а не имя тега или атрибута.</li>
+<li>Текст внутри <code>p</code>: Работаю с платформой 1С:Предприятие. Мне интересны настройка конфигураций, разработка отчётов и автоматизация работы с документами.. Это содержимое, а не имя тега или атрибута.</li>
 <li><code>&lt;/p&gt;</code> — конец элемента <code>p</code>.</li>
 </ul></li>
-<li id="lab3-business-card-html-L18"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L18">Строка 18</a><code class="source-code">        &lt;a class=&quot;cta&quot; href=&quot;https://github.com/error999777&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Мой GitHub &lt;span aria-hidden=&quot;true&quot;&gt;↗&lt;/span&gt;&lt;/a&gt;</code><ul class="explain"><li><code>&lt;a&gt;</code> — Гиперссылка. Адрес записан в атрибуте href, а текст между &lt;a&gt; и &lt;/a&gt; виден пользователю.</li>
+<li id="lab3-business-card-html-L18"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L18">Строка 18</a><code class="source-code">        &lt;a class=&quot;cta&quot; href=&quot;https://github.com/error999777&quot;&gt;Мой GitHub &lt;span aria-hidden=&quot;true&quot;&gt;↗&lt;/span&gt;&lt;/a&gt;</code><ul class="explain"><li><code>&lt;a&gt;</code> — Гиперссылка. Адрес записан в атрибуте href, а текст между &lt;a&gt; и &lt;/a&gt; виден пользователю.</li>
 <li><code>class=&quot;cta&quot;</code> — Имена CSS-классов через пробел. Один класс может повторяться у многих элементов; один элемент может иметь несколько классов.</li>
 <li><code>href=&quot;https://github.com/error999777&quot;</code> — Адрес назначения у a или адрес CSS у link. Ссылку создаёт элемент a; href — его атрибут, а не отдельный тег.</li>
-<li><code>target=&quot;_blank&quot;</code> — Место открытия ссылки: _blank — новая вкладка/окно, _self — текущая, _parent — родительская рамка, _top — верхний документ.</li>
-<li><code>rel=&quot;noopener noreferrer&quot;</code> — Тип связи. stylesheet у link — таблица стилей; noopener у новой вкладки ограничивает доступ к opener, noreferrer не передаёт Referer.</li>
 <li>Текст внутри <code>a</code>: Мой GitHub. Это содержимое, а не имя тега или атрибута.</li>
 <li><code>&lt;span&gt;</code> — Универсальный контейнер для небольшого фрагмента внутри текста; по умолчанию строчный.</li>
 <li><code>aria-hidden=&quot;true&quot;</code> — aria-hidden=&quot;true&quot; исключает декоративный фрагмент из дерева доступности; визуально он остаётся.</li>
@@ -2561,38 +2539,25 @@
 <li><code>&lt;/span&gt;</code> — конец элемента <code>span</code>.</li>
 <li><code>&lt;/a&gt;</code> — конец элемента <code>a</code>.</li>
 </ul></li>
-<li id="lab3-business-card-html-L19"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L19">Строка 19</a><code class="source-code">        &lt;p class=&quot;caption&quot;&gt;Учебный сайт-визитка · Лабораторная №3&lt;/p&gt;</code><ul class="explain"><li><code>&lt;p&gt;</code> — Абзац текста. Для нового абзаца нужен ещё один p, а не много br.</li>
-<li><code>class=&quot;caption&quot;</code> — Имена CSS-классов через пробел. Один класс может повторяться у многих элементов; один элемент может иметь несколько классов.</li>
-<li>Текст внутри <code>p</code>: Учебный сайт-визитка · Лабораторная №3. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/p&gt;</code> — конец элемента <code>p</code>.</li>
+<li id="lab3-business-card-html-L19"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L19">Строка 19</a><code class="source-code">      &lt;/div&gt;</code><ul class="explain"><li><code>&lt;/div&gt;</code> — конец элемента <code>div</code>.</li>
 </ul></li>
-<li id="lab3-business-card-html-L20"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L20">Строка 20</a><code class="source-code">      &lt;/div&gt;</code><ul class="explain"><li><code>&lt;/div&gt;</code> — конец элемента <code>div</code>.</li>
+<li id="lab3-business-card-html-L20"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L20">Строка 20</a><code class="source-code">      &lt;img class=&quot;portrait&quot; src=&quot;assets/timofey.png&quot; width=&quot;960&quot; height=&quot;1280&quot; alt=&quot;Тимофей Ковалёв&quot;&gt;</code><ul class="explain"><li><code>&lt;img&gt;</code> — Подключает изображение: src — путь, alt — текстовое описание. Пустой элемент, &lt;/img&gt; не нужен.</li>
+<li><code>class=&quot;portrait&quot;</code> — Имена CSS-классов через пробел. Один класс может повторяться у многих элементов; один элемент может иметь несколько классов.</li>
+<li><code>src=&quot;assets/timofey.png&quot;</code> — Адрес подключаемого ресурса, здесь картинки. В отличие от href, ресурс отображается внутри страницы.</li>
+<li><code>width=&quot;960&quot;</code> — Ширина изображения в HTML задаётся числом, например width=&quot;520&quot;, без px. CSS может изменить отображаемую ширину.</li>
+<li><code>height=&quot;1280&quot;</code> — Высота изображения в HTML задаётся числом. Вместе с width помогает заранее зарезервировать место под картинку.</li>
+<li><code>alt=&quot;Тимофей Ковалёв&quot;</code> — Текстовый эквивалент картинки: доступен диктору и полезен при ошибке загрузки. Это не всплывающая подсказка.</li>
 </ul></li>
-<li id="lab3-business-card-html-L21"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L21">Строка 21</a><code class="source-code">      &lt;figure class=&quot;hero-art&quot;&gt;</code><ul class="explain"><li><code>&lt;figure&gt;</code> — Самостоятельная иллюстрация с подписью. В работе объединяет фотографию и figcaption.</li>
-<li><code>class=&quot;hero-art&quot;</code> — Имена CSS-классов через пробел. Один класс может повторяться у многих элементов; один элемент может иметь несколько классов.</li>
+<li id="lab3-business-card-html-L21"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L21">Строка 21</a><code class="source-code">    &lt;/section&gt;</code><ul class="explain"><li><code>&lt;/section&gt;</code> — конец элемента <code>section</code>.</li>
 </ul></li>
-<li id="lab3-business-card-html-L22"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L22">Строка 22</a><code class="source-code">        &lt;img src=&quot;assets/workspace.svg&quot; width=&quot;660&quot; height=&quot;600&quot; alt=&quot;Иллюстрация рабочего пространства: окно браузера с макетом сайта и фрагмент CSS-кода.&quot;&gt;</code><ul class="explain"><li><code>&lt;img&gt;</code> — Подключает изображение: src — путь, alt — текстовое описание. Пустой элемент, &lt;/img&gt; не нужен.</li>
-<li><code>src=&quot;assets/workspace.svg&quot;</code> — Адрес подключаемого ресурса, здесь картинки. В отличие от href, ресурс отображается внутри страницы.</li>
-<li><code>width=&quot;660&quot;</code> — Ширина изображения в HTML задаётся числом, например width=&quot;520&quot;, без px. CSS может изменить отображаемую ширину.</li>
-<li><code>height=&quot;600&quot;</code> — Высота изображения в HTML задаётся числом. Вместе с width помогает заранее зарезервировать место под картинку.</li>
-<li><code>alt=&quot;Иллюстрация рабочего пространства: окно браузера с макетом сайта и фрагмент CSS-кода.&quot;</code> — Текстовый эквивалент картинки: доступен диктору и полезен при ошибке загрузки. Это не всплывающая подсказка.</li>
+<li id="lab3-business-card-html-L22"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L22">Строка 22</a><code class="source-code">  &lt;/main&gt;</code><ul class="explain"><li><code>&lt;/main&gt;</code> — конец элемента <code>main</code>.</li>
 </ul></li>
-<li id="lab3-business-card-html-L23"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L23">Строка 23</a><code class="source-code">        &lt;figcaption&gt;От первой строки кода — к своему сайту.&lt;/figcaption&gt;</code><ul class="explain"><li><code>&lt;figcaption&gt;</code> — Подпись к содержимому figure. Это не атрибут alt и не название вкладки title.</li>
-<li>Текст внутри <code>figcaption</code>: От первой строки кода — к своему сайту.. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/figcaption&gt;</code> — конец элемента <code>figcaption</code>.</li>
+<li id="lab3-business-card-html-L23"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L23">Строка 23</a><code class="source-code">&lt;/body&gt;</code><ul class="explain"><li><code>&lt;/body&gt;</code> — конец элемента <code>body</code>.</li>
 </ul></li>
-<li id="lab3-business-card-html-L24"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L24">Строка 24</a><code class="source-code">      &lt;/figure&gt;</code><ul class="explain"><li><code>&lt;/figure&gt;</code> — конец элемента <code>figure</code>.</li>
-</ul></li>
-<li id="lab3-business-card-html-L25"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L25">Строка 25</a><code class="source-code">    &lt;/section&gt;</code><ul class="explain"><li><code>&lt;/section&gt;</code> — конец элемента <code>section</code>.</li>
-</ul></li>
-<li id="lab3-business-card-html-L26"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L26">Строка 26</a><code class="source-code">  &lt;/main&gt;</code><ul class="explain"><li><code>&lt;/main&gt;</code> — конец элемента <code>main</code>.</li>
-</ul></li>
-<li id="lab3-business-card-html-L27"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L27">Строка 27</a><code class="source-code">&lt;/body&gt;</code><ul class="explain"><li><code>&lt;/body&gt;</code> — конец элемента <code>body</code>.</li>
-</ul></li>
-<li id="lab3-business-card-html-L28"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L28">Строка 28</a><code class="source-code">&lt;/html&gt;</code><ul class="explain"><li><code>&lt;/html&gt;</code> — конец элемента <code>html</code>.</li>
+<li id="lab3-business-card-html-L24"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.html#L24">Строка 24</a><code class="source-code">&lt;/html&gt;</code><ul class="explain"><li><code>&lt;/html&gt;</code> — конец элемента <code>html</code>.</li>
 </ul></li>
 </ol></details>
-<details id="file-lab3-business-card-css"><summary>lab3/business-card.css — 16 строк</summary><div class="inside"><p><a href="https://github.com/error999777/wb1/blob/main/lab3/business-card.css">Исходный файл на GitHub</a> · <a href="../lab3/business-card.css">lab3/business-card.css</a></p>
+<details id="file-lab3-business-card-css"><summary>lab3/business-card.css — 15 строк</summary><div class="inside"><p><a href="https://github.com/error999777/wb1/blob/main/lab3/business-card.css">Исходный файл на GitHub</a> · <a href="../lab3/business-card.css">lab3/business-card.css</a></p>
 </div><ol class="source-lines"><li id="lab3-business-card-css-L1"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.css#L1">Строка 1</a><code class="source-code">* { box-sizing: border-box; }</code><ul class="explain"><li>Селектор <code>*</code> выбирает элементы. Выбирает все элементы.</li>
 <li><code>box-sizing: border-box</code> — Как считается размер блока. border-box включает padding и border в width/height.</li>
 <li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
@@ -2615,13 +2580,13 @@
 <li><code>gap: 5vw</code> — Расстояние между элементами flex или grid.</li>
 <li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
 </ul></li>
-<li id="lab3-business-card-css-L4"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.css#L4">Строка 4</a><code class="source-code">.eyebrow { font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: .16em; color: #657d53; margin-bottom: 30px; }</code><ul class="explain"><li>Селектор <code>.eyebrow</code> выбирает элементы. Точка перед <code>eyebrow</code> означает класс из атрибута class.</li>
+<li id="lab3-business-card-css-L4"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.css#L4">Строка 4</a><code class="source-code">.eyebrow { font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: .16em; color: #566b46; margin: 0 0 24px; }</code><ul class="explain"><li>Селектор <code>.eyebrow</code> выбирает элементы. Точка перед <code>eyebrow</code> означает класс из атрибута class.</li>
 <li><code>font-size: 12px</code> — Размер букв. clamp() выбирает адаптивный размер в заданных пределах.</li>
 <li><code>font-weight: bold</code> — Толщина шрифта: bold — жирный, normal — обычный.</li>
 <li><code>text-transform: uppercase</code> — Регистр отображения. uppercase показывает заглавные буквы, исходный текст в HTML не меняется.</li>
 <li><code>letter-spacing: .16em</code> — Расстояние между буквами. Отрицательные значения немного сближают их.</li>
-<li><code>color: #657d53</code> — Цвет текста и currentColor; не цвет фона.</li>
-<li><code>margin-bottom: 30px</code> — Внешний отступ снизу.</li>
+<li><code>color: #566b46</code> — Цвет текста и currentColor; не цвет фона.</li>
+<li><code>margin: 0 0 24px</code> — Внешний отступ. 24px — со всех сторон; 12px 0 — сверху/снизу 12px, слева/справа 0; auto по бокам центрирует ограниченный по ширине блок.</li>
 <li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
 </ul></li>
 <li id="lab3-business-card-css-L5"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.css#L5">Строка 5</a><code class="source-code">h1 { font-size: clamp(35px, 4.1vw, 60px); line-height: 1.12; letter-spacing: -.045em; margin: 0; }</code><ul class="explain"><li>Селектор <code>h1</code> выбирает элементы. Имя без . и # означает селектор по тегу.</li>
@@ -2631,9 +2596,12 @@
 <li><code>margin: 0</code> — Внешний отступ. 24px — со всех сторон; 12px 0 — сверху/снизу 12px, слева/справа 0; auto по бокам центрирует ограниченный по ширине блок.</li>
 <li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
 </ul></li>
-<li id="lab3-business-card-css-L6"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.css#L6">Строка 6</a><code class="source-code">h1 span { color: #637d47; overflow-wrap: anywhere; }</code><ul class="explain"><li>Селектор <code>h1 span</code> выбирает элементы. Пробел между частями — выбор потомка.</li>
-<li><code>color: #637d47</code> — Цвет текста и currentColor; не цвет фона.</li>
-<li><code>overflow-wrap: anywhere</code> — Разрешает перенос длинного слова/адреса. anywhere помогает не растянуть страницу длинной ссылкой.</li>
+<li id="lab3-business-card-css-L6"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.css#L6">Строка 6</a><code class="source-code">h1 span { display: block; margin-top: 14px; color: #566e3c; font-size: .56em; letter-spacing: -.02em; }</code><ul class="explain"><li>Селектор <code>h1 span</code> выбирает элементы. Пробел между частями — выбор потомка.</li>
+<li><code>display: block</code> — Способ раскладки. block — блок; flex — гибкая раскладка; grid — сетка; table/row/cell — имитация табличной раскладки у DIV.</li>
+<li><code>margin-top: 14px</code> — Внешний отступ сверху.</li>
+<li><code>color: #566e3c</code> — Цвет текста и currentColor; не цвет фона.</li>
+<li><code>font-size: .56em</code> — Размер букв. clamp() выбирает адаптивный размер в заданных пределах.</li>
+<li><code>letter-spacing: -.02em</code> — Расстояние между буквами. Отрицательные значения немного сближают их.</li>
 <li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
 </ul></li>
 <li id="lab3-business-card-css-L7"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.css#L7">Строка 7</a><code class="source-code">h2 { font-size: clamp(20px, 2vw, 26px); line-height: 1.35; letter-spacing: -.02em; font-weight: normal; margin: 26px 0 18px; }</code><ul class="explain"><li>Селектор <code>h2</code> выбирает элементы. Имя без . и # означает селектор по тегу.</li>
@@ -2644,11 +2612,12 @@
 <li><code>margin: 26px 0 18px</code> — Внешний отступ. 24px — со всех сторон; 12px 0 — сверху/снизу 12px, слева/справа 0; auto по бокам центрирует ограниченный по ширине блок.</li>
 <li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
 </ul></li>
-<li id="lab3-business-card-css-L8"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.css#L8">Строка 8</a><code class="source-code">.description { max-width: 530px; color: #67716a; font-size: 16px; line-height: 1.75; }</code><ul class="explain"><li>Селектор <code>.description</code> выбирает элементы. Точка перед <code>description</code> означает класс из атрибута class.</li>
+<li id="lab3-business-card-css-L8"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.css#L8">Строка 8</a><code class="source-code">.description { max-width: 530px; color: #505d54; font-size: 16px; line-height: 1.75; margin: 0; }</code><ul class="explain"><li>Селектор <code>.description</code> выбирает элементы. Точка перед <code>description</code> означает класс из атрибута class.</li>
 <li><code>max-width: 530px</code> — Ограничивает максимальную ширину. С margin: auto обычно центрирует содержимое.</li>
-<li><code>color: #67716a</code> — Цвет текста и currentColor; не цвет фона.</li>
+<li><code>color: #505d54</code> — Цвет текста и currentColor; не цвет фона.</li>
 <li><code>font-size: 16px</code> — Размер букв. clamp() выбирает адаптивный размер в заданных пределах.</li>
 <li><code>line-height: 1.75</code> — Высота строки. Число без единицы умножается на размер шрифта.</li>
+<li><code>margin: 0</code> — Внешний отступ. 24px — со всех сторон; 12px 0 — сверху/снизу 12px, слева/справа 0; auto по бокам центрирует ограниченный по ширине блок.</li>
 <li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
 </ul></li>
 <li id="lab3-business-card-css-L9"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.css#L9">Строка 9</a><code class="source-code">.cta { margin-top: 24px; display: inline-flex; align-items: center; gap: 50px; background: #2e4934; color: #fff; padding: 17px 24px; text-decoration: none; border-radius: 4px; font-size: 15px; font-weight: bold; }</code><ul class="explain"><li>Селектор <code>.cta</code> выбирает элементы. Точка перед <code>cta</code> означает класс из атрибута class.</li>
@@ -2674,245 +2643,26 @@
 <li><code>outline-offset: 5px</code> — Зазор между элементом и outline.</li>
 <li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
 </ul></li>
-<li id="lab3-business-card-css-L12"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.css#L12">Строка 12</a><code class="source-code">.caption { color: #747d6e; font-size: 12px; margin-top: 40px; }</code><ul class="explain"><li>Селектор <code>.caption</code> выбирает элементы. Точка перед <code>caption</code> означает класс из атрибута class.</li>
-<li><code>color: #747d6e</code> — Цвет текста и currentColor; не цвет фона.</li>
-<li><code>font-size: 12px</code> — Размер букв. clamp() выбирает адаптивный размер в заданных пределах.</li>
-<li><code>margin-top: 40px</code> — Внешний отступ сверху.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
-</ul></li>
-<li id="lab3-business-card-css-L13"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.css#L13">Строка 13</a><code class="source-code">.hero-art { margin: 0; }</code><ul class="explain"><li>Селектор <code>.hero-art</code> выбирает элементы. Точка перед <code>hero-art</code> означает класс из атрибута class.</li>
-<li><code>margin: 0</code> — Внешний отступ. 24px — со всех сторон; 12px 0 — сверху/снизу 12px, слева/справа 0; auto по бокам центрирует ограниченный по ширине блок.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
-</ul></li>
-<li id="lab3-business-card-css-L14"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.css#L14">Строка 14</a><code class="source-code">.hero-art img { width: 100%; height: auto; display: block; }</code><ul class="explain"><li>Селектор <code>.hero-art img</code> выбирает элементы. Пробел между частями — выбор потомка. Точка перед <code>hero-art</code> означает класс из атрибута class.</li>
+<li id="lab3-business-card-css-L12"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.css#L12">Строка 12</a><code class="source-code">.portrait { width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; object-position: center 78%; display: block; border-radius: 8px; }</code><ul class="explain"><li>Селектор <code>.portrait</code> выбирает элементы. Точка перед <code>portrait</code> означает класс из атрибута class.</li>
 <li><code>width: 100%</code> — Ширина: 100% занимает доступную ширину родителя; фиксированное px задаёт конкретный CSS-размер.</li>
 <li><code>height: auto</code> — Высота. auto сохраняет пропорции изображения при изменении ширины.</li>
+<li><code>aspect-ratio: 1 / 1</code> — Пропорции блока. 1 / 1 делает место под фотографию квадратным.</li>
+<li><code>object-fit: cover</code> — Как изображение заполняет свой блок. cover сохраняет пропорции, заполняет весь блок и обрезает лишнее.</li>
+<li><code>object-position: center 78%</code> — Как разместить изображение внутри блока при обрезке. center 78% центрирует по горизонтали и сдвигает видимую область вниз.</li>
 <li><code>display: block</code> — Способ раскладки. block — блок; flex — гибкая раскладка; grid — сетка; table/row/cell — имитация табличной раскладки у DIV.</li>
+<li><code>border-radius: 8px</code> — Радиус скругления углов.</li>
 <li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
 </ul></li>
-<li id="lab3-business-card-css-L15"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.css#L15">Строка 15</a><code class="source-code">figcaption { text-align: center; font-size: 12px; color: #747d6e; margin-top: 15px; }</code><ul class="explain"><li>Селектор <code>figcaption</code> выбирает элементы. Имя без . и # означает селектор по тегу.</li>
-<li><code>text-align: center</code> — Горизонтальное выравнивание текста: left или center.</li>
-<li><code>font-size: 12px</code> — Размер букв. clamp() выбирает адаптивный размер в заданных пределах.</li>
-<li><code>color: #747d6e</code> — Цвет текста и currentColor; не цвет фона.</li>
-<li><code>margin-top: 15px</code> — Внешний отступ сверху.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-business-card-css-L13"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.css#L13">Строка 13</a><code class="source-code">@media (max-width: 850px) {</code><ul class="explain"><li>Условный блок <code>@media (max-width: 850px)</code>: вложенные стили применяются только при выполнении условия.</li>
 </ul></li>
-<li id="lab3-business-card-css-L16"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.css#L16">Строка 16</a><code class="source-code">@media (max-width: 850px) { .hero { grid-template-columns: 1fr; padding: 44px 24px; gap: 24px; } .hero-copy { max-width: 650px; } .hero-art { max-width: 560px; margin: auto; } .caption { margin-top: 26px; } }</code><ul class="explain"><li>Условный блок <code>@media (max-width: 850px)</code>: вложенные стили применяются только при выполнении условия.</li>
-<li>Селектор <code>.hero</code> выбирает элементы. Точка перед <code>hero</code> означает класс из атрибута class.</li>
-<li>Селектор <code>.hero-copy</code> выбирает элементы. Точка перед <code>hero-copy</code> означает класс из атрибута class.</li>
-<li>Селектор <code>.hero-art</code> выбирает элементы. Точка перед <code>hero-art</code> означает класс из атрибута class.</li>
-<li>Селектор <code>.caption</code> выбирает элементы. Точка перед <code>caption</code> означает класс из атрибута class.</li>
+<li id="lab3-business-card-css-L14"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.css#L14">Строка 14</a><code class="source-code">  .hero { grid-template-columns: 1fr; padding: 44px 24px; gap: 28px; max-width: 620px; }</code><ul class="explain"><li>Селектор <code>.hero</code> выбирает элементы. Точка перед <code>hero</code> означает класс из атрибута class.</li>
 <li><code>grid-template-columns: 1fr</code> — Ширины столбцов grid. repeat(3, 1fr) — три равные доли; 1fr — одна колонка; 1.1fr 1fr — две неравные доли.</li>
 <li><code>padding: 44px 24px</code> — Внутренний отступ между содержимым и рамкой. Четыре значения читаются: верх, право, низ, лево.</li>
-<li><code>gap: 24px</code> — Расстояние между элементами flex или grid.</li>
-<li><code>max-width: 650px</code> — Ограничивает максимальную ширину. С margin: auto обычно центрирует содержимое.</li>
-<li><code>max-width: 560px</code> — Ограничивает максимальную ширину. С margin: auto обычно центрирует содержимое.</li>
-<li><code>margin: auto</code> — Внешний отступ. 24px — со всех сторон; 12px 0 — сверху/снизу 12px, слева/справа 0; auto по бокам центрирует ограниченный по ширине блок.</li>
-<li><code>margin-top: 26px</code> — Внешний отступ сверху.</li>
+<li><code>gap: 28px</code> — Расстояние между элементами flex или grid.</li>
+<li><code>max-width: 620px</code> — Ограничивает максимальную ширину. С margin: auto обычно центрирует содержимое.</li>
 <li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
 </ul></li>
-</ol></details>
-<details id="file-lab3-assets-workspace-svg"><summary>lab3/assets/workspace.svg — 27 строк</summary><div class="inside"><p><a href="https://github.com/error999777/wb1/blob/main/lab3/assets/workspace.svg">Исходный файл на GitHub</a> · <a href="../lab3/assets/workspace.svg">lab3/assets/workspace.svg</a></p>
-</div><ol class="source-lines"><li id="lab3-assets-workspace-svg-L1"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/assets/workspace.svg#L1">Строка 1</a><code class="source-code">&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 660 600&quot; role=&quot;img&quot; aria-label=&quot;Макет веб-сайта и окно редактора CSS&quot;&gt;</code><ul class="explain"><li><code>&lt;svg&gt;</code> — Корневой элемент векторной картинки SVG; используется в иллюстрации визитки, не в основной таблице.</li>
-<li><code>xmlns=&quot;http://www.w3.org/2000/svg&quot;</code> — Пространство имён SVG: http://www.w3.org/2000/svg. Объявляет, что элементы относятся к SVG.</li>
-<li><code>viewbox=&quot;0 0 660 600&quot;</code> — Внутренняя система координат SVG. viewBox=&quot;0 0 660 600&quot; задаёт начало и размеры области рисования.</li>
-<li><code>role=&quot;img&quot;</code> — Роль для технологий доступности. В DIV-таблице table/row/columnheader/rowheader/cell дополняют отсутствующую семантику div.</li>
-<li><code>aria-label=&quot;Макет веб-сайта и окно редактора CSS&quot;</code> — Текстовое имя элемента для технологий доступности. Обычно не отображается как видимый текст.</li>
-</ul></li>
-<li id="lab3-assets-workspace-svg-L2"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/assets/workspace.svg#L2">Строка 2</a><code class="source-code"> &lt;rect x=&quot;15&quot; y=&quot;24&quot; width=&quot;630&quot; height=&quot;550&quot; rx=&quot;220&quot; fill=&quot;#e5e8d7&quot;/&gt;</code><ul class="explain"><li><code>&lt;rect&gt;</code> — SVG-прямоугольник. Координаты и размеры задаются атрибутами.</li>
-<li><code>x=&quot;15&quot;</code> — Горизонтальная координата в SVG; у rect — левого края.</li>
-<li><code>y=&quot;24&quot;</code> — Вертикальная координата в SVG; у rect — верхнего края.</li>
-<li><code>width=&quot;630&quot;</code> — Ширина изображения в HTML задаётся числом, например width=&quot;520&quot;, без px. CSS может изменить отображаемую ширину.</li>
-<li><code>height=&quot;550&quot;</code> — Высота изображения в HTML задаётся числом. Вместе с width помогает заранее зарезервировать место под картинку.</li>
-<li><code>rx=&quot;220&quot;</code> — Горизонтальный радиус скругления углов SVG-прямоугольника.</li>
-<li><code>fill=&quot;#e5e8d7&quot;</code> — Цвет заливки SVG-фигуры.</li>
-</ul></li>
-<li id="lab3-assets-workspace-svg-L3"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/assets/workspace.svg#L3">Строка 3</a><code class="source-code"> &lt;circle cx=&quot;553&quot; cy=&quot;105&quot; r=&quot;42&quot; fill=&quot;#d2dcad&quot;/&gt;</code><ul class="explain"><li><code>&lt;circle&gt;</code> — SVG-круг с центром cx, cy и радиусом r.</li>
-<li><code>cx=&quot;553&quot;</code> — Горизонтальная координата центра SVG-круга.</li>
-<li><code>cy=&quot;105&quot;</code> — Вертикальная координата центра SVG-круга.</li>
-<li><code>r=&quot;42&quot;</code> — Радиус SVG-круга.</li>
-<li><code>fill=&quot;#d2dcad&quot;</code> — Цвет заливки SVG-фигуры.</li>
-</ul></li>
-<li id="lab3-assets-workspace-svg-L4"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/assets/workspace.svg#L4">Строка 4</a><code class="source-code"> &lt;circle cx=&quot;86&quot; cy=&quot;495&quot; r=&quot;26&quot; fill=&quot;#c1cfa3&quot;/&gt;</code><ul class="explain"><li><code>&lt;circle&gt;</code> — SVG-круг с центром cx, cy и радиусом r.</li>
-<li><code>cx=&quot;86&quot;</code> — Горизонтальная координата центра SVG-круга.</li>
-<li><code>cy=&quot;495&quot;</code> — Вертикальная координата центра SVG-круга.</li>
-<li><code>r=&quot;26&quot;</code> — Радиус SVG-круга.</li>
-<li><code>fill=&quot;#c1cfa3&quot;</code> — Цвет заливки SVG-фигуры.</li>
-</ul></li>
-<li id="lab3-assets-workspace-svg-L5"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/assets/workspace.svg#L5">Строка 5</a><code class="source-code"> &lt;path d=&quot;M80 533H593&quot; stroke=&quot;#adbaa0&quot; stroke-width=&quot;2&quot;/&gt;</code><ul class="explain"><li><code>&lt;path&gt;</code> — SVG-контур. Атрибут d описывает путь командами движения и рисования.</li>
-<li><code>d=&quot;M80 533H593&quot;</code> — Данные SVG-контура: M — переместиться, L — линия, H/V — горизонтальная/вертикальная линия, Z — замкнуть контур.</li>
-<li><code>stroke=&quot;#adbaa0&quot;</code> — Цвет обводки SVG-фигуры.</li>
-<li><code>stroke-width=&quot;2&quot;</code> — Толщина обводки SVG.</li>
-</ul></li>
-<li id="lab3-assets-workspace-svg-L6"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/assets/workspace.svg#L6">Строка 6</a><code class="source-code"> &lt;rect x=&quot;72&quot; y=&quot;121&quot; width=&quot;510&quot; height=&quot;331&quot; rx=&quot;11&quot; fill=&quot;#c9d0ba&quot;/&gt;</code><ul class="explain"><li><code>&lt;rect&gt;</code> — SVG-прямоугольник. Координаты и размеры задаются атрибутами.</li>
-<li><code>x=&quot;72&quot;</code> — Горизонтальная координата в SVG; у rect — левого края.</li>
-<li><code>y=&quot;121&quot;</code> — Вертикальная координата в SVG; у rect — верхнего края.</li>
-<li><code>width=&quot;510&quot;</code> — Ширина изображения в HTML задаётся числом, например width=&quot;520&quot;, без px. CSS может изменить отображаемую ширину.</li>
-<li><code>height=&quot;331&quot;</code> — Высота изображения в HTML задаётся числом. Вместе с width помогает заранее зарезервировать место под картинку.</li>
-<li><code>rx=&quot;11&quot;</code> — Горизонтальный радиус скругления углов SVG-прямоугольника.</li>
-<li><code>fill=&quot;#c9d0ba&quot;</code> — Цвет заливки SVG-фигуры.</li>
-</ul></li>
-<li id="lab3-assets-workspace-svg-L7"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/assets/workspace.svg#L7">Строка 7</a><code class="source-code"> &lt;rect x=&quot;64&quot; y=&quot;110&quot; width=&quot;510&quot; height=&quot;331&quot; rx=&quot;11&quot; fill=&quot;#fffdf7&quot; stroke=&quot;#afbaa4&quot; stroke-width=&quot;2&quot;/&gt;</code><ul class="explain"><li><code>&lt;rect&gt;</code> — SVG-прямоугольник. Координаты и размеры задаются атрибутами.</li>
-<li><code>x=&quot;64&quot;</code> — Горизонтальная координата в SVG; у rect — левого края.</li>
-<li><code>y=&quot;110&quot;</code> — Вертикальная координата в SVG; у rect — верхнего края.</li>
-<li><code>width=&quot;510&quot;</code> — Ширина изображения в HTML задаётся числом, например width=&quot;520&quot;, без px. CSS может изменить отображаемую ширину.</li>
-<li><code>height=&quot;331&quot;</code> — Высота изображения в HTML задаётся числом. Вместе с width помогает заранее зарезервировать место под картинку.</li>
-<li><code>rx=&quot;11&quot;</code> — Горизонтальный радиус скругления углов SVG-прямоугольника.</li>
-<li><code>fill=&quot;#fffdf7&quot;</code> — Цвет заливки SVG-фигуры.</li>
-<li><code>stroke=&quot;#afbaa4&quot;</code> — Цвет обводки SVG-фигуры.</li>
-<li><code>stroke-width=&quot;2&quot;</code> — Толщина обводки SVG.</li>
-</ul></li>
-<li id="lab3-assets-workspace-svg-L8"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/assets/workspace.svg#L8">Строка 8</a><code class="source-code"> &lt;path d=&quot;M64 149H574&quot; stroke=&quot;#d7ddcb&quot; stroke-width=&quot;2&quot;/&gt;</code><ul class="explain"><li><code>&lt;path&gt;</code> — SVG-контур. Атрибут d описывает путь командами движения и рисования.</li>
-<li><code>d=&quot;M64 149H574&quot;</code> — Данные SVG-контура: M — переместиться, L — линия, H/V — горизонтальная/вертикальная линия, Z — замкнуть контур.</li>
-<li><code>stroke=&quot;#d7ddcb&quot;</code> — Цвет обводки SVG-фигуры.</li>
-<li><code>stroke-width=&quot;2&quot;</code> — Толщина обводки SVG.</li>
-</ul></li>
-<li id="lab3-assets-workspace-svg-L9"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/assets/workspace.svg#L9">Строка 9</a><code class="source-code"> &lt;circle cx=&quot;86&quot; cy=&quot;130&quot; r=&quot;4&quot; fill=&quot;#dca888&quot;/&gt;&lt;circle cx=&quot;101&quot; cy=&quot;130&quot; r=&quot;4&quot; fill=&quot;#d7c78e&quot;/&gt;&lt;circle cx=&quot;116&quot; cy=&quot;130&quot; r=&quot;4&quot; fill=&quot;#92ae86&quot;/&gt;</code><ul class="explain"><li><code>&lt;circle&gt;</code> — SVG-круг с центром cx, cy и радиусом r.</li>
-<li><code>cx=&quot;86&quot;</code> — Горизонтальная координата центра SVG-круга.</li>
-<li><code>cy=&quot;130&quot;</code> — Вертикальная координата центра SVG-круга.</li>
-<li><code>r=&quot;4&quot;</code> — Радиус SVG-круга.</li>
-<li><code>fill=&quot;#dca888&quot;</code> — Цвет заливки SVG-фигуры.</li>
-<li><code>cx=&quot;101&quot;</code> — Горизонтальная координата центра SVG-круга.</li>
-<li><code>fill=&quot;#d7c78e&quot;</code> — Цвет заливки SVG-фигуры.</li>
-<li><code>cx=&quot;116&quot;</code> — Горизонтальная координата центра SVG-круга.</li>
-<li><code>fill=&quot;#92ae86&quot;</code> — Цвет заливки SVG-фигуры.</li>
-</ul></li>
-<li id="lab3-assets-workspace-svg-L10"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/assets/workspace.svg#L10">Строка 10</a><code class="source-code"> &lt;rect x=&quot;244&quot; y=&quot;123&quot; width=&quot;158&quot; height=&quot;13&quot; rx=&quot;6&quot; fill=&quot;#e9eddf&quot;/&gt;</code><ul class="explain"><li><code>&lt;rect&gt;</code> — SVG-прямоугольник. Координаты и размеры задаются атрибутами.</li>
-<li><code>x=&quot;244&quot;</code> — Горизонтальная координата в SVG; у rect — левого края.</li>
-<li><code>y=&quot;123&quot;</code> — Вертикальная координата в SVG; у rect — верхнего края.</li>
-<li><code>width=&quot;158&quot;</code> — Ширина изображения в HTML задаётся числом, например width=&quot;520&quot;, без px. CSS может изменить отображаемую ширину.</li>
-<li><code>height=&quot;13&quot;</code> — Высота изображения в HTML задаётся числом. Вместе с width помогает заранее зарезервировать место под картинку.</li>
-<li><code>rx=&quot;6&quot;</code> — Горизонтальный радиус скругления углов SVG-прямоугольника.</li>
-<li><code>fill=&quot;#e9eddf&quot;</code> — Цвет заливки SVG-фигуры.</li>
-</ul></li>
-<li id="lab3-assets-workspace-svg-L11"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/assets/workspace.svg#L11">Строка 11</a><code class="source-code"> &lt;text x=&quot;101&quot; y=&quot;203&quot; font-family=&quot;Arial,sans-serif&quot; font-size=&quot;11&quot; letter-spacing=&quot;3&quot; fill=&quot;#6b8158&quot;&gt;HELLO, WEB.&lt;/text&gt;</code><ul class="explain"><li><code>&lt;text&gt;</code> — Текст в SVG-картинке; не обычный HTML-абзац.</li>
-<li><code>x=&quot;101&quot;</code> — Горизонтальная координата в SVG; у rect — левого края.</li>
-<li><code>y=&quot;203&quot;</code> — Вертикальная координата в SVG; у rect — верхнего края.</li>
-<li><code>font-family=&quot;Arial,sans-serif&quot;</code> — Семейство шрифта SVG-текста; в обычном CSS это свойство с тем же названием.</li>
-<li><code>font-size=&quot;11&quot;</code> — Размер шрифта SVG-текста.</li>
-<li><code>letter-spacing=&quot;3&quot;</code> — Межбуквенное расстояние SVG-текста.</li>
-<li><code>fill=&quot;#6b8158&quot;</code> — Цвет заливки SVG-фигуры.</li>
-<li>Текст внутри <code>text</code>: HELLO, WEB.. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/text&gt;</code> — конец элемента <code>text</code>.</li>
-</ul></li>
-<li id="lab3-assets-workspace-svg-L12"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/assets/workspace.svg#L12">Строка 12</a><code class="source-code"> &lt;rect x=&quot;101&quot; y=&quot;225&quot; width=&quot;204&quot; height=&quot;18&quot; rx=&quot;4&quot; fill=&quot;#35523a&quot;/&gt;</code><ul class="explain"><li><code>&lt;rect&gt;</code> — SVG-прямоугольник. Координаты и размеры задаются атрибутами.</li>
-<li><code>x=&quot;101&quot;</code> — Горизонтальная координата в SVG; у rect — левого края.</li>
-<li><code>y=&quot;225&quot;</code> — Вертикальная координата в SVG; у rect — верхнего края.</li>
-<li><code>width=&quot;204&quot;</code> — Ширина изображения в HTML задаётся числом, например width=&quot;520&quot;, без px. CSS может изменить отображаемую ширину.</li>
-<li><code>height=&quot;18&quot;</code> — Высота изображения в HTML задаётся числом. Вместе с width помогает заранее зарезервировать место под картинку.</li>
-<li><code>rx=&quot;4&quot;</code> — Горизонтальный радиус скругления углов SVG-прямоугольника.</li>
-<li><code>fill=&quot;#35523a&quot;</code> — Цвет заливки SVG-фигуры.</li>
-</ul></li>
-<li id="lab3-assets-workspace-svg-L13"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/assets/workspace.svg#L13">Строка 13</a><code class="source-code"> &lt;rect x=&quot;101&quot; y=&quot;253&quot; width=&quot;158&quot; height=&quot;18&quot; rx=&quot;4&quot; fill=&quot;#35523a&quot;/&gt;</code><ul class="explain"><li><code>&lt;rect&gt;</code> — SVG-прямоугольник. Координаты и размеры задаются атрибутами.</li>
-<li><code>x=&quot;101&quot;</code> — Горизонтальная координата в SVG; у rect — левого края.</li>
-<li><code>y=&quot;253&quot;</code> — Вертикальная координата в SVG; у rect — верхнего края.</li>
-<li><code>width=&quot;158&quot;</code> — Ширина изображения в HTML задаётся числом, например width=&quot;520&quot;, без px. CSS может изменить отображаемую ширину.</li>
-<li><code>height=&quot;18&quot;</code> — Высота изображения в HTML задаётся числом. Вместе с width помогает заранее зарезервировать место под картинку.</li>
-<li><code>rx=&quot;4&quot;</code> — Горизонтальный радиус скругления углов SVG-прямоугольника.</li>
-<li><code>fill=&quot;#35523a&quot;</code> — Цвет заливки SVG-фигуры.</li>
-</ul></li>
-<li id="lab3-assets-workspace-svg-L14"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/assets/workspace.svg#L14">Строка 14</a><code class="source-code"> &lt;rect x=&quot;101&quot; y=&quot;296&quot; width=&quot;175&quot; height=&quot;6&quot; rx=&quot;3&quot; fill=&quot;#c3cbb8&quot;/&gt;</code><ul class="explain"><li><code>&lt;rect&gt;</code> — SVG-прямоугольник. Координаты и размеры задаются атрибутами.</li>
-<li><code>x=&quot;101&quot;</code> — Горизонтальная координата в SVG; у rect — левого края.</li>
-<li><code>y=&quot;296&quot;</code> — Вертикальная координата в SVG; у rect — верхнего края.</li>
-<li><code>width=&quot;175&quot;</code> — Ширина изображения в HTML задаётся числом, например width=&quot;520&quot;, без px. CSS может изменить отображаемую ширину.</li>
-<li><code>height=&quot;6&quot;</code> — Высота изображения в HTML задаётся числом. Вместе с width помогает заранее зарезервировать место под картинку.</li>
-<li><code>rx=&quot;3&quot;</code> — Горизонтальный радиус скругления углов SVG-прямоугольника.</li>
-<li><code>fill=&quot;#c3cbb8&quot;</code> — Цвет заливки SVG-фигуры.</li>
-</ul></li>
-<li id="lab3-assets-workspace-svg-L15"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/assets/workspace.svg#L15">Строка 15</a><code class="source-code"> &lt;rect x=&quot;101&quot; y=&quot;311&quot; width=&quot;150&quot; height=&quot;6&quot; rx=&quot;3&quot; fill=&quot;#c3cbb8&quot;/&gt;</code><ul class="explain"><li><code>&lt;rect&gt;</code> — SVG-прямоугольник. Координаты и размеры задаются атрибутами.</li>
-<li><code>x=&quot;101&quot;</code> — Горизонтальная координата в SVG; у rect — левого края.</li>
-<li><code>y=&quot;311&quot;</code> — Вертикальная координата в SVG; у rect — верхнего края.</li>
-<li><code>width=&quot;150&quot;</code> — Ширина изображения в HTML задаётся числом, например width=&quot;520&quot;, без px. CSS может изменить отображаемую ширину.</li>
-<li><code>height=&quot;6&quot;</code> — Высота изображения в HTML задаётся числом. Вместе с width помогает заранее зарезервировать место под картинку.</li>
-<li><code>rx=&quot;3&quot;</code> — Горизонтальный радиус скругления углов SVG-прямоугольника.</li>
-<li><code>fill=&quot;#c3cbb8&quot;</code> — Цвет заливки SVG-фигуры.</li>
-</ul></li>
-<li id="lab3-assets-workspace-svg-L16"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/assets/workspace.svg#L16">Строка 16</a><code class="source-code"> &lt;rect x=&quot;101&quot; y=&quot;348&quot; width=&quot;107&quot; height=&quot;32&quot; rx=&quot;4&quot; fill=&quot;#78955b&quot;/&gt;</code><ul class="explain"><li><code>&lt;rect&gt;</code> — SVG-прямоугольник. Координаты и размеры задаются атрибутами.</li>
-<li><code>x=&quot;101&quot;</code> — Горизонтальная координата в SVG; у rect — левого края.</li>
-<li><code>y=&quot;348&quot;</code> — Вертикальная координата в SVG; у rect — верхнего края.</li>
-<li><code>width=&quot;107&quot;</code> — Ширина изображения в HTML задаётся числом, например width=&quot;520&quot;, без px. CSS может изменить отображаемую ширину.</li>
-<li><code>height=&quot;32&quot;</code> — Высота изображения в HTML задаётся числом. Вместе с width помогает заранее зарезервировать место под картинку.</li>
-<li><code>rx=&quot;4&quot;</code> — Горизонтальный радиус скругления углов SVG-прямоугольника.</li>
-<li><code>fill=&quot;#78955b&quot;</code> — Цвет заливки SVG-фигуры.</li>
-</ul></li>
-<li id="lab3-assets-workspace-svg-L17"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/assets/workspace.svg#L17">Строка 17</a><code class="source-code"> &lt;rect x=&quot;353&quot; y=&quot;191&quot; width=&quot;174&quot; height=&quot;190&quot; rx=&quot;6&quot; fill=&quot;#e6ebd6&quot;/&gt;</code><ul class="explain"><li><code>&lt;rect&gt;</code> — SVG-прямоугольник. Координаты и размеры задаются атрибутами.</li>
-<li><code>x=&quot;353&quot;</code> — Горизонтальная координата в SVG; у rect — левого края.</li>
-<li><code>y=&quot;191&quot;</code> — Вертикальная координата в SVG; у rect — верхнего края.</li>
-<li><code>width=&quot;174&quot;</code> — Ширина изображения в HTML задаётся числом, например width=&quot;520&quot;, без px. CSS может изменить отображаемую ширину.</li>
-<li><code>height=&quot;190&quot;</code> — Высота изображения в HTML задаётся числом. Вместе с width помогает заранее зарезервировать место под картинку.</li>
-<li><code>rx=&quot;6&quot;</code> — Горизонтальный радиус скругления углов SVG-прямоугольника.</li>
-<li><code>fill=&quot;#e6ebd6&quot;</code> — Цвет заливки SVG-фигуры.</li>
-</ul></li>
-<li id="lab3-assets-workspace-svg-L18"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/assets/workspace.svg#L18">Строка 18</a><code class="source-code"> &lt;circle cx=&quot;440&quot; cy=&quot;250&quot; r=&quot;32&quot; fill=&quot;#b6c895&quot;/&gt;</code><ul class="explain"><li><code>&lt;circle&gt;</code> — SVG-круг с центром cx, cy и радиусом r.</li>
-<li><code>cx=&quot;440&quot;</code> — Горизонтальная координата центра SVG-круга.</li>
-<li><code>cy=&quot;250&quot;</code> — Вертикальная координата центра SVG-круга.</li>
-<li><code>r=&quot;32&quot;</code> — Радиус SVG-круга.</li>
-<li><code>fill=&quot;#b6c895&quot;</code> — Цвет заливки SVG-фигуры.</li>
-</ul></li>
-<li id="lab3-assets-workspace-svg-L19"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/assets/workspace.svg#L19">Строка 19</a><code class="source-code"> &lt;path d=&quot;M367 362L415 290L451 332L484 287L515 362Z&quot; fill=&quot;#8fa875&quot;/&gt;</code><ul class="explain"><li><code>&lt;path&gt;</code> — SVG-контур. Атрибут d описывает путь командами движения и рисования.</li>
-<li><code>d=&quot;M367 362L415 290L451 332L484 287L515 362Z&quot;</code> — Данные SVG-контура: M — переместиться, L — линия, H/V — горизонтальная/вертикальная линия, Z — замкнуть контур.</li>
-<li><code>fill=&quot;#8fa875&quot;</code> — Цвет заливки SVG-фигуры.</li>
-</ul></li>
-<li id="lab3-assets-workspace-svg-L20"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/assets/workspace.svg#L20">Строка 20</a><code class="source-code"> &lt;rect x=&quot;289&quot; y=&quot;375&quot; width=&quot;314&quot; height=&quot;158&quot; rx=&quot;9&quot; fill=&quot;#203c30&quot;/&gt;</code><ul class="explain"><li><code>&lt;rect&gt;</code> — SVG-прямоугольник. Координаты и размеры задаются атрибутами.</li>
-<li><code>x=&quot;289&quot;</code> — Горизонтальная координата в SVG; у rect — левого края.</li>
-<li><code>y=&quot;375&quot;</code> — Вертикальная координата в SVG; у rect — верхнего края.</li>
-<li><code>width=&quot;314&quot;</code> — Ширина изображения в HTML задаётся числом, например width=&quot;520&quot;, без px. CSS может изменить отображаемую ширину.</li>
-<li><code>height=&quot;158&quot;</code> — Высота изображения в HTML задаётся числом. Вместе с width помогает заранее зарезервировать место под картинку.</li>
-<li><code>rx=&quot;9&quot;</code> — Горизонтальный радиус скругления углов SVG-прямоугольника.</li>
-<li><code>fill=&quot;#203c30&quot;</code> — Цвет заливки SVG-фигуры.</li>
-</ul></li>
-<li id="lab3-assets-workspace-svg-L21"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/assets/workspace.svg#L21">Строка 21</a><code class="source-code"> &lt;text x=&quot;312&quot; y=&quot;404&quot; fill=&quot;#a9c37e&quot; font-family=&quot;monospace&quot; font-size=&quot;13&quot;&gt;style.css&lt;/text&gt;</code><ul class="explain"><li><code>&lt;text&gt;</code> — Текст в SVG-картинке; не обычный HTML-абзац.</li>
-<li><code>x=&quot;312&quot;</code> — Горизонтальная координата в SVG; у rect — левого края.</li>
-<li><code>y=&quot;404&quot;</code> — Вертикальная координата в SVG; у rect — верхнего края.</li>
-<li><code>fill=&quot;#a9c37e&quot;</code> — Цвет заливки SVG-фигуры.</li>
-<li><code>font-family=&quot;monospace&quot;</code> — Семейство шрифта SVG-текста; в обычном CSS это свойство с тем же названием.</li>
-<li><code>font-size=&quot;13&quot;</code> — Размер шрифта SVG-текста.</li>
-<li>Текст внутри <code>text</code>: style.css. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/text&gt;</code> — конец элемента <code>text</code>.</li>
-</ul></li>
-<li id="lab3-assets-workspace-svg-L22"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/assets/workspace.svg#L22">Строка 22</a><code class="source-code"> &lt;text x=&quot;312&quot; y=&quot;437&quot; fill=&quot;#d9e5c7&quot; font-family=&quot;monospace&quot; font-size=&quot;14&quot;&gt;.idea {&lt;/text&gt;</code><ul class="explain"><li><code>&lt;text&gt;</code> — Текст в SVG-картинке; не обычный HTML-абзац.</li>
-<li><code>x=&quot;312&quot;</code> — Горизонтальная координата в SVG; у rect — левого края.</li>
-<li><code>y=&quot;437&quot;</code> — Вертикальная координата в SVG; у rect — верхнего края.</li>
-<li><code>fill=&quot;#d9e5c7&quot;</code> — Цвет заливки SVG-фигуры.</li>
-<li><code>font-family=&quot;monospace&quot;</code> — Семейство шрифта SVG-текста; в обычном CSS это свойство с тем же названием.</li>
-<li><code>font-size=&quot;14&quot;</code> — Размер шрифта SVG-текста.</li>
-<li>Текст внутри <code>text</code>: .idea {. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/text&gt;</code> — конец элемента <code>text</code>.</li>
-</ul></li>
-<li id="lab3-assets-workspace-svg-L23"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/assets/workspace.svg#L23">Строка 23</a><code class="source-code"> &lt;text x=&quot;330&quot; y=&quot;462&quot; fill=&quot;#b7c9a0&quot; font-family=&quot;monospace&quot; font-size=&quot;14&quot;&gt;display: block;&lt;/text&gt;</code><ul class="explain"><li><code>&lt;text&gt;</code> — Текст в SVG-картинке; не обычный HTML-абзац.</li>
-<li><code>x=&quot;330&quot;</code> — Горизонтальная координата в SVG; у rect — левого края.</li>
-<li><code>y=&quot;462&quot;</code> — Вертикальная координата в SVG; у rect — верхнего края.</li>
-<li><code>fill=&quot;#b7c9a0&quot;</code> — Цвет заливки SVG-фигуры.</li>
-<li><code>font-family=&quot;monospace&quot;</code> — Семейство шрифта SVG-текста; в обычном CSS это свойство с тем же названием.</li>
-<li><code>font-size=&quot;14&quot;</code> — Размер шрифта SVG-текста.</li>
-<li>Текст внутри <code>text</code>: display: block;. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/text&gt;</code> — конец элемента <code>text</code>.</li>
-</ul></li>
-<li id="lab3-assets-workspace-svg-L24"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/assets/workspace.svg#L24">Строка 24</a><code class="source-code"> &lt;text x=&quot;330&quot; y=&quot;487&quot; fill=&quot;#b7c9a0&quot; font-family=&quot;monospace&quot; font-size=&quot;14&quot;&gt;color: possibility;&lt;/text&gt;</code><ul class="explain"><li><code>&lt;text&gt;</code> — Текст в SVG-картинке; не обычный HTML-абзац.</li>
-<li><code>x=&quot;330&quot;</code> — Горизонтальная координата в SVG; у rect — левого края.</li>
-<li><code>y=&quot;487&quot;</code> — Вертикальная координата в SVG; у rect — верхнего края.</li>
-<li><code>fill=&quot;#b7c9a0&quot;</code> — Цвет заливки SVG-фигуры.</li>
-<li><code>font-family=&quot;monospace&quot;</code> — Семейство шрифта SVG-текста; в обычном CSS это свойство с тем же названием.</li>
-<li><code>font-size=&quot;14&quot;</code> — Размер шрифта SVG-текста.</li>
-<li>Текст внутри <code>text</code>: color: possibility;. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/text&gt;</code> — конец элемента <code>text</code>.</li>
-</ul></li>
-<li id="lab3-assets-workspace-svg-L25"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/assets/workspace.svg#L25">Строка 25</a><code class="source-code"> &lt;text x=&quot;312&quot; y=&quot;512&quot; fill=&quot;#d9e5c7&quot; font-family=&quot;monospace&quot; font-size=&quot;14&quot;&gt;}&lt;/text&gt;</code><ul class="explain"><li><code>&lt;text&gt;</code> — Текст в SVG-картинке; не обычный HTML-абзац.</li>
-<li><code>x=&quot;312&quot;</code> — Горизонтальная координата в SVG; у rect — левого края.</li>
-<li><code>y=&quot;512&quot;</code> — Вертикальная координата в SVG; у rect — верхнего края.</li>
-<li><code>fill=&quot;#d9e5c7&quot;</code> — Цвет заливки SVG-фигуры.</li>
-<li><code>font-family=&quot;monospace&quot;</code> — Семейство шрифта SVG-текста; в обычном CSS это свойство с тем же названием.</li>
-<li><code>font-size=&quot;14&quot;</code> — Размер шрифта SVG-текста.</li>
-<li>Текст внутри <code>text</code>: }. Это содержимое, а не имя тега или атрибута.</li>
-<li><code>&lt;/text&gt;</code> — конец элемента <code>text</code>.</li>
-</ul></li>
-<li id="lab3-assets-workspace-svg-L26"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/assets/workspace.svg#L26">Строка 26</a><code class="source-code"> &lt;path d=&quot;M126 98L133 79M111 85L93 79M146 105L164 97&quot; stroke=&quot;#8ca168&quot; stroke-width=&quot;3&quot; stroke-linecap=&quot;round&quot;/&gt;</code><ul class="explain"><li><code>&lt;path&gt;</code> — SVG-контур. Атрибут d описывает путь командами движения и рисования.</li>
-<li><code>d=&quot;M126 98L133 79M111 85L93 79M146 105L164 97&quot;</code> — Данные SVG-контура: M — переместиться, L — линия, H/V — горизонтальная/вертикальная линия, Z — замкнуть контур.</li>
-<li><code>stroke=&quot;#8ca168&quot;</code> — Цвет обводки SVG-фигуры.</li>
-<li><code>stroke-width=&quot;3&quot;</code> — Толщина обводки SVG.</li>
-<li><code>stroke-linecap=&quot;round&quot;</code> — Вид концов открытой SVG-линии: round — скругление.</li>
-</ul></li>
-<li id="lab3-assets-workspace-svg-L27"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/assets/workspace.svg#L27">Строка 27</a><code class="source-code">&lt;/svg&gt;</code><ul class="explain"><li><code>&lt;/svg&gt;</code> — конец элемента <code>svg</code>.</li>
+<li id="lab3-business-card-css-L15"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/business-card.css#L15">Строка 15</a><code class="source-code">}</code><ul class="explain"><li>Закрывает блок CSS-правила.</li>
 </ul></li>
 </ol></details>
 <details id="file-index-html"><summary>index.html — 26 строк</summary><div class="inside"><p><a href="https://github.com/error999777/wb1/blob/main/index.html">Исходный файл на GitHub</a> · <a href="../index.html">index.html</a></p>
