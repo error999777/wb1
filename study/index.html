@@ -373,7 +373,7 @@
 <p>Когда хотя бы половина блока колец попадает в область просмотра, <code>IntersectionObserver</code> добавляет класс <code>spinning</code> и прекращает наблюдение. Кадры <code>@keyframes spin</code> поворачивают кольца в разные стороны за 4,5 секунды. Анимация проигрывается один раз и учитывает системное уменьшение движения.</p>
 <p>На странице «Проекты» скрипт <code>report.js</code> сравнивает выбранное значение <code>select</code> с атрибутом <code>data-category</code> каждой строки. Несовпадающие строки скрываются через <code>hidden</code>. Для нового итога скрипт складывает только видимые значения <code>data-amount</code>.</p>
 <p>На странице «Обо мне» ответы раскрываются средствами браузера. Элемент <code>summary</code> показывает вопрос, а <code>details</code> хранит вопрос и раскрываемый ответ.</p>
-<p>В учебном расчёте <code>input</code> запускает обновление после каждого изменения поля. Скрипт проверяет <code>validity.valid</code>, берёт числовые значения через <code>valueAsNumber</code>, переводит цену в целые копейки и умножает на количество. <code>Intl.NumberFormat</code> отображает результат в рублях в элементе <code>output</code>.</p>
+<p>В расчёте суммы документа <code>input</code> запускает обновление после каждого изменения поля. Скрипт проверяет <code>validity.valid</code>, берёт числовые значения через <code>valueAsNumber</code>, переводит цену в целые копейки и умножает на количество. <code>Intl.NumberFormat</code> отображает результат в рублях в элементе <code>output</code>.</p>
 <p>Исходники визитки: <a href="../lab3/card.html">lab3/card.html</a>, <a href="../lab3/card.css">lab3/card.css</a> и <a href="../lab3/card.js">lab3/card.js</a>.</p>
 </section>
 <section id="lines"><h2>11. Построчный разбор всех исходных файлов</h2><p>Раскрой нужный файл. Каждая строка показана без изменения кода и снабжена объяснением HTML, CSS или JavaScript. Всего 1060 строк в 13 файлах. Сами файлы гайда сюда не входят: это учебное пособие, а не ещё одна часть лабораторной.</p>
@@ -2777,8 +2777,8 @@
 <li>Текст внутри <code>h3</code>: Расчёт суммы документа. Это содержимое, а не имя тега или атрибута.</li>
 <li><code>&lt;/h3&gt;</code> — конец элемента <code>h3</code>.</li>
 </ul></li>
-<li id="lab3-card-html-L73"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/card.html#L73">Строка 73</a><code class="source-code">          &lt;p&gt;Учебный пример. Измени количество или цену, чтобы пересчитать итог.&lt;/p&gt;</code><ul class="explain"><li><code>&lt;p&gt;</code> — Абзац текста. Для нового абзаца нужен ещё один p, а не много br.</li>
-<li>Текст внутри <code>p</code>: Учебный пример. Измени количество или цену, чтобы пересчитать итог.. Это содержимое, а не имя тега или атрибута.</li>
+<li id="lab3-card-html-L73"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/card.html#L73">Строка 73</a><code class="source-code">          &lt;p&gt;Укажи количество и цену за единицу. Итог пересчитается автоматически.&lt;/p&gt;</code><ul class="explain"><li><code>&lt;p&gt;</code> — Абзац текста. Для нового абзаца нужен ещё один p, а не много br.</li>
+<li>Текст внутри <code>p</code>: Укажи количество и цену за единицу. Итог пересчитается автоматически.. Это содержимое, а не имя тега или атрибута.</li>
 <li><code>&lt;/p&gt;</code> — конец элемента <code>p</code>.</li>
 </ul></li>
 <li id="lab3-card-html-L74"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/card.html#L74">Строка 74</a><code class="source-code">          &lt;form class=&quot;invoice&quot;&gt;</code><ul class="explain"><li><code>&lt;form&gt;</code> — Форма с полями ввода. В данном упражнении action=&quot;#&quot; не отправляет имя на реальный сервер приложения.</li>
@@ -3832,9 +3832,9 @@
 <li><code>name=&quot;viewport&quot;</code> — Имя метаданных у meta: viewport или description. Это не имя HTML-тега.</li>
 <li><code>content=&quot;width=device-width, initial-scale=1&quot;</code> — Значение метаданных у meta. У viewport задаёт ширину области просмотра и начальный масштаб.</li>
 </ul></li>
-<li id="lab3-projects-html-L6"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/projects.html#L6">Строка 6</a><code class="source-code">  &lt;meta name=&quot;description&quot; content=&quot;Учебный отчёт по продажам с фильтром и итогом.&quot;&gt;</code><ul class="explain"><li><code>&lt;meta&gt;</code> — Метаданные: charset — кодировка; name и content — название и значение настройки. Пустой элемент, без закрывающего тега.</li>
+<li id="lab3-projects-html-L6"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/projects.html#L6">Строка 6</a><code class="source-code">  &lt;meta name=&quot;description&quot; content=&quot;Примеры работы Тимофея Ковалёва с отчётами и документами в 1С.&quot;&gt;</code><ul class="explain"><li><code>&lt;meta&gt;</code> — Метаданные: charset — кодировка; name и content — название и значение настройки. Пустой элемент, без закрывающего тега.</li>
 <li><code>name=&quot;description&quot;</code> — Имя метаданных у meta: viewport или description. Это не имя HTML-тега.</li>
-<li><code>content=&quot;Учебный отчёт по продажам с фильтром и итогом.&quot;</code> — Значение метаданных у meta. У viewport задаёт ширину области просмотра и начальный масштаб.</li>
+<li><code>content=&quot;Примеры работы Тимофея Ковалёва с отчётами и документами в 1С.&quot;</code> — Значение метаданных у meta. У viewport задаёт ширину области просмотра и начальный масштаб.</li>
 </ul></li>
 <li id="lab3-projects-html-L7"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/projects.html#L7">Строка 7</a><code class="source-code">  &lt;title&gt;Проекты | Тимофей Ковалёв&lt;/title&gt;</code><ul class="explain"><li><code>&lt;title&gt;</code> — Название документа во вкладке браузера; внутри head. Не путать с атрибутом title у картинки или ссылки.</li>
 <li>Текст внутри <code>title</code>: Проекты | Тимофей Ковалёв. Это содержимое, а не имя тега или атрибута.</li>
@@ -3893,9 +3893,9 @@
 <li>Текст внутри <code>h1</code>: Проекты. Это содержимое, а не имя тега или атрибута.</li>
 <li><code>&lt;/h1&gt;</code> — конец элемента <code>h1</code>.</li>
 </ul></li>
-<li id="lab3-projects-html-L22"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/projects.html#L22">Строка 22</a><code class="source-code">    &lt;p class=&quot;pagelead&quot;&gt;Учебные примеры того, как работают отчёты и документы в 1С.&lt;/p&gt;</code><ul class="explain"><li><code>&lt;p&gt;</code> — Абзац текста. Для нового абзаца нужен ещё один p, а не много br.</li>
+<li id="lab3-projects-html-L22"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/projects.html#L22">Строка 22</a><code class="source-code">    &lt;p class=&quot;pagelead&quot;&gt;Отчёты и документы в 1С. Посмотри, как отбор по категории меняет итог продаж.&lt;/p&gt;</code><ul class="explain"><li><code>&lt;p&gt;</code> — Абзац текста. Для нового абзаца нужен ещё один p, а не много br.</li>
 <li><code>class=&quot;pagelead&quot;</code> — Имена CSS-классов через пробел. Один класс может повторяться у многих элементов; один элемент может иметь несколько классов.</li>
-<li>Текст внутри <code>p</code>: Учебные примеры того, как работают отчёты и документы в 1С.. Это содержимое, а не имя тега или атрибута.</li>
+<li>Текст внутри <code>p</code>: Отчёты и документы в 1С. Посмотри, как отбор по категории меняет итог продаж.. Это содержимое, а не имя тега или атрибута.</li>
 <li><code>&lt;/p&gt;</code> — конец элемента <code>p</code>.</li>
 </ul></li>
 <li id="lab3-projects-html-L23"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/projects.html#L23">Строка 23</a><code class="source-code">    &lt;section class=&quot;example report&quot; aria-labelledby=&quot;report-title&quot;&gt;</code><ul class="explain"><li><code>&lt;section&gt;</code> — Тематический раздел, обычно с заголовком. Здесь отделяет общее задание и информацию о каждой модели.</li>
@@ -4414,19 +4414,19 @@
 <li><code>&lt;/b&gt;</code> — конец элемента <code>b</code>.</li>
 <li><code>&lt;/a&gt;</code> — конец элемента <code>a</code>.</li>
 </ul></li>
-<li id="index-html-L18"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/index.html#L18">Строка 18</a><code class="source-code">      &lt;a href=&quot;lab3/card.html&quot;&gt;&lt;span&gt;03 / Дополнительное задание&lt;/span&gt;&lt;h2&gt;Сайт-визитка&lt;/h2&gt;&lt;p&gt;Визитка программиста 1С.&lt;/p&gt;&lt;b&gt;Открыть страницу →&lt;/b&gt;&lt;/a&gt;</code><ul class="explain"><li><code>&lt;a&gt;</code> — Гиперссылка. Адрес записан в атрибуте href, а текст между &lt;a&gt; и &lt;/a&gt; виден пользователю.</li>
+<li id="index-html-L18"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/index.html#L18">Строка 18</a><code class="source-code">      &lt;a href=&quot;lab3/card.html&quot;&gt;&lt;span&gt;Программист 1С&lt;/span&gt;&lt;h2&gt;Тимофей Ковалёв&lt;/h2&gt;&lt;p&gt;Визитка, проекты и примеры работы с 1С.&lt;/p&gt;&lt;b&gt;Открыть визитку →&lt;/b&gt;&lt;/a&gt;</code><ul class="explain"><li><code>&lt;a&gt;</code> — Гиперссылка. Адрес записан в атрибуте href, а текст между &lt;a&gt; и &lt;/a&gt; виден пользователю.</li>
 <li><code>href=&quot;lab3/card.html&quot;</code> — Адрес назначения у a или адрес CSS у link. Ссылку создаёт элемент a; href — его атрибут, а не отдельный тег.</li>
 <li><code>&lt;span&gt;</code> — Универсальный контейнер для небольшого фрагмента внутри текста; по умолчанию строчный.</li>
-<li>Текст внутри <code>span</code>: 03 / Дополнительное задание. Это содержимое, а не имя тега или атрибута.</li>
+<li>Текст внутри <code>span</code>: Программист 1С. Это содержимое, а не имя тега или атрибута.</li>
 <li><code>&lt;/span&gt;</code> — конец элемента <code>span</code>.</li>
 <li><code>&lt;h2&gt;</code> — Заголовок раздела внутри страницы. Уровень важнее размера букв.</li>
-<li>Текст внутри <code>h2</code>: Сайт-визитка. Это содержимое, а не имя тега или атрибута.</li>
+<li>Текст внутри <code>h2</code>: Тимофей Ковалёв. Это содержимое, а не имя тега или атрибута.</li>
 <li><code>&lt;/h2&gt;</code> — конец элемента <code>h2</code>.</li>
 <li><code>&lt;p&gt;</code> — Абзац текста. Для нового абзаца нужен ещё один p, а не много br.</li>
-<li>Текст внутри <code>p</code>: Визитка программиста 1С.. Это содержимое, а не имя тега или атрибута.</li>
+<li>Текст внутри <code>p</code>: Визитка, проекты и примеры работы с 1С.. Это содержимое, а не имя тега или атрибута.</li>
 <li><code>&lt;/p&gt;</code> — конец элемента <code>p</code>.</li>
 <li><code>&lt;b&gt;</code> — Выделение фрагмента для привлечения внимания; по умолчанию жирный шрифт, без значения особой важности.</li>
-<li>Текст внутри <code>b</code>: Открыть страницу →. Это содержимое, а не имя тега или атрибута.</li>
+<li>Текст внутри <code>b</code>: Открыть визитку →. Это содержимое, а не имя тега или атрибута.</li>
 <li><code>&lt;/b&gt;</code> — конец элемента <code>b</code>.</li>
 <li><code>&lt;/a&gt;</code> — конец элемента <code>a</code>.</li>
 </ul></li>
