@@ -241,26 +241,18 @@
 }</code></pre>
 <p><code>.main-title</code> — селектор, то есть кого выбрать; <code>{ }</code> — границы блока; <code>color</code> — свойство; <code>:</code> отделяет свойство от значения; <code>red</code> — значение; <code>;</code> завершает объявление. <code>/* ... */</code> — комментарий, его браузер не отображает.</p>
 <table><thead><tr><th scope="col">Запись из работы</th><th scope="col">Как прочитать</th></tr>
-</thead><tbody><tr><td data-label="Запись из работы"><code>*</code></td><td data-label="Как прочитать">Все элементы; нулевая специфичность. В работе задаёт box-sizing.</td></tr>
-<tr><td data-label="Запись из работы"><code>h1</code></td><td data-label="Как прочитать">Все h1 выбранного документа.</td></tr>
-<tr><td data-label="Запись из работы"><code>.main-title</code></td><td data-label="Как прочитать">Все элементы с классом main-title. Точка используется в CSS, а не в значении class.</td></tr>
-<tr><td data-label="Запись из работы"><code>#first-post</code></td><td data-label="Как прочитать">Элемент с id=&quot;first-post&quot;. Решётка используется в CSS и в якоре ссылки.</td></tr>
-<tr><td data-label="Запись из работы"><code>input[placeholder=&quot;Белый&quot;]</code></td><td data-label="Как прочитать">Поле input, у которого placeholder точно равен «Белый».</td></tr>
-<tr><td data-label="Запись из работы"><code>.link:hover</code></td><td data-label="Как прочитать">Ссылка с классом link при наведении мыши.</td></tr>
-<tr><td data-label="Запись из работы"><code>a:focus-visible</code></td><td data-label="Как прочитать">Ссылка в состоянии видимого фокуса, обычно при работе клавиатурой.</td></tr>
-<tr><td data-label="Запись из работы"><code>.post:nth-child(2)</code></td><td data-label="Как прочитать">Элемент .post, который является вторым элементом среди детей своего родителя. Считаются элементы, не текстовые узлы.</td></tr>
-<tr><td data-label="Запись из работы"><code>.nav-list li:last-child</code></td><td data-label="Как прочитать">Последний ребёнок li своего родителя внутри .nav-list.</td></tr>
-<tr><td data-label="Запись из работы"><code>.color-list li:first-child</code></td><td data-label="Как прочитать">Первый ребёнок li своего родителя внутри .color-list.</td></tr>
-<tr><td data-label="Запись из работы"><code>input::placeholder</code></td><td data-label="Как прочитать">Псевдоэлемент подсказки поля, а не введённое пользователем значение.</td></tr>
-<tr><td data-label="Запись из работы"><code>.main-title::after</code></td><td data-label="Как прочитать">Декоративный фрагмент после содержимого заголовка; создаётся через content.</td></tr>
-<tr><td data-label="Запись из работы"><code>.widget .color-list li</code></td><td data-label="Как прочитать">Потомки: li на любой глубине внутри .color-list внутри .widget.</td></tr>
-<tr><td data-label="Запись из работы"><code>.nav-list &gt; li</code></td><td data-label="Как прочитать">Только непосредственные дети li списка .nav-list.</td></tr>
-<tr><td data-label="Запись из работы"><code>.post h2 + p</code></td><td data-label="Как прочитать">Только p сразу после h2, с тем же родителем, внутри .post.</td></tr>
-<tr><td data-label="Запись из работы"><code>.link.special-link</code></td><td data-label="Как прочитать">Один элемент, имеющий одновременно оба класса. Здесь нет пробела между классами.</td></tr>
-<tr><td data-label="Запись из работы"><code>.important-widget h3, .note</code></td><td data-label="Как прочитать">Две независимые группы выбора: h3 внутри .important-widget И элементы .note.</td></tr>
-<tr><td data-label="Запись из работы"><code>tbody tr:nth-child(even)</code></td><td data-label="Как прочитать">Чётные строки tbody для полосатого фона таблицы.</td></tr>
-<tr><td data-label="Запись из работы"><code>@media (max-width: 850px)</code></td><td data-label="Как прочитать">Условие ширины: вложенные правила действуют только при ширине viewport не более 850 CSS-пикселей.</td></tr>
-<tr><td data-label="Запись из работы"><code>@media (prefers-reduced-motion: reduce)</code></td><td data-label="Как прочитать">Условие пользовательской настройки уменьшения движения; в таком режиме отключается плавная прокрутка.</td></tr>
+</thead><tbody><tr><td data-label="Запись из работы"><code>*</code></td><td data-label="Как прочитать">Выбирает все элементы. В этом примере задаёт box-sizing.</td></tr>
+<tr><td data-label="Запись из работы"><code>h3</code></td><td data-label="Как прочитать">Выбирает заголовки h3. По умолчанию они розовые.</td></tr>
+<tr><td data-label="Запись из работы"><code>.main-title</code></td><td data-label="Как прочитать">Выбирает элементы с классом main-title. Точка в HTML не пишется.</td></tr>
+<tr><td data-label="Запись из работы"><code>.special-link</code></td><td data-label="Как прочитать">Выбирает вторую ссылку. Правило стоит после .link, поэтому синий цвет выигрывает у зелёного.</td></tr>
+<tr><td data-label="Запись из работы"><code>#first-post</code></td><td data-label="Как прочитать">Выбирает первый пост по атрибуту id. Заголовок и абзац получают оранжевый цвет от него.</td></tr>
+<tr><td data-label="Запись из работы"><code>input[placeholder=&quot;Белый&quot;]</code></td><td data-label="Как прочитать">Выбирает поле, у которого placeholder точно равен «Белый».</td></tr>
+<tr><td data-label="Запись из работы"><code>.nav-list li:nth-child(3) a</code></td><td data-label="Как прочитать">Выбирает ссылку в третьем пункте меню.</td></tr>
+<tr><td data-label="Запись из работы"><code>.post:nth-child(2)</code></td><td data-label="Как прочитать">Выбирает второй пост по положению среди соседних элементов.</td></tr>
+<tr><td data-label="Запись из работы"><code>.color-list li:first-child</code></td><td data-label="Как прочитать">Выбирает первый пункт списка цветов.</td></tr>
+<tr><td data-label="Запись из работы"><code>input::placeholder</code></td><td data-label="Как прочитать">Выбирает текст подсказки внутри поля.</td></tr>
+<tr><td data-label="Запись из работы"><code>.important-widget h3, .note</code></td><td data-label="Как прочитать">Выбирает h3 внутри .important-widget и отдельно элементы с классом note.</td></tr>
+<tr><td data-label="Запись из работы"><code>h2 + p</code></td><td data-label="Как прочитать">Выбирает p сразу после h2 с тем же родителем.</td></tr>
 </tbody></table><p><b>Наследование:</b> у <code>#first-post</code> задан <code>color: orange</code>. Заголовок и абзац наследуют цвет, если у них нет собственного более подходящего правила. <code>color: inherit</code> явно берёт цвет родителя.</p>
 <p><b>Приоритет:</b> в обычных авторских правилах без <code>!important</code>, слоёв и других специальных случаев ID имеет больший вес, чем класс/атрибут/псевдокласс, а они — больший вес, чем тег. Комбинаторы и * вес не увеличивают. При равном весе выигрывает более позднее правило. В файле задания нет встроенных style-атрибутов.</p>
 <p>Чтобы не путаться: <code>.link.special-link</code> — оба класса на одном элементе; <code>.link .special-link</code> — .special-link внутри другого элемента .link; <code>.link, .special-link</code> — любая из двух групп.</p>
@@ -295,7 +287,6 @@
 <tr><td data-label="Свойство"><code>content</code></td><td data-label="Понятное объяснение">Содержимое ::before/::after. Пустая строка создаёт декоративный псевдоэлемент без текста.</td></tr>
 <tr><td data-label="Свойство"><code>cursor</code></td><td data-label="Понятное объяснение">Вид указателя мыши. pointer — указатель для кликабельного элемента.</td></tr>
 <tr><td data-label="Свойство"><code>display</code></td><td data-label="Понятное объяснение">Способ раскладки. block — блок; flex — гибкая раскладка; grid — сетка; table/row/cell — имитация табличной раскладки у DIV.</td></tr>
-<tr><td data-label="Свойство"><code>flex-direction</code></td><td data-label="Понятное объяснение">Направление flex: column располагает элементы вертикально.</td></tr>
 <tr><td data-label="Свойство"><code>flex-wrap</code></td><td data-label="Понятное объяснение">wrap разрешает перенос элементов flex на следующую строку.</td></tr>
 <tr><td data-label="Свойство"><code>font</code></td><td data-label="Понятное объяснение">Сокращённая настройка шрифта. 16px/1.65 Arial, sans-serif — размер 16px, высота строки 1.65, список шрифтов.</td></tr>
 <tr><td data-label="Свойство"><code>font-family</code></td><td data-label="Понятное объяснение">Список шрифтов по приоритету: Arial, затем подходящий sans-serif.</td></tr>
@@ -310,7 +301,6 @@
 <tr><td data-label="Свойство"><code>justify-items</code></td><td data-label="Понятное объяснение">Выравнивает элементы внутри их ячеек по горизонтали в этой сетке.</td></tr>
 <tr><td data-label="Свойство"><code>letter-spacing</code></td><td data-label="Понятное объяснение">Расстояние между буквами. Отрицательные значения немного сближают их.</td></tr>
 <tr><td data-label="Свойство"><code>line-height</code></td><td data-label="Понятное объяснение">Высота строки. Число без единицы умножается на размер шрифта.</td></tr>
-<tr><td data-label="Свойство"><code>list-style</code></td><td data-label="Понятное объяснение">Оформление маркеров списка. none убирает маркеры, но сам ul остаётся списком.</td></tr>
 <tr><td data-label="Свойство"><code>margin</code></td><td data-label="Понятное объяснение">Внешний отступ. 24px — со всех сторон; 12px 0 — сверху/снизу 12px, слева/справа 0; auto по бокам центрирует ограниченный по ширине блок.</td></tr>
 <tr><td data-label="Свойство"><code>margin-bottom</code></td><td data-label="Понятное объяснение">Внешний отступ снизу.</td></tr>
 <tr><td data-label="Свойство"><code>margin-inline</code></td><td data-label="Понятное объяснение">Отступы по горизонтали для русского текста. auto с двух сторон центрирует блок.</td></tr>
@@ -330,7 +320,6 @@
 <tr><td data-label="Свойство"><code>overflow-x</code></td><td data-label="Понятное объяснение">Переполнение по горизонтали. auto показывает прокрутку, только когда содержимое не помещается.</td></tr>
 <tr><td data-label="Свойство"><code>padding</code></td><td data-label="Понятное объяснение">Внутренний отступ между содержимым и рамкой. Четыре значения читаются: верх, право, низ, лево.</td></tr>
 <tr><td data-label="Свойство"><code>padding-block</code></td><td data-label="Понятное объяснение">Внутренние отступы сверху и снизу.</td></tr>
-<tr><td data-label="Свойство"><code>padding-bottom</code></td><td data-label="Понятное объяснение">Внутренний отступ снизу.</td></tr>
 <tr><td data-label="Свойство"><code>padding-inline</code></td><td data-label="Понятное объяснение">Задаёт внутренние отступы слева и справа при горизонтальном письме.</td></tr>
 <tr><td data-label="Свойство"><code>padding-left</code></td><td data-label="Понятное объяснение">Внутренний отступ слева.</td></tr>
 <tr><td data-label="Свойство"><code>padding-top</code></td><td data-label="Понятное объяснение">Внутренний отступ сверху.</td></tr>
@@ -376,7 +365,7 @@
 <p>В расчёте суммы документа <code>input</code> запускает обновление после каждого изменения поля. Скрипт проверяет <code>validity.valid</code>, берёт числовые значения через <code>valueAsNumber</code>, переводит цену в целые копейки и умножает на количество. <code>Intl.NumberFormat</code> отображает результат в рублях в элементе <code>output</code>.</p>
 <p>Исходники визитки: <a href="../lab3/card.html">lab3/card.html</a>, <a href="../lab3/card.css">lab3/card.css</a> и <a href="../lab3/card.js">lab3/card.js</a>.</p>
 </section>
-<section id="lines"><h2>11. Построчный разбор всех исходных файлов</h2><p>Раскрой нужный файл. Каждая строка показана без изменения кода и снабжена объяснением HTML, CSS или JavaScript. Всего 1060 строк в 13 файлах. Сами файлы гайда сюда не входят: это учебное пособие, а не ещё одна часть лабораторной.</p>
+<section id="lines"><h2>11. Построчный разбор всех исходных файлов</h2><p>Раскрой нужный файл. Каждая строка показана без изменения кода и снабжена объяснением HTML, CSS или JavaScript. Всего 1075 строк в 13 файлах. Сами файлы гайда сюда не входят: это учебное пособие, а не ещё одна часть лабораторной.</p>
 <details id="file-lab2-general-html"><summary>lab2/general.html — 93 строк</summary><div class="inside"><p><a href="https://github.com/error999777/wb1/blob/main/lab2/general.html">Исходный файл на GitHub</a> · <a href="../lab2/general.html">lab2/general.html</a></p>
 </div><ol class="source-lines"><li id="lab2-general-html-L1"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab2/general.html#L1">Строка 1</a><code class="source-code">&lt;!DOCTYPE html&gt;</code><ul class="explain"><li>DOCTYPE html включает стандартный режим HTML5. Это объявление типа документа, а не обычный парный тег.</li>
 </ul></li>
@@ -2256,264 +2245,148 @@
 <li id="lab3-index-html-L52"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/index.html#L52">Строка 52</a><code class="source-code">&lt;/html&gt;</code><ul class="explain"><li><code>&lt;/html&gt;</code> — конец элемента <code>html</code>.</li>
 </ul></li>
 </ol></details>
-<details id="file-lab3-style-css"><summary>lab3/style.css — 56 строк</summary><div class="inside"><p><a href="https://github.com/error999777/wb1/blob/main/lab3/style.css">Исходный файл на GitHub</a> · <a href="../lab3/style.css">lab3/style.css</a></p>
-</div><ol class="source-lines"><li id="lab3-style-css-L1"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L1">Строка 1</a><code class="source-code">/* 1. Универсальный селектор: общая модель размеров. */</code><ul class="explain"><li>CSS-комментарий: 1. Универсальный селектор: общая модель размеров..</li>
+<details id="file-lab3-style-css"><summary>lab3/style.css — 71 строк</summary><div class="inside"><p><a href="https://github.com/error999777/wb1/blob/main/lab3/style.css">Исходный файл на GitHub</a> · <a href="../lab3/style.css">lab3/style.css</a></p>
+</div><ol class="source-lines"><li id="lab3-style-css-L1"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L1">Строка 1</a><code class="source-code">/* 1. Все элементы */</code><ul class="explain"><li>CSS-комментарий: 1. Все элементы.</li>
 </ul></li>
-<li id="lab3-style-css-L2"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L2">Строка 2</a><code class="source-code">* { box-sizing: border-box; }</code><ul class="explain"><li>Селектор <code>*</code> выбирает элементы. Выбирает все элементы.</li>
-<li><code>box-sizing: border-box</code> — Как считается размер блока. border-box включает padding и border в width/height.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L2"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L2">Строка 2</a><code class="source-code">* {</code><ul class="explain"><li>Селектор <code>*</code> выбирает элементы. Выбирает все элементы.</li>
 </ul></li>
-<li id="lab3-style-css-L3"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L3">Строка 3</a><code class="source-code"> </code><ul class="explain"><li>Пустая строка отделяет части файла; на отображение не влияет.</li>
+<li id="lab3-style-css-L3"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L3">Строка 3</a><code class="source-code">    box-sizing: border-box;</code><ul class="explain"><li><code>box-sizing: border-box</code> — Как считается размер блока. border-box включает padding и border в width/height.</li>
 </ul></li>
-<li id="lab3-style-css-L4"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L4">Строка 4</a><code class="source-code">/* 2. Селекторы по тегам задают базовое оформление. */</code><ul class="explain"><li>CSS-комментарий: 2. Селекторы по тегам задают базовое оформление..</li>
+<li id="lab3-style-css-L4"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L4">Строка 4</a><code class="source-code">}</code><ul class="explain"><li>Закрывает блок CSS-правила.</li>
 </ul></li>
-<li id="lab3-style-css-L5"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L5">Строка 5</a><code class="source-code">body { max-width: 1000px; margin: 0 auto; padding: 48px 24px; background: #f3f3ef; color: #243337; font: 16px/1.6 Arial, sans-serif; }</code><ul class="explain"><li>Селектор <code>body</code> выбирает элементы. Имя без . и # означает селектор по тегу.</li>
-<li><code>max-width: 1000px</code> — Ограничивает максимальную ширину. С margin: auto обычно центрирует содержимое.</li>
-<li><code>margin: 0 auto</code> — Внешний отступ. 24px — со всех сторон; 12px 0 — сверху/снизу 12px, слева/справа 0; auto по бокам центрирует ограниченный по ширине блок.</li>
-<li><code>padding: 48px 24px</code> — Внутренний отступ между содержимым и рамкой. Четыре значения читаются: верх, право, низ, лево.</li>
-<li><code>background: #f3f3ef</code> — Фон элемента. Может содержать цвет, линейный градиент или радиальный градиент.</li>
-<li><code>color: #243337</code> — Цвет текста и currentColor; не цвет фона.</li>
-<li><code>font: 16px/1.6 Arial, sans-serif</code> — Сокращённая настройка шрифта. 16px/1.65 Arial, sans-serif — размер 16px, высота строки 1.65, список шрифтов.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L5"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L5">Строка 5</a><code class="source-code"> </code><ul class="explain"><li>Пустая строка отделяет части файла; на отображение не влияет.</li>
 </ul></li>
-<li id="lab3-style-css-L6"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L6">Строка 6</a><code class="source-code">header { border-bottom: 1px solid #d4dcd8; padding-bottom: 24px; }</code><ul class="explain"><li>Селектор <code>header</code> выбирает элементы. Имя без . и # означает селектор по тегу.</li>
-<li><code>border-bottom: 1px solid #d4dcd8</code> — Рамка только снизу.</li>
-<li><code>padding-bottom: 24px</code> — Внутренний отступ снизу.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L6"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L6">Строка 6</a><code class="source-code">/* 2. По тегу */</code><ul class="explain"><li>CSS-комментарий: 2. По тегу.</li>
 </ul></li>
-<li id="lab3-style-css-L7"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L7">Строка 7</a><code class="source-code">h1 { margin: 0 0 20px; font-size: clamp(36px, 7vw, 58px); line-height: 1.15; letter-spacing: -.04em; }</code><ul class="explain"><li>Селектор <code>h1</code> выбирает элементы. Имя без . и # означает селектор по тегу.</li>
-<li><code>margin: 0 0 20px</code> — Внешний отступ. 24px — со всех сторон; 12px 0 — сверху/снизу 12px, слева/справа 0; auto по бокам центрирует ограниченный по ширине блок.</li>
-<li><code>font-size: clamp(36px, 7vw, 58px)</code> — Размер букв. clamp() выбирает адаптивный размер в заданных пределах.</li>
-<li><code>line-height: 1.15</code> — Высота строки. Число без единицы умножается на размер шрифта.</li>
-<li><code>letter-spacing: -.04em</code> — Расстояние между буквами. Отрицательные значения немного сближают их.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L7"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L7">Строка 7</a><code class="source-code">h3 {</code><ul class="explain"><li>Селектор <code>h3</code> выбирает элементы. Имя без . и # означает селектор по тегу.</li>
 </ul></li>
-<li id="lab3-style-css-L8"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L8">Строка 8</a><code class="source-code">h2 { font-size: 24px; margin: 0 0 10px; }</code><ul class="explain"><li>Селектор <code>h2</code> выбирает элементы. Имя без . и # означает селектор по тегу.</li>
-<li><code>font-size: 24px</code> — Размер букв. clamp() выбирает адаптивный размер в заданных пределах.</li>
-<li><code>margin: 0 0 10px</code> — Внешний отступ. 24px — со всех сторон; 12px 0 — сверху/снизу 12px, слева/справа 0; auto по бокам центрирует ограниченный по ширине блок.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L8"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L8">Строка 8</a><code class="source-code">    color: deeppink;</code><ul class="explain"><li><code>color: deeppink</code> — Цвет текста и currentColor; не цвет фона.</li>
 </ul></li>
-<li id="lab3-style-css-L9"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L9">Строка 9</a><code class="source-code">h3 { font-size: 22px; margin: 0 0 16px; color: pink; }</code><ul class="explain"><li>Селектор <code>h3</code> выбирает элементы. Имя без . и # означает селектор по тегу.</li>
-<li><code>font-size: 22px</code> — Размер букв. clamp() выбирает адаптивный размер в заданных пределах.</li>
-<li><code>margin: 0 0 16px</code> — Внешний отступ. 24px — со всех сторон; 12px 0 — сверху/снизу 12px, слева/справа 0; auto по бокам центрирует ограниченный по ширине блок.</li>
-<li><code>color: pink</code> — Цвет текста и currentColor; не цвет фона.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L9"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L9">Строка 9</a><code class="source-code">}</code><ul class="explain"><li>Закрывает блок CSS-правила.</li>
 </ul></li>
-<li id="lab3-style-css-L10"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L10">Строка 10</a><code class="source-code">p { margin: 0; }</code><ul class="explain"><li>Селектор <code>p</code> выбирает элементы. Имя без . и # означает селектор по тегу.</li>
-<li><code>margin: 0</code> — Внешний отступ. 24px — со всех сторон; 12px 0 — сверху/снизу 12px, слева/справа 0; auto по бокам центрирует ограниченный по ширине блок.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L10"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L10">Строка 10</a><code class="source-code"> </code><ul class="explain"><li>Пустая строка отделяет части файла; на отображение не влияет.</li>
 </ul></li>
-<li id="lab3-style-css-L11"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L11">Строка 11</a><code class="source-code"> </code><ul class="explain"><li>Пустая строка отделяет части файла; на отображение не влияет.</li>
+<li id="lab3-style-css-L11"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L11">Строка 11</a><code class="source-code">/* 3. По классу */</code><ul class="explain"><li>CSS-комментарий: 3. По классу.</li>
 </ul></li>
-<li id="lab3-style-css-L12"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L12">Строка 12</a><code class="source-code">/* 3. Классы, включая составной селектор .link.special-link. */</code><ul class="explain"><li>CSS-комментарий: 3. Классы, включая составной селектор .link.special-link..</li>
+<li id="lab3-style-css-L12"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L12">Строка 12</a><code class="source-code">.main-title {</code><ul class="explain"><li>Селектор <code>.main-title</code> выбирает элементы. Точка перед <code>main-title</code> означает класс из атрибута class.</li>
 </ul></li>
-<li id="lab3-style-css-L13"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L13">Строка 13</a><code class="source-code">.main-title { color: red; }</code><ul class="explain"><li>Селектор <code>.main-title</code> выбирает элементы. Точка перед <code>main-title</code> означает класс из атрибута class.</li>
-<li><code>color: red</code> — Цвет текста и currentColor; не цвет фона.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L13"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L13">Строка 13</a><code class="source-code">    color: red;</code><ul class="explain"><li><code>color: red</code> — Цвет текста и currentColor; не цвет фона.</li>
 </ul></li>
-<li id="lab3-style-css-L14"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L14">Строка 14</a><code class="source-code">.nav-list { display: flex; list-style: none; padding: 0; gap: 14px; flex-wrap: wrap; }</code><ul class="explain"><li>Селектор <code>.nav-list</code> выбирает элементы. Точка перед <code>nav-list</code> означает класс из атрибута class.</li>
-<li><code>display: flex</code> — Способ раскладки. block — блок; flex — гибкая раскладка; grid — сетка; table/row/cell — имитация табличной раскладки у DIV.</li>
-<li><code>list-style: none</code> — Оформление маркеров списка. none убирает маркеры, но сам ul остаётся списком.</li>
-<li><code>padding: 0</code> — Внутренний отступ между содержимым и рамкой. Четыре значения читаются: верх, право, низ, лево.</li>
-<li><code>gap: 14px</code> — Расстояние между элементами flex или grid.</li>
-<li><code>flex-wrap: wrap</code> — wrap разрешает перенос элементов flex на следующую строку.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L14"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L14">Строка 14</a><code class="source-code">}</code><ul class="explain"><li>Закрывает блок CSS-правила.</li>
 </ul></li>
-<li id="lab3-style-css-L15"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L15">Строка 15</a><code class="source-code">.nav-list &gt; li { padding: 10px 24px; border-radius: 5px; background: white; }</code><ul class="explain"><li>Селектор <code>.nav-list &gt; li</code> выбирает элементы. Знак > выбирает непосредственного ребёнка. Точка перед <code>nav-list</code> означает класс из атрибута class.</li>
-<li><code>padding: 10px 24px</code> — Внутренний отступ между содержимым и рамкой. Четыре значения читаются: верх, право, низ, лево.</li>
-<li><code>border-radius: 5px</code> — Радиус скругления углов.</li>
-<li><code>background: white</code> — Фон элемента. Может содержать цвет, линейный градиент или радиальный градиент.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L15"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L15">Строка 15</a><code class="source-code"> </code><ul class="explain"><li>Пустая строка отделяет части файла; на отображение не влияет.</li>
 </ul></li>
-<li id="lab3-style-css-L16"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L16">Строка 16</a><code class="source-code">.link { color: green; text-decoration: none; font-weight: bold; }</code><ul class="explain"><li>Селектор <code>.link</code> выбирает элементы. Точка перед <code>link</code> означает класс из атрибута class.</li>
-<li><code>color: green</code> — Цвет текста и currentColor; не цвет фона.</li>
-<li><code>text-decoration: none</code> — Оформление текста: none убирает подчёркивание ссылки; underline возвращает его при наведении.</li>
-<li><code>font-weight: bold</code> — Толщина шрифта: bold — жирный, normal — обычный.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L16"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L16">Строка 16</a><code class="source-code">.link {</code><ul class="explain"><li>Селектор <code>.link</code> выбирает элементы. Точка перед <code>link</code> означает класс из атрибута class.</li>
 </ul></li>
-<li id="lab3-style-css-L17"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L17">Строка 17</a><code class="source-code">.link.special-link { color: blue; }</code><ul class="explain"><li>Селектор <code>.link.special-link</code> выбирает элементы. Точка перед <code>link</code> означает класс из атрибута class. Точка перед <code>special-link</code> означает класс из атрибута class.</li>
-<li><code>color: blue</code> — Цвет текста и currentColor; не цвет фона.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L17"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L17">Строка 17</a><code class="source-code">    color: green;</code><ul class="explain"><li><code>color: green</code> — Цвет текста и currentColor; не цвет фона.</li>
 </ul></li>
-<li id="lab3-style-css-L18"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L18">Строка 18</a><code class="source-code">.content, .sidebar { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 24px; }</code><ul class="explain"><li>Селектор <code>.content, .sidebar</code> выбирает элементы. Запятая разделяет независимые группы выбора. Пробел между частями — выбор потомка. Точка перед <code>content</code> означает класс из атрибута class. Точка перед <code>sidebar</code> означает класс из атрибута class.</li>
-<li><code>display: grid</code> — Способ раскладки. block — блок; flex — гибкая раскладка; grid — сетка; table/row/cell — имитация табличной раскладки у DIV.</li>
-<li><code>grid-template-columns: repeat(2, 1fr)</code> — Ширины столбцов grid. repeat(3, 1fr) — три равные доли; 1fr — одна колонка; 1.1fr 1fr — две неравные доли.</li>
-<li><code>gap: 20px</code> — Расстояние между элементами flex или grid.</li>
-<li><code>margin-top: 24px</code> — Внешний отступ сверху.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L18"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L18">Строка 18</a><code class="source-code">}</code><ul class="explain"><li>Закрывает блок CSS-правила.</li>
 </ul></li>
-<li id="lab3-style-css-L19"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L19">Строка 19</a><code class="source-code">.post, .widget { border: 1px solid #d4dcd8; padding: 26px; border-radius: 6px; background: #fff; }</code><ul class="explain"><li>Селектор <code>.post, .widget</code> выбирает элементы. Запятая разделяет независимые группы выбора. Пробел между частями — выбор потомка. Точка перед <code>post</code> означает класс из атрибута class. Точка перед <code>widget</code> означает класс из атрибута class.</li>
-<li><code>border: 1px solid #d4dcd8</code> — Рамка: 1px solid #999 — толщина, сплошной стиль, цвет.</li>
-<li><code>padding: 26px</code> — Внутренний отступ между содержимым и рамкой. Четыре значения читаются: верх, право, низ, лево.</li>
-<li><code>border-radius: 6px</code> — Радиус скругления углов.</li>
-<li><code>background: #fff</code> — Фон элемента. Может содержать цвет, линейный градиент или радиальный градиент.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L19"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L19">Строка 19</a><code class="source-code"> </code><ul class="explain"><li>Пустая строка отделяет части файла; на отображение не влияет.</li>
 </ul></li>
-<li id="lab3-style-css-L20"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L20">Строка 20</a><code class="source-code">.post:first-child { background: #253338; border-color: #253338; }</code><ul class="explain"><li>Селектор <code>.post:first-child</code> выбирает элементы. Точка перед <code>post</code> означает класс из атрибута class. :first-child — первый элемент среди детей своего родителя.</li>
-<li><code>background: #253338</code> — Фон элемента. Может содержать цвет, линейный градиент или радиальный градиент.</li>
-<li><code>border-color: #253338</code> — Меняет цвет уже существующей рамки.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L20"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L20">Строка 20</a><code class="source-code">.special-link {</code><ul class="explain"><li>Селектор <code>.special-link</code> выбирает элементы. Точка перед <code>special-link</code> означает класс из атрибута class.</li>
 </ul></li>
-<li id="lab3-style-css-L21"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L21">Строка 21</a><code class="source-code">.widget:first-child { background: #253338; border-color: #253338; }</code><ul class="explain"><li>Селектор <code>.widget:first-child</code> выбирает элементы. Точка перед <code>widget</code> означает класс из атрибута class. :first-child — первый элемент среди детей своего родителя.</li>
-<li><code>background: #253338</code> — Фон элемента. Может содержать цвет, линейный градиент или радиальный градиент.</li>
-<li><code>border-color: #253338</code> — Меняет цвет уже существующей рамки.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L21"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L21">Строка 21</a><code class="source-code">    color: blue;</code><ul class="explain"><li><code>color: blue</code> — Цвет текста и currentColor; не цвет фона.</li>
 </ul></li>
-<li id="lab3-style-css-L22"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L22">Строка 22</a><code class="source-code">.important-widget { background: #f8e8e8; }</code><ul class="explain"><li>Селектор <code>.important-widget</code> выбирает элементы. Точка перед <code>important-widget</code> означает класс из атрибута class.</li>
-<li><code>background: #f8e8e8</code> — Фон элемента. Может содержать цвет, линейный градиент или радиальный градиент.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L22"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L22">Строка 22</a><code class="source-code">}</code><ul class="explain"><li>Закрывает блок CSS-правила.</li>
 </ul></li>
-<li id="lab3-style-css-L23"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L23">Строка 23</a><code class="source-code">.important-widget h3, .note { color: maroon; }</code><ul class="explain"><li>Селектор <code>.important-widget h3, .note</code> выбирает элементы. Запятая разделяет независимые группы выбора. Пробел между частями — выбор потомка. Точка перед <code>important-widget</code> означает класс из атрибута class. Точка перед <code>note</code> означает класс из атрибута class.</li>
-<li><code>color: maroon</code> — Цвет текста и currentColor; не цвет фона.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L23"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L23">Строка 23</a><code class="source-code"> </code><ul class="explain"><li>Пустая строка отделяет части файла; на отображение не влияет.</li>
 </ul></li>
-<li id="lab3-style-css-L24"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L24">Строка 24</a><code class="source-code">.color-list { margin: 0; padding: 0; list-style: none; }</code><ul class="explain"><li>Селектор <code>.color-list</code> выбирает элементы. Точка перед <code>color-list</code> означает класс из атрибута class.</li>
-<li><code>margin: 0</code> — Внешний отступ. 24px — со всех сторон; 12px 0 — сверху/снизу 12px, слева/справа 0; auto по бокам центрирует ограниченный по ширине блок.</li>
-<li><code>padding: 0</code> — Внутренний отступ между содержимым и рамкой. Четыре значения читаются: верх, право, низ, лево.</li>
-<li><code>list-style: none</code> — Оформление маркеров списка. none убирает маркеры, но сам ul остаётся списком.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L24"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L24">Строка 24</a><code class="source-code">.highlighted, .submit-btn {</code><ul class="explain"><li>Селектор <code>.highlighted, .submit-btn</code> выбирает элементы. Запятая разделяет независимые группы выбора. Пробел между частями — выбор потомка. Точка перед <code>highlighted</code> означает класс из атрибута class. Точка перед <code>submit-btn</code> означает класс из атрибута class.</li>
 </ul></li>
-<li id="lab3-style-css-L25"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L25">Строка 25</a><code class="source-code">.color-list li { background: #fff; padding: 8px 12px; margin-top: 8px; border-radius: 3px; }</code><ul class="explain"><li>Селектор <code>.color-list li</code> выбирает элементы. Пробел между частями — выбор потомка. Точка перед <code>color-list</code> означает класс из атрибута class.</li>
-<li><code>background: #fff</code> — Фон элемента. Может содержать цвет, линейный градиент или радиальный градиент.</li>
-<li><code>padding: 8px 12px</code> — Внутренний отступ между содержимым и рамкой. Четыре значения читаются: верх, право, низ, лево.</li>
-<li><code>margin-top: 8px</code> — Внешний отступ сверху.</li>
-<li><code>border-radius: 3px</code> — Радиус скругления углов.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L25"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L25">Строка 25</a><code class="source-code">    color: black;</code><ul class="explain"><li><code>color: black</code> — Цвет текста и currentColor; не цвет фона.</li>
 </ul></li>
-<li id="lab3-style-css-L26"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L26">Строка 26</a><code class="source-code">.highlighted { color: black; font-weight: bold; }</code><ul class="explain"><li>Селектор <code>.highlighted</code> выбирает элементы. Точка перед <code>highlighted</code> означает класс из атрибута class.</li>
-<li><code>color: black</code> — Цвет текста и currentColor; не цвет фона.</li>
-<li><code>font-weight: bold</code> — Толщина шрифта: bold — жирный, normal — обычный.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L26"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L26">Строка 26</a><code class="source-code">}</code><ul class="explain"><li>Закрывает блок CSS-правила.</li>
 </ul></li>
-<li id="lab3-style-css-L27"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L27">Строка 27</a><code class="source-code">.form { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; margin-top: 30px; padding: 24px; background: #fff; border: 1px solid #d4dcd8; border-radius: 6px; }</code><ul class="explain"><li>Селектор <code>.form</code> выбирает элементы. Точка перед <code>form</code> означает класс из атрибута class.</li>
-<li><code>display: flex</code> — Способ раскладки. block — блок; flex — гибкая раскладка; grid — сетка; table/row/cell — имитация табличной раскладки у DIV.</li>
-<li><code>gap: 14px</code> — Расстояние между элементами flex или grid.</li>
-<li><code>align-items: center</code> — Выравнивание элементов по поперечной оси flex или в областях grid: center — по центру, stretch — растянуть.</li>
-<li><code>flex-wrap: wrap</code> — wrap разрешает перенос элементов flex на следующую строку.</li>
-<li><code>margin-top: 30px</code> — Внешний отступ сверху.</li>
-<li><code>padding: 24px</code> — Внутренний отступ между содержимым и рамкой. Четыре значения читаются: верх, право, низ, лево.</li>
-<li><code>background: #fff</code> — Фон элемента. Может содержать цвет, линейный градиент или радиальный градиент.</li>
-<li><code>border: 1px solid #d4dcd8</code> — Рамка: 1px solid #999 — толщина, сплошной стиль, цвет.</li>
-<li><code>border-radius: 6px</code> — Радиус скругления углов.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L27"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L27">Строка 27</a><code class="source-code"> </code><ul class="explain"><li>Пустая строка отделяет части файла; на отображение не влияет.</li>
 </ul></li>
-<li id="lab3-style-css-L28"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L28">Строка 28</a><code class="source-code">.submit-btn { color: black; background: #e4edba; border: 1px solid #b7c47d; border-radius: 4px; padding: 11px 20px; cursor: pointer; font: inherit; }</code><ul class="explain"><li>Селектор <code>.submit-btn</code> выбирает элементы. Точка перед <code>submit-btn</code> означает класс из атрибута class.</li>
-<li><code>color: black</code> — Цвет текста и currentColor; не цвет фона.</li>
-<li><code>background: #e4edba</code> — Фон элемента. Может содержать цвет, линейный градиент или радиальный градиент.</li>
-<li><code>border: 1px solid #b7c47d</code> — Рамка: 1px solid #999 — толщина, сплошной стиль, цвет.</li>
-<li><code>border-radius: 4px</code> — Радиус скругления углов.</li>
-<li><code>padding: 11px 20px</code> — Внутренний отступ между содержимым и рамкой. Четыре значения читаются: верх, право, низ, лево.</li>
-<li><code>cursor: pointer</code> — Вид указателя мыши. pointer — указатель для кликабельного элемента.</li>
-<li><code>font: inherit</code> — Сокращённая настройка шрифта. 16px/1.65 Arial, sans-serif — размер 16px, высота строки 1.65, список шрифтов.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L28"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L28">Строка 28</a><code class="source-code">/* 4. По id */</code><ul class="explain"><li>CSS-комментарий: 4. По id.</li>
 </ul></li>
-<li id="lab3-style-css-L29"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L29">Строка 29</a><code class="source-code"> </code><ul class="explain"><li>Пустая строка отделяет части файла; на отображение не влияет.</li>
+<li id="lab3-style-css-L29"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L29">Строка 29</a><code class="source-code">#first-post {</code><ul class="explain"><li>Селектор <code>#first-post</code> выбирает элементы. Решётка перед <code>first-post</code> означает id.</li>
 </ul></li>
-<li id="lab3-style-css-L30"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L30">Строка 30</a><code class="source-code">/* 4. Идентификатор: цвет наследуют заголовок и абзац первого поста. */</code><ul class="explain"><li>CSS-комментарий: 4. Идентификатор: цвет наследуют заголовок и абзац первого поста..</li>
+<li id="lab3-style-css-L30"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L30">Строка 30</a><code class="source-code">    color: orange;</code><ul class="explain"><li><code>color: orange</code> — Цвет текста и currentColor; не цвет фона.</li>
 </ul></li>
-<li id="lab3-style-css-L31"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L31">Строка 31</a><code class="source-code">#first-post { color: orange; }</code><ul class="explain"><li>Селектор <code>#first-post</code> выбирает элементы. Решётка перед <code>first-post</code> означает id.</li>
-<li><code>color: orange</code> — Цвет текста и currentColor; не цвет фона.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L31"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L31">Строка 31</a><code class="source-code">    background: #333;</code><ul class="explain"><li><code>background: #333</code> — Фон элемента. Может содержать цвет, линейный градиент или радиальный градиент.</li>
 </ul></li>
-<li id="lab3-style-css-L32"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L32">Строка 32</a><code class="source-code"> </code><ul class="explain"><li>Пустая строка отделяет части файла; на отображение не влияет.</li>
+<li id="lab3-style-css-L32"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L32">Строка 32</a><code class="source-code">}</code><ul class="explain"><li>Закрывает блок CSS-правила.</li>
 </ul></li>
-<li id="lab3-style-css-L33"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L33">Строка 33</a><code class="source-code">/* 5. Атрибутные селекторы. На тёмном фоне виден белый placeholder. */</code><ul class="explain"><li>CSS-комментарий: 5. Атрибутные селекторы. На тёмном фоне виден белый placeholder..</li>
+<li id="lab3-style-css-L33"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L33">Строка 33</a><code class="source-code"> </code><ul class="explain"><li>Пустая строка отделяет части файла; на отображение не влияет.</li>
 </ul></li>
-<li id="lab3-style-css-L34"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L34">Строка 34</a><code class="source-code">input[placeholder=&quot;Белый&quot;] { color: white; background: #253338; border: 1px solid #647a80; border-radius: 4px; padding: 12px; font: inherit; min-width: 0; max-width: 100%; }</code><ul class="explain"><li>Селектор <code>input[placeholder=&quot;Белый&quot;]</code> выбирает элементы. Квадратные скобки проверяют наличие/значение атрибута.</li>
-<li><code>color: white</code> — Цвет текста и currentColor; не цвет фона.</li>
-<li><code>background: #253338</code> — Фон элемента. Может содержать цвет, линейный градиент или радиальный градиент.</li>
-<li><code>border: 1px solid #647a80</code> — Рамка: 1px solid #999 — толщина, сплошной стиль, цвет.</li>
-<li><code>border-radius: 4px</code> — Радиус скругления углов.</li>
-<li><code>padding: 12px</code> — Внутренний отступ между содержимым и рамкой. Четыре значения читаются: верх, право, низ, лево.</li>
-<li><code>font: inherit</code> — Сокращённая настройка шрифта. 16px/1.65 Arial, sans-serif — размер 16px, высота строки 1.65, список шрифтов.</li>
-<li><code>min-width: 0</code> — Минимальная ширина. У большой таблицы 740px сохраняет читаемые столбцы; на телефоне появляется внутренняя прокрутка.</li>
-<li><code>max-width: 100%</code> — Ограничивает максимальную ширину. С margin: auto обычно центрирует содержимое.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L34"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L34">Строка 34</a><code class="source-code">/* 5. По атрибуту */</code><ul class="explain"><li>CSS-комментарий: 5. По атрибуту.</li>
 </ul></li>
-<li id="lab3-style-css-L35"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L35">Строка 35</a><code class="source-code">input[placeholder=&quot;Белый&quot;]::placeholder { color: white; opacity: 1; }</code><ul class="explain"><li>Селектор <code>input[placeholder=&quot;Белый&quot;]::placeholder</code> выбирает элементы. ::placeholder выбирает текст подсказки input. Квадратные скобки проверяют наличие/значение атрибута.</li>
-<li><code>color: white</code> — Цвет текста и currentColor; не цвет фона.</li>
-<li><code>opacity: 1</code> — Непрозрачность. 0 скрывает элемент визуально, 1 показывает полностью.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L35"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L35">Строка 35</a><code class="source-code">input[placeholder=&quot;Белый&quot;] {</code><ul class="explain"><li>Селектор <code>input[placeholder=&quot;Белый&quot;]</code> выбирает элементы. Квадратные скобки проверяют наличие/значение атрибута.</li>
 </ul></li>
-<li id="lab3-style-css-L36"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L36">Строка 36</a><code class="source-code">.nav-list a[href=&quot;#&quot;] { text-underline-offset: 4px; }</code><ul class="explain"><li>Селектор <code>.nav-list a[href=&quot;#&quot;]</code> выбирает элементы. Пробел между частями — выбор потомка. Точка перед <code>nav-list</code> означает класс из атрибута class. Квадратные скобки проверяют наличие/значение атрибута.</li>
-<li><code>text-underline-offset: 4px</code> — Расстояние между текстом и линией подчёркивания.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L36"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L36">Строка 36</a><code class="source-code">    background: #333;</code><ul class="explain"><li><code>background: #333</code> — Фон элемента. Может содержать цвет, линейный градиент или радиальный градиент.</li>
 </ul></li>
-<li id="lab3-style-css-L37"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L37">Строка 37</a><code class="source-code"> </code><ul class="explain"><li>Пустая строка отделяет части файла; на отображение не влияет.</li>
+<li id="lab3-style-css-L37"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L37">Строка 37</a><code class="source-code">    color: white;</code><ul class="explain"><li><code>color: white</code> — Цвет текста и currentColor; не цвет фона.</li>
 </ul></li>
-<li id="lab3-style-css-L38"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L38">Строка 38</a><code class="source-code">/* 6. Псевдоклассы: положение, наведение, фокус. */</code><ul class="explain"><li>CSS-комментарий: 6. Псевдоклассы: положение, наведение, фокус..</li>
+<li id="lab3-style-css-L38"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L38">Строка 38</a><code class="source-code">}</code><ul class="explain"><li>Закрывает блок CSS-правила.</li>
 </ul></li>
-<li id="lab3-style-css-L39"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L39">Строка 39</a><code class="source-code">.nav-list li:last-child { background: #253338; }</code><ul class="explain"><li>Селектор <code>.nav-list li:last-child</code> выбирает элементы. Пробел между частями — выбор потомка. Точка перед <code>nav-list</code> означает класс из атрибута class. :last-child — последний элемент среди детей своего родителя.</li>
-<li><code>background: #253338</code> — Фон элемента. Может содержать цвет, линейный градиент или радиальный градиент.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L39"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L39">Строка 39</a><code class="source-code"> </code><ul class="explain"><li>Пустая строка отделяет части файла; на отображение не влияет.</li>
 </ul></li>
-<li id="lab3-style-css-L40"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L40">Строка 40</a><code class="source-code">.nav-list li:nth-child(3) a { color: yellow; }</code><ul class="explain"><li>Селектор <code>.nav-list li:nth-child(3) a</code> выбирает элементы. Пробел между частями — выбор потомка. Точка перед <code>nav-list</code> означает класс из атрибута class. nth-child(3) — положение среди соседних элементов; even — чётные.</li>
-<li><code>color: yellow</code> — Цвет текста и currentColor; не цвет фона.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L40"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L40">Строка 40</a><code class="source-code">/* 6. Псевдоклассы и псевдоэлемент */</code><ul class="explain"><li>CSS-комментарий: 6. Псевдоклассы и псевдоэлемент.</li>
 </ul></li>
-<li id="lab3-style-css-L41"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L41">Строка 41</a><code class="source-code">.post:nth-child(2) { color: purple; }</code><ul class="explain"><li>Селектор <code>.post:nth-child(2)</code> выбирает элементы. Точка перед <code>post</code> означает класс из атрибута class. nth-child(2) — положение среди соседних элементов; even — чётные.</li>
-<li><code>color: purple</code> — Цвет текста и currentColor; не цвет фона.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L41"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L41">Строка 41</a><code class="source-code">.nav-list li:nth-child(3) a {</code><ul class="explain"><li>Селектор <code>.nav-list li:nth-child(3) a</code> выбирает элементы. Пробел между частями — выбор потомка. Точка перед <code>nav-list</code> означает класс из атрибута class. nth-child(3) — положение среди соседних элементов; even — чётные.</li>
 </ul></li>
-<li id="lab3-style-css-L42"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L42">Строка 42</a><code class="source-code">.color-list li:nth-child(2) { color: brown; }</code><ul class="explain"><li>Селектор <code>.color-list li:nth-child(2)</code> выбирает элементы. Пробел между частями — выбор потомка. Точка перед <code>color-list</code> означает класс из атрибута class. nth-child(2) — положение среди соседних элементов; even — чётные.</li>
-<li><code>color: brown</code> — Цвет текста и currentColor; не цвет фона.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L42"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L42">Строка 42</a><code class="source-code">    color: yellow;</code><ul class="explain"><li><code>color: yellow</code> — Цвет текста и currentColor; не цвет фона.</li>
 </ul></li>
-<li id="lab3-style-css-L43"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L43">Строка 43</a><code class="source-code">.link:hover { text-decoration: underline; }</code><ul class="explain"><li>Селектор <code>.link:hover</code> выбирает элементы. Точка перед <code>link</code> означает класс из атрибута class. :hover — наведение мыши.</li>
-<li><code>text-decoration: underline</code> — Оформление текста: none убирает подчёркивание ссылки; underline возвращает его при наведении.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L43"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L43">Строка 43</a><code class="source-code">    background: #333;</code><ul class="explain"><li><code>background: #333</code> — Фон элемента. Может содержать цвет, линейный градиент или радиальный градиент.</li>
 </ul></li>
-<li id="lab3-style-css-L44"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L44">Строка 44</a><code class="source-code">.submit-btn:hover { background: #d6e39e; }</code><ul class="explain"><li>Селектор <code>.submit-btn:hover</code> выбирает элементы. Точка перед <code>submit-btn</code> означает класс из атрибута class. :hover — наведение мыши.</li>
-<li><code>background: #d6e39e</code> — Фон элемента. Может содержать цвет, линейный градиент или радиальный градиент.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L44"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L44">Строка 44</a><code class="source-code">}</code><ul class="explain"><li>Закрывает блок CSS-правила.</li>
 </ul></li>
-<li id="lab3-style-css-L45"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L45">Строка 45</a><code class="source-code">a:focus-visible, input:focus-visible, button:focus-visible { outline: 3px solid #497b72; outline-offset: 4px; }</code><ul class="explain"><li>Селектор <code>a:focus-visible, input:focus-visible, button:focus-visible</code> выбирает элементы. Запятая разделяет независимые группы выбора. Пробел между частями — выбор потомка. :focus-visible — видимый фокус, например при Tab.</li>
-<li><code>outline: 3px solid #497b72</code> — Внешняя обводка фокуса, обычно без влияния на размер элемента.</li>
-<li><code>outline-offset: 4px</code> — Зазор между элементом и outline.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L45"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L45">Строка 45</a><code class="source-code"> </code><ul class="explain"><li>Пустая строка отделяет части файла; на отображение не влияет.</li>
 </ul></li>
-<li id="lab3-style-css-L46"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L46">Строка 46</a><code class="source-code"> </code><ul class="explain"><li>Пустая строка отделяет части файла; на отображение не влияет.</li>
+<li id="lab3-style-css-L46"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L46">Строка 46</a><code class="source-code">.post:nth-child(2) {</code><ul class="explain"><li>Селектор <code>.post:nth-child(2)</code> выбирает элементы. Точка перед <code>post</code> означает класс из атрибута class. nth-child(2) — положение среди соседних элементов; even — чётные.</li>
 </ul></li>
-<li id="lab3-style-css-L47"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L47">Строка 47</a><code class="source-code">/* Псевдоэлемент добавляет декоративную линию, сохраняя цвет заголовка. */</code><ul class="explain"><li>CSS-комментарий: Псевдоэлемент добавляет декоративную линию, сохраняя цвет заголовка..</li>
+<li id="lab3-style-css-L47"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L47">Строка 47</a><code class="source-code">    color: purple;</code><ul class="explain"><li><code>color: purple</code> — Цвет текста и currentColor; не цвет фона.</li>
 </ul></li>
-<li id="lab3-style-css-L48"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L48">Строка 48</a><code class="source-code">.main-title::after { content: &quot;&quot;; display: block; width: 64px; height: 4px; margin-top: 18px; background: currentColor; }</code><ul class="explain"><li>Селектор <code>.main-title::after</code> выбирает элементы. Точка перед <code>main-title</code> означает класс из атрибута class. ::after — псевдоэлемент после содержимого; для создания нужен content.</li>
-<li><code>content: &quot;&quot;</code> — Содержимое ::before/::after. Пустая строка создаёт декоративный псевдоэлемент без текста.</li>
-<li><code>display: block</code> — Способ раскладки. block — блок; flex — гибкая раскладка; grid — сетка; table/row/cell — имитация табличной раскладки у DIV.</li>
-<li><code>width: 64px</code> — Ширина: 100% занимает доступную ширину родителя; фиксированное px задаёт конкретный CSS-размер.</li>
-<li><code>height: 4px</code> — Высота. auto сохраняет пропорции изображения при изменении ширины.</li>
-<li><code>margin-top: 18px</code> — Внешний отступ сверху.</li>
-<li><code>background: currentColor</code> — Фон элемента. Может содержать цвет, линейный градиент или радиальный градиент.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L48"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L48">Строка 48</a><code class="source-code">}</code><ul class="explain"><li>Закрывает блок CSS-правила.</li>
 </ul></li>
 <li id="lab3-style-css-L49"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L49">Строка 49</a><code class="source-code"> </code><ul class="explain"><li>Пустая строка отделяет части файла; на отображение не влияет.</li>
 </ul></li>
-<li id="lab3-style-css-L50"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L50">Строка 50</a><code class="source-code">/* 7. Потомки: первый пункт списка цветов. */</code><ul class="explain"><li>CSS-комментарий: 7. Потомки: первый пункт списка цветов..</li>
+<li id="lab3-style-css-L50"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L50">Строка 50</a><code class="source-code">.color-list li:first-child {</code><ul class="explain"><li>Селектор <code>.color-list li:first-child</code> выбирает элементы. Пробел между частями — выбор потомка. Точка перед <code>color-list</code> означает класс из атрибута class. :first-child — первый элемент среди детей своего родителя.</li>
 </ul></li>
-<li id="lab3-style-css-L51"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L51">Строка 51</a><code class="source-code">.widget .color-list li:first-child { color: gray; }</code><ul class="explain"><li>Селектор <code>.widget .color-list li:first-child</code> выбирает элементы. Пробел между частями — выбор потомка. Точка перед <code>widget</code> означает класс из атрибута class. Точка перед <code>color-list</code> означает класс из атрибута class. :first-child — первый элемент среди детей своего родителя.</li>
-<li><code>color: gray</code> — Цвет текста и currentColor; не цвет фона.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L51"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L51">Строка 51</a><code class="source-code">    color: dimgray;</code><ul class="explain"><li><code>color: dimgray</code> — Цвет текста и currentColor; не цвет фона.</li>
 </ul></li>
-<li id="lab3-style-css-L52"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L52">Строка 52</a><code class="source-code"> </code><ul class="explain"><li>Пустая строка отделяет части файла; на отображение не влияет.</li>
+<li id="lab3-style-css-L52"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L52">Строка 52</a><code class="source-code">}</code><ul class="explain"><li>Закрывает блок CSS-правила.</li>
 </ul></li>
-<li id="lab3-style-css-L53"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L53">Строка 53</a><code class="source-code">/* 8. Соседний элемент: абзац непосредственно после h2. */</code><ul class="explain"><li>CSS-комментарий: 8. Соседний элемент: абзац непосредственно после h2..</li>
+<li id="lab3-style-css-L53"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L53">Строка 53</a><code class="source-code"> </code><ul class="explain"><li>Пустая строка отделяет части файла; на отображение не влияет.</li>
 </ul></li>
-<li id="lab3-style-css-L54"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L54">Строка 54</a><code class="source-code">.post h2 + p { color: inherit; border-top: 1px solid currentColor; padding-top: 12px; }</code><ul class="explain"><li>Селектор <code>.post h2 + p</code> выбирает элементы. Знак + выбирает непосредственного следующего соседа. Точка перед <code>post</code> означает класс из атрибута class.</li>
-<li><code>color: inherit</code> — Цвет текста и currentColor; не цвет фона.</li>
-<li><code>border-top: 1px solid currentColor</code> — Рамка только сверху.</li>
-<li><code>padding-top: 12px</code> — Внутренний отступ сверху.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L54"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L54">Строка 54</a><code class="source-code">.color-list li:nth-child(2) {</code><ul class="explain"><li>Селектор <code>.color-list li:nth-child(2)</code> выбирает элементы. Пробел между частями — выбор потомка. Точка перед <code>color-list</code> означает класс из атрибута class. nth-child(2) — положение среди соседних элементов; even — чётные.</li>
 </ul></li>
-<li id="lab3-style-css-L55"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L55">Строка 55</a><code class="source-code"> </code><ul class="explain"><li>Пустая строка отделяет части файла; на отображение не влияет.</li>
+<li id="lab3-style-css-L55"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L55">Строка 55</a><code class="source-code">    color: brown;</code><ul class="explain"><li><code>color: brown</code> — Цвет текста и currentColor; не цвет фона.</li>
 </ul></li>
-<li id="lab3-style-css-L56"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L56">Строка 56</a><code class="source-code">@media (max-width: 650px) { body { padding: 28px 18px; } .content, .sidebar { grid-template-columns: 1fr; } .form { align-items: stretch; flex-direction: column; } }</code><ul class="explain"><li>Условный блок <code>@media (max-width: 650px)</code>: вложенные стили применяются только при выполнении условия.</li>
-<li>Селектор <code>body</code> выбирает элементы. Имя без . и # означает селектор по тегу.</li>
-<li>Селектор <code>.content, .sidebar</code> выбирает элементы. Запятая разделяет независимые группы выбора. Пробел между частями — выбор потомка. Точка перед <code>content</code> означает класс из атрибута class. Точка перед <code>sidebar</code> означает класс из атрибута class.</li>
-<li>Селектор <code>.form</code> выбирает элементы. Точка перед <code>form</code> означает класс из атрибута class.</li>
-<li><code>padding: 28px 18px</code> — Внутренний отступ между содержимым и рамкой. Четыре значения читаются: верх, право, низ, лево.</li>
-<li><code>grid-template-columns: 1fr</code> — Ширины столбцов grid. repeat(3, 1fr) — три равные доли; 1fr — одна колонка; 1.1fr 1fr — две неравные доли.</li>
-<li><code>align-items: stretch</code> — Выравнивание элементов по поперечной оси flex или в областях grid: center — по центру, stretch — растянуть.</li>
-<li><code>flex-direction: column</code> — Направление flex: column располагает элементы вертикально.</li>
-<li><code>}</code> завершает блок правила; <code>;</code> разделяет объявления свойств.</li>
+<li id="lab3-style-css-L56"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L56">Строка 56</a><code class="source-code">}</code><ul class="explain"><li>Закрывает блок CSS-правила.</li>
+</ul></li>
+<li id="lab3-style-css-L57"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L57">Строка 57</a><code class="source-code"> </code><ul class="explain"><li>Пустая строка отделяет части файла; на отображение не влияет.</li>
+</ul></li>
+<li id="lab3-style-css-L58"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L58">Строка 58</a><code class="source-code">input::placeholder {</code><ul class="explain"><li>Селектор <code>input::placeholder</code> выбирает элементы. ::placeholder выбирает текст подсказки input.</li>
+</ul></li>
+<li id="lab3-style-css-L59"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L59">Строка 59</a><code class="source-code">    color: white;</code><ul class="explain"><li><code>color: white</code> — Цвет текста и currentColor; не цвет фона.</li>
+</ul></li>
+<li id="lab3-style-css-L60"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L60">Строка 60</a><code class="source-code">    opacity: 1;</code><ul class="explain"><li><code>opacity: 1</code> — Непрозрачность. 0 скрывает элемент визуально, 1 показывает полностью.</li>
+</ul></li>
+<li id="lab3-style-css-L61"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L61">Строка 61</a><code class="source-code">}</code><ul class="explain"><li>Закрывает блок CSS-правила.</li>
+</ul></li>
+<li id="lab3-style-css-L62"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L62">Строка 62</a><code class="source-code"> </code><ul class="explain"><li>Пустая строка отделяет части файла; на отображение не влияет.</li>
+</ul></li>
+<li id="lab3-style-css-L63"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L63">Строка 63</a><code class="source-code">/* 7. Потомок */</code><ul class="explain"><li>CSS-комментарий: 7. Потомок.</li>
+</ul></li>
+<li id="lab3-style-css-L64"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L64">Строка 64</a><code class="source-code">.important-widget h3, .note {</code><ul class="explain"><li>Селектор <code>.important-widget h3, .note</code> выбирает элементы. Запятая разделяет независимые группы выбора. Пробел между частями — выбор потомка. Точка перед <code>important-widget</code> означает класс из атрибута class. Точка перед <code>note</code> означает класс из атрибута class.</li>
+</ul></li>
+<li id="lab3-style-css-L65"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L65">Строка 65</a><code class="source-code">    color: maroon;</code><ul class="explain"><li><code>color: maroon</code> — Цвет текста и currentColor; не цвет фона.</li>
+</ul></li>
+<li id="lab3-style-css-L66"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L66">Строка 66</a><code class="source-code">}</code><ul class="explain"><li>Закрывает блок CSS-правила.</li>
+</ul></li>
+<li id="lab3-style-css-L67"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L67">Строка 67</a><code class="source-code"> </code><ul class="explain"><li>Пустая строка отделяет части файла; на отображение не влияет.</li>
+</ul></li>
+<li id="lab3-style-css-L68"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L68">Строка 68</a><code class="source-code">/* 8. Соседний элемент */</code><ul class="explain"><li>CSS-комментарий: 8. Соседний элемент.</li>
+</ul></li>
+<li id="lab3-style-css-L69"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L69">Строка 69</a><code class="source-code">h2 + p {</code><ul class="explain"><li>Селектор <code>h2 + p</code> выбирает элементы. Знак + выбирает непосредственного следующего соседа.</li>
+</ul></li>
+<li id="lab3-style-css-L70"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L70">Строка 70</a><code class="source-code">    color: inherit;</code><ul class="explain"><li><code>color: inherit</code> — Цвет текста и currentColor; не цвет фона.</li>
+</ul></li>
+<li id="lab3-style-css-L71"><a class="line-label" href="https://github.com/error999777/wb1/blob/main/lab3/style.css#L71">Строка 71</a><code class="source-code">}</code><ul class="explain"><li>Закрывает блок CSS-правила.</li>
 </ul></li>
 </ol></details>
 <details id="file-lab3-card-html"><summary>lab3/card.html — 98 строк</summary><div class="inside"><p><a href="https://github.com/error999777/wb1/blob/main/lab3/card.html">Исходный файл на GitHub</a> · <a href="../lab3/card.html">lab3/card.html</a></p>
@@ -4558,7 +4431,7 @@
 </ul></li>
 </ol></details>
 </section>
-<section id="defense"><h2>12. Вопросы для самопроверки перед защитой</h2><dl><dt>Какая структура у HTML-документа?</dt><dd>DOCTYPE, корневой html, служебный head с charset/title и отображаемый body. main — основной материал. В работе использован стандартный режим HTML5; HTML — язык разметки, а не язык программирования.</dd><dt>Какой формат из JPEG, PNG, GIF, RAW, SVG, WebP не вставляется обычно напрямую через img?</dt><dd>RAW. Это исходные данные камеры; их обычно конвертируют в формат, поддерживаемый браузером.</dd><dt>На какой версии HTML выполнена №1?</dt><dd>На HTML5: исходник начинается с &lt;!DOCTYPE html&gt;.</dd><dt>Какой тег переносит строку?</dt><dd>&lt;br&gt;. Для отдельного абзаца используется p; для внешнего расстояния между блоками — CSS margin.</dd><dt>Если открыть HTML на своём компьютере, увидят ли его другие в Интернете?</dt><dd>Нет. Локальный файл не публикуется автоматически. GitHub Pages раздаёт файлы по публичным HTTP(S)-адресам; индексация поисковиками — отдельный процесс.</dd><dt>Чем th отличается от td?</dt><dd>th — заголовочная ячейка, td — обычные данные. Жирное оформление th по умолчанию — только визуальное следствие, главное различие смысловое.</dd><dt>Чем caption отличается от h1?</dt><dd>h1 называет всю страницу, caption — конкретную таблицу внутри неё.</dd><dt>Чем tbody отличается от tr?</dt><dd>tbody — группа строк, tr — одна строка. td и th располагаются в tr.</dd><dt>Зачем colspan=&quot;4&quot;?</dt><dd>Одна ячейка примечания занимает четыре столбца. Если в таблице два столбца, нужно colspan=&quot;2&quot;.</dd><dt>Чем div отличается от col?</dt><dd>div — общий контейнер. col описывает столбец существующей table внутри colgroup, не содержит данных и не создаёт ячейки.</dd><dt>Нужен ли JavaScript для details?</dt><dd>Нет: details и summary уже имеют поведение раскрытия в браузере.</dd><dt>Чем класс отличается от id?</dt><dd>class можно повторять и объединять; id должен быть уникальным внутри документа. В CSS выбираются через . и # соответственно.</dd><dt>Почему текст первого поста оранжевый?</dt><dd>У #first-post задан color: orange, заголовок и абзац наследуют его. У абзаца правило h2 + p явно задаёт color: inherit.</dd><dt>Почему placeholder белый, а кнопка чёрная?</dt><dd>input[placeholder=&quot;Белый&quot;]::placeholder задаёт белый цвет именно подсказке. .submit-btn задаёт black тексту кнопки; её фон светлый.</dd><dt>Куда форма отправляет введённое имя?</dt><dd>В исходном учебном HTML action=&quot;#&quot;; реального обработчика и сохранения данных нет. Это демонстрация элементов формы.</dd><dt>Что делает @media?</dt><dd>Условно включает CSS-правила, например одну колонку вместо трёх на узком экране.</dd><dt>Почему у таблицы индивидуального задания прокрутка на телефоне?</dt><dd>Её min-width больше ширины экрана, а родительский div имеет overflow-x: auto. Прокручивается таблица внутри блока.</dd><dt>Как изменить данные?</dt><dd>В lab2/general.html найти нужный tr, затем его td. Менять текст внутри ячейки, сохраняя структуру строки и число столбцов.</dd><dt>Как изменить заголовок?</dt><dd>Видимый заголовок — текст внутри h1; название вкладки — текст внутри title. Это разные места.</dd><dt>Как изменить цвет?</dt><dd>Открыть соответствующий CSS-файл, найти селектор и изменить значение color или background. Например .main-title { color: red; } меняет цвет текста.</dd></dl><p>Практика: закрой гайд и набери таблицу из двух столбцов; добавь caption и tfoot; сделай один details. Затем объясни, почему ссылка с href="#comparison" требует id="comparison". Это проверяет понимание лучше, чем заучивание большого файла.</p>
+<section id="defense"><h2>12. Вопросы для самопроверки перед защитой</h2><dl><dt>Какая структура у HTML-документа?</dt><dd>DOCTYPE, корневой html, служебный head с charset/title и отображаемый body. main — основной материал. В работе использован стандартный режим HTML5; HTML — язык разметки, а не язык программирования.</dd><dt>Какой формат из JPEG, PNG, GIF, RAW, SVG, WebP не вставляется обычно напрямую через img?</dt><dd>RAW. Это исходные данные камеры; их обычно конвертируют в формат, поддерживаемый браузером.</dd><dt>На какой версии HTML выполнена №1?</dt><dd>На HTML5: исходник начинается с &lt;!DOCTYPE html&gt;.</dd><dt>Какой тег переносит строку?</dt><dd>&lt;br&gt;. Для отдельного абзаца используется p; для внешнего расстояния между блоками — CSS margin.</dd><dt>Если открыть HTML на своём компьютере, увидят ли его другие в Интернете?</dt><dd>Нет. Локальный файл не публикуется автоматически. GitHub Pages раздаёт файлы по публичным HTTP(S)-адресам; индексация поисковиками — отдельный процесс.</dd><dt>Чем th отличается от td?</dt><dd>th — заголовочная ячейка, td — обычные данные. Жирное оформление th по умолчанию — только визуальное следствие, главное различие смысловое.</dd><dt>Чем caption отличается от h1?</dt><dd>h1 называет всю страницу, caption — конкретную таблицу внутри неё.</dd><dt>Чем tbody отличается от tr?</dt><dd>tbody — группа строк, tr — одна строка. td и th располагаются в tr.</dd><dt>Зачем colspan=&quot;4&quot;?</dt><dd>Одна ячейка примечания занимает четыре столбца. Если в таблице два столбца, нужно colspan=&quot;2&quot;.</dd><dt>Чем div отличается от col?</dt><dd>div — общий контейнер. col описывает столбец существующей table внутри colgroup, не содержит данных и не создаёт ячейки.</dd><dt>Нужен ли JavaScript для details?</dt><dd>Нет: details и summary уже имеют поведение раскрытия в браузере.</dd><dt>Чем класс отличается от id?</dt><dd>class можно повторять и объединять; id должен быть уникальным внутри документа. В CSS выбираются через . и # соответственно.</dd><dt>Почему текст первого поста оранжевый?</dt><dd>У #first-post задан color: orange, заголовок и абзац наследуют его. У абзаца правило h2 + p явно задаёт color: inherit.</dd><dt>Почему placeholder белый, а кнопка чёрная?</dt><dd>input::placeholder окрашивает текст подсказки в белый. .submit-btn задаёт black тексту кнопки; её фон светлый.</dd><dt>Куда форма отправляет введённое имя?</dt><dd>В исходном учебном HTML action=&quot;#&quot;; реального обработчика и сохранения данных нет. Это демонстрация элементов формы.</dd><dt>Что делает @media?</dt><dd>Условно включает CSS-правила, например одну колонку вместо трёх на узком экране.</dd><dt>Почему у таблицы индивидуального задания прокрутка на телефоне?</dt><dd>Её min-width больше ширины экрана, а родительский div имеет overflow-x: auto. Прокручивается таблица внутри блока.</dd><dt>Как изменить данные?</dt><dd>В lab2/general.html найти нужный tr, затем его td. Менять текст внутри ячейки, сохраняя структуру строки и число столбцов.</dd><dt>Как изменить заголовок?</dt><dd>Видимый заголовок — текст внутри h1; название вкладки — текст внутри title. Это разные места.</dd><dt>Как изменить цвет?</dt><dd>Открыть соответствующий CSS-файл, найти селектор и изменить значение color или background. Например .main-title { color: red; } меняет цвет текста.</dd></dl><p>Практика: закрой гайд и набери таблицу из двух столбцов; добавь caption и tfoot; сделай один details. Затем объясни, почему ссылка с href="#comparison" требует id="comparison". Это проверяет понимание лучше, чем заучивание большого файла.</p>
 </section>
 <section id="sources"><h2>13. Источники и как пользоваться гайдом</h2><p>Основа разбора — предоставленная методичка «Лаб. №2-3 Верстка таблицами DIV.pdf» (стр. 1–6), прежний PDF про селекторы и исходные файлы wb1. Исходные PDF не загружались в публичный репозиторий.</p>
 <p>Для сверки синтаксиса: <a href="https://html.spec.whatwg.org/multipage/tables.html">HTML Standard: таблицы</a>, <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax">MDN: синтаксис HTML</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Selectors">MDN: селекторы CSS</a>. Это справочные материалы; примеры и построчные пояснения здесь привязаны к твоим файлам.</p>
