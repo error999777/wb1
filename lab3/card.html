@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Тимофей Ковалёв, программист 1С. Конфигурации, отчёты и документы.">
+  <title>Тимофей Ковалёв | Программист 1С</title>
+  <link rel="stylesheet" href="card.css">
+  <script src="card.js" defer></script>
+</head>
+<body id="top">
+  <header class="bar shell">
+    <a class="monogram" href="#top" aria-label="К началу страницы">ТК</a>
+    <nav aria-label="Визитка">
+      <a href="#work">Работа с 1С</a>
+      <a href="https://github.com/error999777">GitHub <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="intro">
+        <h1 id="hero-title">Тимофей<br>Ковалёв</h1>
+        <h2>Программист 1С</h2>
+        <p>Настраиваю конфигурации, собираю отчёты и автоматизирую работу с документами в 1С:Предприятии.</p>
+        <a class="action" href="#work">Чем занимаюсь <span aria-hidden="true">↓</span></a>
+      </div>
+
+      <figure class="stage">
+        <div class="set">
+          <div class="halo" aria-hidden="true"></div>
+          <div class="stageword" aria-hidden="true">1С</div>
+          <div class="floor" aria-hidden="true"></div>
+          <div class="subject">
+            <img src="assets/portrait.webp" width="1086" height="1448" alt="Тимофей Ковалёв в чёрном костюме">
+          </div>
+        </div>
+        <figcaption>
+          <span>Ковалёв Тимофей Николаевич</span>
+          <button class="light" type="button" aria-pressed="false" hidden>Свет</button>
+        </figcaption>
+      </figure>
+    </section>
+
+    <div class="interlude shell">
+      <div class="track" aria-hidden="true"></div>
+      <div class="orbit" aria-hidden="true">
+        <span class="ring outer"></span>
+        <span class="ring inner"></span>
+        <span class="core">1С</span>
+      </div>
+      <label class="motion">
+        <input type="checkbox"> Пауза
+      </label>
+    </div>
+
+    <section class="work shell" id="work" aria-labelledby="work-title">
+      <h2 id="work-title">Что я делаю в 1С</h2>
+      <div class="workbody">
+        <div class="areas">
+          <article>
+            <h3>Конфигурации</h3>
+            <p>Настраиваю справочники, формы и реквизиты под задачи учёта.</p>
+          </article>
+          <article>
+            <h3>Отчёты</h3>
+            <p>Собираю данные в отчётах с фильтрами, группировками и итогами.</p>
+          </article>
+          <article>
+            <h3>Документы</h3>
+            <p>Автоматизирую заполнение документов и проверку данных при вводе.</p>
+          </article>
+        </div>
+
+        <section class="example" aria-labelledby="example-title">
+          <h3 id="example-title">Расчёт суммы документа</h3>
+          <p>Учебный пример. Измени количество или цену, чтобы пересчитать итог.</p>
+          <form class="invoice">
+            <div class="fields">
+              <label for="quantity">Количество
+                <input id="quantity" name="quantity" type="number" min="0" max="100000" step="1" value="3" required>
+              </label>
+              <label for="price">Цена за единицу, ₽
+                <input id="price" name="price" type="number" min="0" max="10000000" step="0.01" value="1250" required>
+              </label>
+            </div>
+            <div class="total">
+              <span>Сумма</span>
+              <output for="quantity price">3 750 ₽</output>
+            </div>
+          </form>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bar shell">
+    <span>Тимофей Ковалёв</span>
+    <a href="#top">Наверх <span aria-hidden="true">↑</span></a>
+  </footer>
+</body>
+</html>

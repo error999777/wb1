@@ -7,7 +7,7 @@
 | №1 | https://error999777.github.io/wb1/lab1/ | Основные теги HTML, кот и Чечерск |
 | №2 | https://error999777.github.io/wb1/lab2/ | Общее сравнение Lamborghini / Voyah / Jaguar; индивидуальное сравнение трёх Hyundai; DIV-таблица; контрольные вопросы |
 | №3 | https://error999777.github.io/wb1/lab3/ | Исходный HTML из методички и внешний CSS с восемью группами селекторов |
-| №3, дополнительное | https://error999777.github.io/wb1/lab3/business-card.html | Сайт-визитка и секция о работе с 1С |
+| №3, дополнительное | https://error999777.github.io/wb1/lab3/card.html | Сайт-визитка и секция о работе с 1С |
 
 Главная: https://error999777.github.io/wb1/
 
@@ -24,7 +24,7 @@
 - `index.html`, `labs.css` — оглавление работ.
 - `lab2/index.html`, `lab2/style.css`, `lab2/assets/` — лабораторная №2. Источники характеристик и фотографий приведены на самой странице.
 - `lab3/index.html`, `lab3/style.css` — основное задание №3.
-- `lab3/business-card.html`, `lab3/business-card.css`, `lab3/assets/` — дополнительное задание.
+- `lab3/card.html`, `lab3/card.css`, `lab3/assets/` — дополнительное задание.
 - `lab3/README.md` — пояснение селекторов, палитра, схема макета и ответы на контрольные вопросы.
 
 Для локального просмотра из корня репозитория: `python -m http.server 8000`, затем открыть `http://localhost:8000/`.
