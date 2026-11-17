@@ -1,15 +1,6 @@
-const stage = document.querySelector('.stage');
-const set = stage.querySelector('.set');
-const light = stage.querySelector('.light');
+const set = document.querySelector('.set');
 const motionAllowed = matchMedia('(prefers-reduced-motion: no-preference)');
 let frame = 0;
-
-light.hidden = false;
-light.addEventListener('click', () => {
-  const isOn = light.getAttribute('aria-pressed') === 'true';
-  light.setAttribute('aria-pressed', String(!isOn));
-  stage.classList.toggle('lit', !isOn);
-});
 
 function resetPortrait() {
   cancelAnimationFrame(frame);
@@ -33,6 +24,16 @@ set.addEventListener('pointermove', (event) => {
 set.addEventListener('pointerleave', resetPortrait);
 set.addEventListener('pointercancel', resetPortrait);
 motionAllowed.addEventListener('change', resetPortrait);
+
+const orbit = document.querySelector('.orbit');
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver(([entry]) => {
+    if (entry.intersectionRatio < 0.5) return;
+    orbit.classList.add('spinning');
+    observer.disconnect();
+  }, { threshold: 0.5 });
+  observer.observe(orbit);
+}
 
 const invoice = document.querySelector('.invoice');
 const quantity = invoice.elements.quantity;

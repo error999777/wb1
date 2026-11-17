@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Учебный отчёт по продажам с фильтром и итогом.">
+  <title>Проекты | Тимофей Ковалёв</title>
+  <link rel="stylesheet" href="card.css">
+  <script src="report.js" defer></script>
+</head>
+<body>
+  <header class="bar shell">
+    <a class="monogram" href="card.html" aria-label="На главную">ТК</a>
+    <nav aria-label="Визитка">
+      <a href="card.html">Главная</a>
+      <a href="projects.html" aria-current="page">Проекты</a>
+      <a href="about.html">Обо мне</a>
+    </nav>
+  </header>
+  <main class="shell subpage">
+    <h1>Проекты</h1>
+    <p class="pagelead">Учебные примеры того, как работают отчёты и документы в 1С.</p>
+    <section class="example report" aria-labelledby="report-title">
+      <div class="reporthead">
+        <div>
+          <h2 id="report-title">Отчёт по продажам</h2>
+          <p>Выбери категорию. В итог попадут только видимые строки.</p>
+        </div>
+        <label class="filter" hidden>Категория
+          <select>
+            <option value="all">Все категории</option>
+            <option value="equipment">Техника</option>
+            <option value="supplies">Расходники</option>
+            <option value="services">Услуги</option>
+          </select>
+        </label>
+      </div>
+      <table aria-labelledby="report-title">
+        <thead>
+          <tr><th scope="col">Позиция</th><th scope="col">Категория</th><th scope="col">Сумма</th></tr>
+        </thead>
+        <tbody>
+          <tr data-category="equipment" data-amount="4800"><th scope="row">Сканер</th><td>Техника</td><td>4 800 ₽</td></tr>
+          <tr data-category="supplies" data-amount="650"><th scope="row">Бумага</th><td>Расходники</td><td>650 ₽</td></tr>
+          <tr data-category="services" data-amount="2500"><th scope="row">Настройка</th><td>Услуги</td><td>2 500 ₽</td></tr>
+          <tr data-category="equipment" data-amount="7200"><th scope="row">Принтер</th><td>Техника</td><td>7 200 ₽</td></tr>
+          <tr data-category="supplies" data-amount="900"><th scope="row">Этикетки</th><td>Расходники</td><td>900 ₽</td></tr>
+        </tbody>
+      </table>
+      <p class="reporttotal" role="status"><span>5 позиций</span><strong>16 050 ₽</strong></p>
+    </section>
+    <a class="action" href="card.html#example-title">Попробовать расчёт документа <span aria-hidden="true">↗</span></a>
+  </main>
+  <footer class="bar shell">
+    <span>Тимофей Ковалёв</span>
+    <a href="https://github.com/error999777">GitHub <span aria-hidden="true">↗</span></a>
+  </footer>
+</body>
+</html>

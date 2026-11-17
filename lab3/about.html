@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Тимофей Ковалёв и его подход к работе с 1С.">
+  <title>Обо мне | Тимофей Ковалёв</title>
+  <link rel="stylesheet" href="card.css">
+</head>
+<body>
+  <header class="bar shell">
+    <a class="monogram" href="card.html" aria-label="На главную">ТК</a>
+    <nav aria-label="Визитка">
+      <a href="card.html">Главная</a>
+      <a href="projects.html">Проекты</a>
+      <a href="about.html" aria-current="page">Обо мне</a>
+    </nav>
+  </header>
+  <main class="shell subpage">
+    <h1>Обо мне</h1>
+    <div class="profile">
+      <section aria-labelledby="profile-title">
+        <h2 id="profile-title">Ковалёв Тимофей Николаевич</h2>
+        <p>Работаю с платформой 1С:Предприятие. Мне интересны задачи учёта, где можно сократить ручной ввод и помочь пользователю быстрее найти нужные данные.</p>
+        <a class="action" href="projects.html">Посмотреть примеры <span aria-hidden="true">↗</span></a>
+      </section>
+      <section class="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">Как я подхожу к задачам</h2>
+        <details>
+          <summary>С чего начинать настройку?</summary>
+          <p>Смотрю, как пользователь выполняет задачу сейчас. Потом определяю, какие поля ему нужны, что можно заполнить автоматически и где нужна проверка.</p>
+        </details>
+        <details>
+          <summary>Как проверить расчёт?</summary>
+          <p>Сначала считаю итог вручную на нескольких строках. Затем сравниваю с программой и проверяю округление, нулевые значения и пропуски.</p>
+        </details>
+        <details>
+          <summary>Что делает отчёт удобным?</summary>
+          <p>Понятные заголовки, фильтры по нужным признакам и итог, который пересчитывается по выбранным данным. Пользователь сразу видит, какие строки вошли в расчёт.</p>
+        </details>
+      </section>
+    </div>
+  </main>
+  <footer class="bar shell">
+    <span>Тимофей Ковалёв</span>
+    <a href="https://github.com/error999777">GitHub <span aria-hidden="true">↗</span></a>
+  </footer>
+</body>
+</html>
