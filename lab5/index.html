@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Лабораторная работа №5. Позиционирование и Flexbox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav aria-label="Навигация по работе">
+      <a href="../">Все лабораторные</a>
+      <a href="#questions">Контрольные вопросы</a>
+      <a href="../lab3/card.html#achievements">Мои достижения</a>
+    </nav>
+    <h1>Лабораторная работа №5</h1>
+    <h2>Общее задание</h2>
+  </header>
+
+  <main>
+    <div class="demo" lang="en">
+      <div class="box-static">Static</div>
+      <div class="box-static">Static</div>
+
+      <div class="box-relative-1">Relative 1</div>
+      <div class="box-relative-2">Relative 2</div>
+
+      <div class="container">
+        <div class="box-absolute-1">Absolute 1</div>
+        <div class="box-absolute-2">Absolute 2</div>
+        <div class="box-absolute-3">Absolute 3</div>
+      </div>
+
+      <div class="box-zindex-1">Z Index 5</div>
+      <div class="box-zindex-2">Z Index 4</div>
+
+      <div class="box-fixed-1">Fixed Top Right</div>
+      <div class="box-fixed-2">Fixed Bottom Left</div>
+    </div>
+
+    <section id="questions">
+      <h2>Контрольные вопросы</h2>
+      <ol>
+        <li><p><code>static</code> оставляет блок в обычном потоке. <code>relative</code> позволяет сдвинуть блок, а его место остаётся. <code>absolute</code> убирает блок из потока и обычно размещает его относительно ближайшего позиционированного предка. <code>fixed</code> обычно закрепляет блок относительно окна. <code>sticky</code> оставляет блок в потоке, но при прокрутке удерживает его у заданного края в пределах родителя.</p></li>
+        <li><p><code>block</code> начинает новую строку, как абзац. <code>inline</code> остаётся в строке, как ссылка, и обычные <code>width</code> и <code>height</code> на неё не действуют. <code>inline-block</code> тоже остаётся в строке, но ему можно задать ширину и высоту. Так можно оформить метку рядом с текстом. При <code>display: none</code> блок скрыт и места не занимает.</p></li>
+        <li><p>У блока есть содержимое, внутренний отступ <code>padding</code>, рамка <code>border</code> и внешний отступ <code>margin</code>. Размер задают <code>width</code> и <code>height</code>. С <code>box-sizing: border-box</code> внутренний отступ и рамка входят в заданный размер.</p></li>
+        <li><p><code>flex-direction</code> задаёт главную ось. <code>row</code> ставит элементы в ряд, <code>column</code> в столбец. <code>row-reverse</code> и <code>column-reverse</code> меняют направление на обратное.</p></li>
+        <li><p><code>justify-content</code> распределяет элементы вдоль главной оси, а <code>align-items</code> выравнивает их поперёк. В строке <code>justify-content: space-between</code> оставляет равные промежутки между блоками, а <code>align-items: center</code> выравнивает блоки по центру по высоте.</p></li>
+        <li><p>В <a href="https://web.dev/articles/one-line-layouts#08_line_up_justify-content_space-between">примере с карточками на web.dev</a> внутри карточки заголовок, текст и картинка идут столбцом. Свойство <code>justify-content: space-between</code> распределяет свободное место, поэтому картинки остаются внизу даже при разной длине текста.</p></li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html>

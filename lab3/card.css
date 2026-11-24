@@ -85,6 +85,44 @@ h1 {
 
 .action:hover { background: #f2dbff; }
 
+.achievements-link {
+  display: inline-block;
+  margin: 12px 0 0 12px;
+  color: var(--accent);
+}
+
+.achievements {
+  padding: 48px 0;
+  background: #221332;
+}
+
+.achievements h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.achievement-list {
+  display: flex;
+  gap: 16px;
+}
+
+.achievement-list article {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  background: #130e19;
+}
+
+.achievement-list p { color: var(--muted); }
+.achievement-list a { margin-top: auto; color: var(--accent); }
+
+@media (max-width: 700px) {
+  .achievement-list { flex-direction: column; }
+}
+
 .stage {
   border: 1px solid var(--line);
   background: #100819;
