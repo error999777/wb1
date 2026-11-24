@@ -1,14 +1,34 @@
 const portrait = document.querySelector('.portrait-model');
 const stage = portrait.closest('.stage');
-const portraitHint = document.getElementById('portrait-hint');
+const portraitPoster = stage.querySelector('.portrait-poster');
+const portraitControls = stage.querySelector('.portrait-controls');
+const portraitReset = stage.querySelector('.portrait-reset');
+const frontOrbit = portrait.getAttribute('camera-orbit');
+
+function blendPortraitViews() {
+  const { theta } = portrait.getCameraOrbit();
+  const angle = Math.abs(Math.atan2(Math.sin(theta), Math.cos(theta))) * 180 / Math.PI;
+  const turn = Math.max(0, Math.min(1, (angle - 1) / 6));
+  stage.style.setProperty('--portrait-turn', turn);
+}
 
 function showPortraitModel(ready) {
   stage.classList.toggle('model-ready', ready);
-  portraitHint.hidden = !ready;
+  portraitControls.hidden = !ready;
+  portraitPoster.setAttribute('aria-hidden', String(ready));
+  if (ready) blendPortraitViews();
 }
 
 portrait.addEventListener('load', () => showPortraitModel(true));
 portrait.addEventListener('error', () => showPortraitModel(false));
+portrait.addEventListener('camera-change', blendPortraitViews);
+portraitReset.addEventListener('click', async () => {
+  // Dragging changes the live camera, so sync it before assigning the starting orbit again.
+  portrait.cameraOrbit = portrait.getCameraOrbit().toString();
+  await portrait.updateComplete;
+  portrait.cameraOrbit = frontOrbit;
+  portrait.jumpCameraToGoal();
+});
 if (portrait.loaded) showPortraitModel(true);
 
 const orbit = document.querySelector('.orbit');
