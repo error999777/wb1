@@ -1,6 +1,7 @@
 const set = document.querySelector('.set');
 const motionAllowed = matchMedia('(prefers-reduced-motion: no-preference)');
 let frame = 0;
+let touchPointer = null;
 
 function resetPortrait() {
   cancelAnimationFrame(frame);
@@ -8,21 +9,43 @@ function resetPortrait() {
   set.style.removeProperty('--y');
 }
 
-set.addEventListener('pointermove', (event) => {
-  if (!motionAllowed.matches || event.pointerType === 'touch') return;
+function tiltPortrait(event) {
   const bounds = set.getBoundingClientRect();
-  const x = (event.clientX - bounds.left) / bounds.width - 0.5;
-  const y = (event.clientY - bounds.top) / bounds.height - 0.5;
+  const x = Math.max(-1, Math.min(1, (event.clientX - bounds.left) / bounds.width * 2 - 1));
+  const y = Math.max(-1, Math.min(1, (event.clientY - bounds.top) / bounds.height * 2 - 1));
 
   cancelAnimationFrame(frame);
   frame = requestAnimationFrame(() => {
     set.style.setProperty('--x', x);
     set.style.setProperty('--y', y);
   });
+}
+
+set.addEventListener('pointermove', (event) => {
+  if (!motionAllowed.matches) return;
+  if (event.pointerType === 'touch' && event.pointerId !== touchPointer) return;
+  tiltPortrait(event);
 });
 
-set.addEventListener('pointerleave', resetPortrait);
-set.addEventListener('pointercancel', resetPortrait);
+set.addEventListener('pointerdown', (event) => {
+  if (event.pointerType !== 'touch' || !event.isPrimary || !motionAllowed.matches) return;
+  touchPointer = event.pointerId;
+  set.setPointerCapture(event.pointerId);
+  tiltPortrait(event);
+});
+
+function endTouch(event) {
+  if (event.pointerId !== touchPointer) return;
+  touchPointer = null;
+  resetPortrait();
+}
+
+set.addEventListener('pointerleave', (event) => {
+  if (event.pointerType !== 'touch') resetPortrait();
+});
+set.addEventListener('pointerup', endTouch);
+set.addEventListener('pointercancel', endTouch);
+set.addEventListener('lostpointercapture', endTouch);
 motionAllowed.addEventListener('change', resetPortrait);
 
 const orbit = document.querySelector('.orbit');
