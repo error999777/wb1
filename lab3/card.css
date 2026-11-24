@@ -96,7 +96,7 @@ h1 {
   background: #221332;
 }
 
-.achievements h2 {
+.achievements h2, .technologies h2 {
   margin-bottom: 20px;
   font-size: 32px;
 }
@@ -121,6 +121,50 @@ h1 {
 
 @media (max-width: 700px) {
   .achievement-list { flex-direction: column; }
+}
+
+.technologies {
+  padding: 48px 0;
+  background: #efe6f8;
+  color: #251532;
+}
+
+.technologies h2 { line-height: 1.2; }
+
+.technology-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.technology-grid article {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  align-items: start;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid #d9c8e8;
+  background: #fcf8ff;
+}
+
+.technology-icon {
+  display: grid;
+  place-items: center;
+  height: 42px;
+  font-size: 13px;
+  font-weight: bold;
+  background: #e3d0f5;
+  color: #462765;
+}
+
+.technology-grid p { margin-top: 5px; color: #51405f; }
+
+@media (max-width: 900px) {
+  .technology-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 560px) {
+  .technology-grid { grid-template-columns: 1fr; }
 }
 
 .stage {

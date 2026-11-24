@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Лабораторная работа №6. Вёрстка Grid</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav aria-label="Навигация по работе">
+      <a href="../">Все лабораторные</a>
+      <a href="#questions">Контрольные вопросы</a>
+      <a href="../lab3/card.html#technologies">Технологии в визитке</a>
+    </nav>
+    <h1>Лабораторная работа №6</h1>
+  </header>
+
+  <main>
+    <h2>Общее задание</h2>
+    <div class="grid-container">
+      <div class="grid-item item6">Широкий блок</div>
+      <div class="grid-item item7">Во всю ширину</div>
+      <div class="grid-item item8">Нижний блок</div>
+      <div class="grid-item item5">Большой блок</div>
+      <div class="grid-item item4">Футер</div>
+    </div>
+
+    <details>
+      <summary>Остальные блоки из шаблона</summary>
+      <div class="extra-grid">
+        <div class="grid-item item1">Заголовок</div>
+        <div class="grid-item item2">Боковая панель</div>
+        <div class="grid-item item3">Контент</div>
+      </div>
+    </details>
+
+    <section id="questions">
+      <h2>Контрольные вопросы</h2>
+      <ol>
+        <li><p>Количество и ширину столбцов задаёт <code>grid-template-columns</code>. Например, <code>repeat(3, 1fr)</code> создаёт три равных столбца.</p></li>
+        <li><p>Можно задать одинаковые доли <code>fr</code>. При <code>1fr 1fr</code> две дорожки получают поровну свободного места.</p></li>
+        <li><p>Функция <code>repeat()</code> с <code>auto-fit</code> или <code>auto-fill</code> подбирает число дорожек. В <code>minmax(160px, 1fr)</code> первое значение задаёт минимальную ширину, а второе позволяет столбцу растянуться.</p></li>
+        <li><p><code>gap</code> задаёт промежутки между элементами. Можно задать их по отдельности с помощью <code>row-gap</code> и <code>column-gap</code>.</p></li>
+        <li><p><code>grid-column: span 2</code> растягивает элемент на два столбца, а <code>grid-row: span 2</code> на две строки. Ещё можно указать номера линий, например <code>grid-column: 1 / 4</code>.</p></li>
+        <li><p>В <a href="https://web.dev/articles/one-line-layouts#07_ram_repeat_auto_minmax_grid-template-columnsauto-fit_minmaxbase_1fr">примере на web.dev</a> цветные карточки перестраиваются при изменении ширины окна. Когда места мало, часть карточек уходит на следующую строку.</p></li>
+      </ol>
+      <p><a href="https://cssgridgarden.com/#ru">Потренироваться в Grid Garden</a></p>
+    </section>
+  </main>
+</body>
+</html>
