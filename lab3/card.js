@@ -1,52 +1,15 @@
-const set = document.querySelector('.set');
-const motionAllowed = matchMedia('(prefers-reduced-motion: no-preference)');
-let frame = 0;
-let touchPointer = null;
+const portrait = document.querySelector('.portrait-model');
+const stage = portrait.closest('.stage');
+const portraitHint = document.getElementById('portrait-hint');
 
-function resetPortrait() {
-  cancelAnimationFrame(frame);
-  set.style.removeProperty('--x');
-  set.style.removeProperty('--y');
+function showPortraitModel(ready) {
+  stage.classList.toggle('model-ready', ready);
+  portraitHint.hidden = !ready;
 }
 
-function tiltPortrait(event) {
-  const bounds = set.getBoundingClientRect();
-  const x = Math.max(-1, Math.min(1, (event.clientX - bounds.left) / bounds.width * 2 - 1));
-  const y = Math.max(-1, Math.min(1, (event.clientY - bounds.top) / bounds.height * 2 - 1));
-
-  cancelAnimationFrame(frame);
-  frame = requestAnimationFrame(() => {
-    set.style.setProperty('--x', x);
-    set.style.setProperty('--y', y);
-  });
-}
-
-set.addEventListener('pointermove', (event) => {
-  if (!motionAllowed.matches) return;
-  if (event.pointerType === 'touch' && event.pointerId !== touchPointer) return;
-  tiltPortrait(event);
-});
-
-set.addEventListener('pointerdown', (event) => {
-  if (event.pointerType !== 'touch' || !event.isPrimary || !motionAllowed.matches) return;
-  touchPointer = event.pointerId;
-  set.setPointerCapture(event.pointerId);
-  tiltPortrait(event);
-});
-
-function endTouch(event) {
-  if (event.pointerId !== touchPointer) return;
-  touchPointer = null;
-  resetPortrait();
-}
-
-set.addEventListener('pointerleave', (event) => {
-  if (event.pointerType !== 'touch') resetPortrait();
-});
-set.addEventListener('pointerup', endTouch);
-set.addEventListener('pointercancel', endTouch);
-set.addEventListener('lostpointercapture', endTouch);
-motionAllowed.addEventListener('change', resetPortrait);
+portrait.addEventListener('load', () => showPortraitModel(true));
+portrait.addEventListener('error', () => showPortraitModel(false));
+if (portrait.loaded) showPortraitModel(true);
 
 const orbit = document.querySelector('.orbit');
 if ('IntersectionObserver' in window) {

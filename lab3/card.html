@@ -6,8 +6,10 @@
   <meta name="description" content="Тимофей Ковалёв, программист 1С. Конфигурации, отчёты и документы.">
   <meta name="theme-color" content="#120f18">
   <title>Тимофей Ковалёв | Программист 1С</title>
-  <link rel="stylesheet" href="card.css?v=5">
-  <script src="card.js?v=3" defer></script>
+  <link rel="stylesheet" href="card.css?v=6">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@4.4.0/dist/model-viewer.min.js"
+    integrity="sha384-wjsPzEO+lXOf7d9csIDfAQpPt2OKuUU3m0K9qsdKIuzX4N8czSF6hdh23eAbZa3p" crossorigin="anonymous"></script>
+  <script src="card.js?v=4" defer></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">К содержанию</a>
@@ -34,19 +36,18 @@
 
       <figure class="stage">
         <div class="set">
-          <div class="portrait-scene">
-            <div class="halo" aria-hidden="true"></div>
-            <div class="stageword" aria-hidden="true">1С</div>
-            <div class="floor" aria-hidden="true"></div>
-            <div class="subject">
-              <img src="assets/portrait.webp" width="1086" height="1448" alt="Тимофей Ковалёв в чёрном костюме" fetchpriority="high">
-            </div>
-          </div>
+          <div class="stageword" aria-hidden="true">1С</div>
+          <div class="floor" aria-hidden="true"></div>
+          <img class="portrait-poster" src="assets/portrait.webp" width="1086" height="1448"
+            alt="Тимофей Ковалёв в чёрном костюме" fetchpriority="high">
+          <model-viewer class="portrait-model" src="assets/portrait.glb"
+            alt="Объёмный портрет Тимофея Ковалёва" aria-describedby="portrait-hint"
+            camera-controls disable-pan disable-tap disable-zoom touch-action="pan-y"
+            camera-orbit="0deg 90deg auto" min-camera-orbit="auto 90deg auto" max-camera-orbit="auto 90deg auto"
+            interaction-prompt="none" loading="eager">
+          </model-viewer>
         </div>
-        <figcaption>
-          <span>Ковалёв Тимофей Николаевич</span>
-          <span class="portrait-hint">Проведи пальцем вбок</span>
-        </figcaption>
+        <figcaption id="portrait-hint" hidden>Перетащи портрет, чтобы повернуть</figcaption>
       </figure>
     </section>
 
