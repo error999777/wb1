@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Примеры работы Тимофея Ковалёва с отчётами и документами в 1С.">
+  <meta name="theme-color" content="#120f18">
   <title>Проекты | Тимофей Ковалёв</title>
-  <link rel="stylesheet" href="card.css">
-  <script src="report.js" defer></script>
+  <link rel="stylesheet" href="card.css?v=4">
+  <script src="report.js?v=2" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">К содержанию</a>
   <header class="bar shell">
     <a class="monogram" href="card.html" aria-label="На главную">ТК</a>
     <nav aria-label="Визитка">
@@ -17,9 +19,9 @@
       <a href="about.html">Обо мне</a>
     </nav>
   </header>
-  <main class="shell subpage">
+  <main class="shell subpage" id="main" tabindex="-1">
     <h1>Проекты</h1>
-    <p class="pagelead">Отчёты и документы в 1С. Посмотри, как отбор по категории меняет итог продаж.</p>
+    <p class="pagelead">Примеры отчётов и расчётов для задач учёта в 1С.</p>
     <section class="example report" aria-labelledby="report-title">
       <div class="reporthead">
         <div>
@@ -27,7 +29,7 @@
           <p>Выбери категорию. В итог попадут только видимые строки.</p>
         </div>
         <label class="filter" hidden>Категория
-          <select>
+          <select name="category" autocomplete="off">
             <option value="all">Все категории</option>
             <option value="equipment">Техника</option>
             <option value="supplies">Расходники</option>
@@ -47,13 +49,19 @@
           <tr data-category="supplies" data-amount="900"><th scope="row">Этикетки</th><td>Расходники</td><td>900 ₽</td></tr>
         </tbody>
       </table>
-      <p class="reporttotal" role="status"><span>5 позиций</span><strong>16 050 ₽</strong></p>
+      <div class="reporttotal" role="status">
+        <span class="report-count">5 позиций</span>
+        <div class="report-amount"><span>Итого</span> <strong>16 050 ₽</strong></div>
+      </div>
     </section>
     <a class="action" href="card.html#example-title">Попробовать расчёт документа</a>
   </main>
-  <footer class="bar shell">
+  <footer class="bar footer shell">
     <span>Тимофей Ковалёв</span>
-    <a href="https://github.com/error999777">GitHub</a>
+    <div class="footer-links">
+      <a href="../">Лабораторные</a>
+      <a href="https://github.com/error999777">GitHub</a>
+    </div>
   </footer>
 </body>
 </html>

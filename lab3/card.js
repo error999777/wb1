@@ -39,6 +39,10 @@ const invoice = document.querySelector('.invoice');
 const quantity = invoice.elements.quantity;
 const price = invoice.elements.price;
 const total = invoice.querySelector('output');
+const fields = [quantity, price].map((input) => ({
+  input,
+  hint: document.getElementById(`${input.id}-error`),
+}));
 const rubles = new Intl.NumberFormat('ru-RU', {
   style: 'currency',
   currency: 'RUB',
@@ -47,8 +51,19 @@ const rubles = new Intl.NumberFormat('ru-RU', {
 });
 
 function updateTotal() {
+  for (const { input, hint } of fields) {
+    hint.hidden = input.validity.valid;
+    if (hint.hidden) {
+      input.removeAttribute('aria-invalid');
+      input.removeAttribute('aria-describedby');
+    } else {
+      input.setAttribute('aria-invalid', 'true');
+      input.setAttribute('aria-describedby', hint.id);
+    }
+  }
+
   if (!quantity.validity.valid || !price.validity.valid) {
-    total.value = 'Проверь поля';
+    total.value = 'Нет суммы';
     return;
   }
 
